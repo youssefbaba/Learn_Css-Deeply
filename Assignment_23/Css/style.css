@@ -1,0 +1,36 @@
+.parent {
+    background-color: red;
+    /* width: 800px; */
+    width: 1000px;
+    margin: auto;
+}
+
+.parent .child {
+    background-color: #f0f0f0;
+    float: left;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 0 15px 15px;
+
+}
+
+.parent .first-div {
+    width: calc(100% - 30px);
+    margin-top: 15px;
+}
+
+.parent .second-div {
+    width: calc((100% - 60px)/3);
+}
+
+.parent .third-div {
+    width: calc((100% - 45px)/2);
+}
+
+.parent .fourth-div {
+    width: calc((100% - 75px)/4);
+}
+
+.clear {
+    clear: both;
+}

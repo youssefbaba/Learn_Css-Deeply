@@ -1,0 +1,51 @@
+/* 
+- for background-position i can use position or units [px , % , em ...]
+    - Direction x : left , center , right
+    - Direction y : top , center , bottom
+    - example:
+        - background-position: left top;
+    - px => top , left 
+    - example:
+        - background-position:100px 200px => 100px(left) 200px(top)   
+        - background-position:10% 20% => 10%(left) 20%(top)   
+
+- for background-size i can use cover or contain or units[ px, % , em , rem]
+
+*/
+
+div {
+    color: white;
+    background-color: #ff0000;
+    background-image: url("../images/gallery-04.png");
+    /* background-repeat: repeat; */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+    /* background-attachment: fixed; */
+    /* background-position: left top; */
+    /* background-position: left center; */
+    /* background-position: left bottom; */
+    /* background-position: center top; */
+    /* background-position: center center; */
+    /* background-position: center bottom; */
+    /* background-position: right top; */
+    /* background-position: right center; */
+    /* background-position: right bottom; */
+    /* background-position: right; */
+    /* background-position: center; */
+    /* background-position: 100px 0px; */
+    /* background-position: 100px 200px; */
+    /* background-position: 100% 0; */
+    /* background-position: 50% 50%; */
+    /* background-position: 100% 100%; */
+    /* background-position: 10%  20%; */
+    /* background-size: auto; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-size: 100px 100px; */
+    /* background-size: 50% 50%; */
+    background-size: 100% 100%;
+
+
+}

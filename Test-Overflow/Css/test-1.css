@@ -1,0 +1,26 @@
+/* 
+overflow property
+    - default value is  overflow:visible
+    - overflow = overflow-x + overflow-y
+        - example : overflow:scroll = overflow-x:scroll + overflow-y:scroll
+    - and i can specific one direction for example overflow-x:hidden and overflow-y:scroll
+    - overflow:auto => ila kan chi depassement dir scroll sinon matdirch scroll
+    - si on ana specifie une seul direction pour overflow  don autre direction automatiquement c'est auto
+         -example : overflow-x:hidden=>overflow-x:hidden and overflow-y:auto
+*/
+.first-div {
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    margin: 40px auto;
+    /* overflow: visible; */
+    /* overflow: scroll; */
+    overflow: auto;
+    /* overflow-x: hidden; */
+    /* overflow-x: scroll; */
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+    /* overflow-y: scroll; */
+    /* overflow-y: hidden; */
+
+}

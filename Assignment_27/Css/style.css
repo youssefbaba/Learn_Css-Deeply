@@ -1,0 +1,56 @@
+.parent {
+    width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 2px solid;
+    border-color: #f66a60 #03a9f4;
+    background-color: #f0f0f0;
+    /* Set a counter named 'counter-span', and its initial value is 0. */
+    counter-reset: counter-span;
+    position: relative;
+}
+
+
+
+.parent span::before {
+    position: absolute;
+    /* Increment the value of section counter by 1 */
+    counter-increment: counter-span;
+    content: counter(counter-span);
+    background-color: #03a9f4;
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.parent span.left-top::before,
+.parent span.left-bottom::before {
+    left: -15px;
+    border-right: 2px solid #f66a60;
+}
+
+.parent span.left-top::before {
+    top: -15px;
+}
+
+.parent span.left-bottom::before {
+    bottom: -15px;
+}
+
+.parent span.right-top::before,
+.parent span.right-bottom::before {
+    right: -15px;
+    border-left: 2px solid #f66a60;
+
+}
+
+.parent span.right-top::before {
+    top: -15px;
+}
+
+.parent span.right-bottom::before {
+    bottom: -15px;
+}

@@ -1,0 +1,24 @@
+/* 
+Shorthand Property : background:[background-color] + [background-image] + [background-repeat] + [background-attachment] + [background-position]
+- Default value Of background-color is transparent
+- Default value Of background-image is none
+- Default value Of background-repeat is repeat
+- Default value Of background-attachment is scroll
+- Default value Of background-position is  0%  0%
+*/
+.div-1 {
+    background-color: red;
+    color: white;
+    background-image: url("../images/avatar-03.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* background-attachment: scroll; */
+    background-attachment: fixed;
+    margin-bottom: 100px;
+}
+
+.div-2 {
+    color: white;
+    background: red url("../images/avatar-05.png") no-repeat fixed center top;
+
+}

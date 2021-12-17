@@ -1,0 +1,27 @@
+/* 
+list-style-type : spicifies the type of list item marker
+list-style-image : property specifies an image as the list item marker:
+
+*/
+
+.links-1 {
+    list-style-type: circle;
+}
+
+.links-2 {
+    list-style-type: square;
+}
+
+.links-3 {
+    list-style-type: upper-roman;
+    list-style-position: outside;
+    list-style-position: inside;
+}
+
+.links-4 {
+    list-style-type: lower-latin;
+}
+
+.links-5 {
+    list-style-image: url("/img_forest.jpg");
+}

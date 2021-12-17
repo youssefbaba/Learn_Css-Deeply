@@ -1,0 +1,35 @@
+/* 
+Property overflow :
+    - default  value is overflow:visible
+    - overflow = overflow-x + oveflow-y
+        -example 1 : overflow:hidden => overflow-x:hidden + oveflow-y:hidden
+        -example 2 : overflow:scroll => overflow-x:scroll + oveflow-y:scroll
+    -overflow:auto => ya3ni ila kan 3andi depassment  rah ghadi ytdar scroll automatiquement  sinon maghadich ydar scroll
+    - ila declarit ghit jiha wa7da lakhra kaydir lih auto 
+        -example : overflow-x:hidden=>overflow-x:hidden and overflow-y:auto
+*/
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin: 20px auto;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    /* overflow-x: hidden; */
+    /* overflow-x: scroll; */
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+    /* overflow-y: scroll; */
+    overflow-y: auto;
+
+
+
+}

@@ -1,0 +1,32 @@
+.first-div {
+    width: 800px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid green;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.first-div p {
+    width: 500px;
+    height: 50%;
+    border: 1px solid red;
+    margin: auto;
+
+}
+
+.second-div {
+    max-width: 800px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid green;
+    margin: auto;
+}
+
+.second-div p {
+    width: 500px;
+    height: 50%;
+    border: 1px solid red;
+    margin: auto;
+
+}

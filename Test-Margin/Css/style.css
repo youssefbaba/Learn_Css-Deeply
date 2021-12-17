@@ -1,0 +1,84 @@
+/* 
+Property Margin:
+    -Negative values are allowed.
+    - margin:[margin-top]+[margin-right]+[margin-bottom]+[margin-left]
+    - margin:20px => margin: 20px 20px 20px 20px ;
+    - margin:20px 30px => margin: 20px 30px 20px 30px ;
+    - margin:20px  10px 15px=> margin: 20px 10px 15px 10px ;
+    - margin:auto  => the browser calculates the margin
+
+
+*/
+
+.div-1 {
+    color: white;
+    font-size: 20px;
+    background-color: dodgerblue;
+    border: 2px solid red;
+    margin-top: 100px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+}
+
+.div-2 {
+    margin-top: -95px;
+    background-color: red;
+    color: white;
+}
+
+.div-3 {
+    background-color: dodgerblue;
+    border: 2px solid red;
+    margin: 25px 50px 75px 100px;
+}
+
+.div-5 {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid red;
+    margin: 25px 50px;
+}
+
+.div-6 {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid red;
+    margin: 20px;
+
+}
+
+.div-7 {
+    width: 80%;
+    color: white;
+    background-color: dodgerblue;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.div-7 p {
+    width: 50%;
+    margin: auto;
+}
+
+.div-8 {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid red;
+    margin-left: 100px;
+}
+
+.div-8 p {
+    margin-left: inherit;
+}
+
+.div-9 {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black;
+
+}
+
+.div-9 p {
+    margin-left: 25%;
+}

@@ -1,0 +1,41 @@
+/* 
+Text Alignment
+    -Alignment
+        - syntax : text-align:[left , center , right]
+        - default value is text-align:left
+    -Direction
+        - syntax : direction:[ltr , rtl]
+        - default value is direction:ltr
+    -Vertical Alignment
+        - for example mo7adat dyal image m3a text au niveau vertical => kin9oul lih  text fine ghadi ykoune par rapport a  image au niveau vertical
+        - syntax: vertical-align:[top , bottom, middle , text-bottom , text-top , px , % ...] 
+        - default value is vertical-align:baseline
+        - only applies to inline,inline-block and table-cell elements: you can't use it to vertically align block-level elements.
+
+
+*/
+div {
+    background-color: #f0f0f0;
+    margin: 40px auto;
+}
+
+.first-div {
+    /* text-align: left; */
+    text-align: center;
+    /* text-align: right; */
+    direction: ltr;
+}
+
+.first-div img {
+    /* vertical-align: baseline; */
+    /* vertical-align: top; */
+    /* vertical-align: bottom; */
+    vertical-align: middle;
+}
+
+.second-div {
+    /* text-align: left; */
+    /* text-align: center; */
+    text-align: right;
+    direction: rtl;
+}

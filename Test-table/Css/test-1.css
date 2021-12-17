@@ -1,0 +1,35 @@
+table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    border-spacing: 0px;
+}
+
+table td,
+table th {
+    border: 0.5px solid #b4b4b4;
+    padding: 10px;
+}
+
+/* table tr:nth-child(2n + 1) {
+    background-color: #f2f2f2;
+} */
+/* elements impaire */
+table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* table tr:nth-child(2n) {
+    background-color: white;
+} */
+/* elements paire */
+table tr:nth-child(even) {
+    background-color: white;
+}
+
+table thead th {
+    background-color: #04aa6d;
+    color: white;
+    border-color: white;
+    text-align: left;
+
+}

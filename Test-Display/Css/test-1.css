@@ -1,0 +1,21 @@
+div {
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid white;
+    color: white;
+    background-color: dodgerblue;
+}
+
+.first-div {
+    text-align: center;
+}
+
+.second-div {
+    display: none;
+}
+
+.second-div span {
+    color: red;
+    background-color: #f0f0f0;
+}

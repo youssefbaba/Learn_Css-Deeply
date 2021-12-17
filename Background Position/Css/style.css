@@ -1,0 +1,33 @@
+/* 
+Background-poisition:
+    - I can use position-x [left , center , right ] + position-y [ top , center , bottom]
+        - example : background-position: left center
+    - I can use units [px , % , em , rem ....]
+        - example : background-position: 100px 200px => 100px for top and  200px for left
+
+
+*/
+
+div {
+    background-color: red;
+    color: white;
+    background-image: url("../images/avatar-03.png");
+    background-repeat: no-repeat;
+    /* background-position: left top; */
+    /* background-position: left center; */
+    /* background-position: left bottom; */
+    /* background-position: center top; */
+    /* background-position: center center; */
+    /* background-position: center bottom; */
+    /* background-position: right top; */
+    /* background-position: right center; */
+    /* background-position: right bottom; */
+    /* background-position: left; */
+    /* background-position: 100px 200px; */
+    /* background-position: 0px 200px; */
+    /* background-position: 100px 0px; */
+    /* background-position: 50% 50%; */
+    /* background-position: 100% 100%; */
+    /* background-position: 0% 60%; */
+    /* background-position: 60% 0%; */
+}

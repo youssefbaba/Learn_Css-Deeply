@@ -1,0 +1,44 @@
+/* 
+-display:block
+    -Take full width if no specific width
+    -Add Line Break
+    -Respect padding and margin  and width and height
+
+-display:inline
+    -Do not respect width and height
+    -Do not add line break => allow elements before and after it
+    -Respect padding and margin  just [left + right] 
+    
+
+-display:inline-block
+    -Do not add line break => allow elements before and after it
+    -Respect padding and margin and width and height
+
+*/
+/* display:block */
+div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 20px;
+    width: 50%;
+    height: 20px;
+}
+
+/* display:inline */
+.span-1 {
+    background-color: #f0f0f0;
+    width: 400px;
+    height: 100px;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* display:inline-block */
+.span-2 {
+    background-color: #f0f0f0;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    margin: 14px;
+    padding: 14px;
+}

@@ -1,0 +1,31 @@
+/* 
+text-shadow: h-shadow v-shadow blur color
+-default value of color is color of text
+*/
+
+p {
+    margin: 0 0 40px;
+}
+
+.one {
+    text-shadow: 1px 1px;
+}
+
+.two {
+    text-shadow: 1px 1px 0px red;
+}
+
+.three {
+    /* text-shadow: 1px 1px 1px green; */
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.four {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
+    text-shadow: 1px 1px #ff5722, 2px 2px #2196f3, 3px 3px #9c27b0;
+
+}

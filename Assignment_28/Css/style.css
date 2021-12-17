@@ -1,0 +1,46 @@
+.parent {
+    width: 400px;
+    margin: auto;
+    list-style: none;
+}
+
+.parent .list-child {
+    background-color: #eeeeee;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.parent .list-child ol {
+    margin-top: 10px;
+    padding-left: 30px;
+
+}
+
+.parent .list-child ol.order-list-one {
+    list-style-type: decimal;
+}
+
+.parent .list-child ol.order-list-two {
+    list-style-type: upper-roman;
+}
+
+.parent .list-child ol li {
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 5px;
+
+}
+
+.parent .three ul {
+    margin-top: 10px;
+    padding: 0;
+
+}
+
+.parent .three ul li {
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 5px;
+    list-style-position: inside;
+
+}

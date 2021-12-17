@@ -1,0 +1,25 @@
+.first-div {
+    width: 600px;
+    margin: 40px auto;
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+.first-div h2 {
+    color: #4caf50;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.first-div p {
+    text-indent: 20px;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+.first-div a {
+    color: #3591ba;
+    text-decoration: none;
+
+}

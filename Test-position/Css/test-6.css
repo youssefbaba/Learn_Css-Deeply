@@ -1,0 +1,42 @@
+/* 
+position sticky 
+-An element with position: sticky; is positioned based on the user's scroll position.
+hanaya element kitpositionna ntila9anae 3la scroll dyal user o mlai kiywssal wa7ad position kiywala fixed  fi hadak position wakaha tdir scroll
+
+*/
+.navigation {
+    position: sticky;
+    top: 10px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #787878;
+}
+
+.navigation ul li {
+    float: left;
+}
+
+.navigation ul a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    width: fit-content;
+}
+
+.navigation ul a.active {
+    background-color: green !important;
+
+}
+
+.navigation ul a:hover {
+    background-color: #3c3c3c;
+}
+
+.clear {
+    clear: both;
+}

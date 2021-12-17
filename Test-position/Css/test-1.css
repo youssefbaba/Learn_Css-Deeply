@@ -1,0 +1,42 @@
+/* 
+position prperty is used for specify  method positionning  used for an element.
+    -syntax position:[top , left , bottom ,right]
+    - Derection for positionning element are top , right , bottom , left 
+    - default positionnign for an element is static => ya3ni ana  element kiyb9a fi position intial dyalo 
+        en plus makiyr2atrouch fih les directions (top , right , bottom , left) o kinssta3mlouh ghalibane for reset other type positionning.
+- Html Element Are positioned static 
+-Static positioned elements are not affected by the top, bottom,left,and right properties.
+-Position static is  used for reset other type of poitioning
+*/
+div {
+    margin: 0 0 40px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid;
+    width: 300px;
+}
+
+.first-div {
+    border-color: blue;
+
+    top: 15px;
+    left: 30px;
+
+}
+
+.second-div {
+    border-color: green;
+    position: static;
+    top: 10px;
+    left: 10px;
+
+}
+
+.third-div {
+    border-color: red;
+}
+
+.fourth-div {
+    border-color: #673ab7;
+    position: static;
+}

@@ -1,0 +1,9 @@
+form {
+    display: flex;
+    gap: 20px;
+}
+
+#special {
+    color: red;
+    font-weight: bold;
+}

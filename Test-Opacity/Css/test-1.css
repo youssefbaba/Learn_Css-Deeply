@@ -1,0 +1,65 @@
+.parent {
+    margin: 0 0 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.first-div img {
+    opacity: 1;
+}
+
+.second-div img {
+    opacity: 0.5;
+}
+
+.third-div img {
+    opacity: 0.2;
+
+}
+
+.container-1 div {
+    float: left;
+    width: calc((100% - 40px)/3);
+}
+
+.container-1 .first-div,
+.container-1 .second-div {
+    margin-right: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+span {
+    display: inline-block;
+    background-color: red;
+    padding: 5px;
+}
+
+.container-2 div {
+    background-color: #3c3c3c;
+    width: 300px;
+    margin: 0 auto 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-2 .first-div {
+    opacity: 1;
+
+}
+
+.container-2 .second-div {
+    opacity: 0.5;
+}
+
+.container-2 .third-div {
+    opacity: 0.2;
+}

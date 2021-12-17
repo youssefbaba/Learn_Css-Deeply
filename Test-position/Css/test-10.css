@@ -1,0 +1,37 @@
+body {
+    min-height: 5000px;
+}
+
+dl dt {
+    background-color: #b4b4b4;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: sticky;
+    top: 10px;
+}
+
+dl dd {
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+dl dd:not(:last-child) {
+    border-bottom: 1px solid #3c3c3c;
+}
+
+a {
+    display: block;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}

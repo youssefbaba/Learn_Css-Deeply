@@ -1,0 +1,74 @@
+/* 
+Note : ila makanch border-style  maghadich ykoune 3andna border 9a3
+ -border:border-width + border-style + border-color
+ -border-width => default value is medium 
+ -border-style => default value is none
+ -border-color => default value is  color of text
+
+*/
+div {
+    padding: 10px;
+    margin: 0 0 20px;
+    color: red;
+}
+
+.first-div {
+    /* border: solid; */
+    border-style: solid;
+    border-width: 5px;
+
+}
+
+.second-div {
+    /* border: dashed; */
+    border-style: dashed;
+    border-width: medium;
+    /*  meduim => 3px */
+}
+
+.third-div {
+    /* border: dotted; */
+    border-style: dotted;
+    border-width: 2px;
+}
+
+.fourth-div {
+    /* border: dashed; */
+    border-style: dashed;
+    border-width: thick;
+    /* thick => 5px */
+}
+
+.fifth-div {
+    /* border: double; */
+    border-style: double;
+    border-width: thin;
+    /* thin => 1px */
+}
+
+p {
+    padding: 10px;
+    margin: 0 0 20px;
+    border-color: dodgerblue;
+    border-style: solid;
+}
+
+.first-paragraph {
+    /* border-width: 5px => 5px for top and bottom an left and right */
+    border-width: 5px;
+}
+
+.second-paragraph {
+    /* border-width: 5px 10px => 5px for top and bottom , 10px for left and right */
+    border-width: 5px 10px;
+}
+
+.third-paragraph {
+    /* border-width: 5px 10px 15px => 5px for top , 10px for right and left , 15px for bottom */
+    border-width: 5px 10px 15px;
+}
+
+.fourth-paragraph {
+    /* border-width: 5px 10px 15px 20px => 5px for top  , 10px for right , 15px for bottom , 20px for left */
+    border-width: 5px 10px 15px 20px;
+}

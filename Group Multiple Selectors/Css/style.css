@@ -1,0 +1,55 @@
+h1,
+h2,
+.special {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 0 20px;
+    color: dodgerblue;
+}
+
+h1 {
+    border: 2px solid red;
+}
+
+h2 {
+    border: 2px solid green;
+}
+
+.special {
+    border: 2px solid blue;
+}
+
+
+.first-div,
+.second-div,
+.third-div,
+.fourth-div {
+    background-color: #eeeeee;
+    padding: 15px;
+    margin: 0 0 20px;
+
+}
+
+.first-div {
+    color: red;
+    border-bottom: 2px solid red;
+
+}
+
+.second-div {
+    color: blue;
+    border-bottom: 2px solid blue;
+
+}
+
+.third-div {
+    color: green;
+    border-bottom: 2px solid green;
+
+}
+
+.fourth-div {
+    color: purple;
+    border-bottom: 2px solid purple;
+
+}

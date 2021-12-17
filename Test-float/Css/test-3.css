@@ -1,0 +1,113 @@
+.container-1,
+.container-2,
+.container-3 {
+    width: 80%;
+    margin: 20px auto;
+    background-color: red;
+    padding: 20px 0;
+    /* overflow: auto; */
+}
+
+.container-1 .first-div-child,
+.container-1 .second-div-child {
+    padding: 20px 0;
+    text-align: center;
+    float: left;
+    width: calc((100% - 60px)/2);
+    margin-left: 20px;
+    /* 
+    width: 50%; 
+    */
+}
+
+.container-1 .first-div-child {
+    background-color: #bbbbbb;
+}
+
+.container-1 .second-div-child {
+    background-color: #cccccc;
+}
+
+
+
+.container-2 .first-div-child,
+.container-2 .second-div-child,
+.container-2 .third-div-child {
+    padding: 20px 0;
+    text-align: center;
+    float: left;
+    width: calc((100% - 80px)/3);
+    margin-left: 20px;
+    /* 
+    width: 50%; 
+    */
+}
+
+.container-2 .first-div-child {
+    background-color: #bbbbbb;
+}
+
+.container-2 .second-div-child {
+    background-color: #cccccc;
+}
+
+.container-2 .third-div-child {
+    background-color: #dddddd;
+}
+
+.container-3 {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #b4b4b4;
+    /* padding: 20px 0; */
+}
+
+.container-3 .first-div-child,
+.container-3 .second-div-child,
+.container-3 .third-div-child {
+    float: left;
+    width: calc((100% - 40px)/3);
+
+}
+
+.container-3 .first-div-child,
+.container-3 .second-div-child {
+    margin-right: 20px;
+
+}
+
+.container-3 img {
+    max-width: 100%;
+}
+
+.container-4 {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.container-4 .first-div-child,
+.container-4 .second-div-child {
+    width: calc(50% - 20px);
+    float: left;
+    height: 300px;
+    padding: 10px;
+
+}
+
+.container-4 .first-div-child h2,
+.container-4 .second-div-child h2 {
+    text-align: center;
+
+}
+
+.container-4 .first-div-child {
+    background-color: #bbbbbb;
+}
+
+.container-4 .second-div-child {
+    background-color: #cccccc;
+}
+
+.clear {
+    clear: both;
+}

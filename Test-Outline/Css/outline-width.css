@@ -1,0 +1,69 @@
+/* 
+bi nisba outline makaynch  hadak blane sides ( top , right , bottom , left )
+
+*/
+
+div {
+    padding: 10px;
+    margin: 0 0 20px;
+    border: 1px solid black;
+    outline-color: red;
+}
+
+.first-div {
+    outline-width: thin;
+    outline-style: solid;
+}
+
+.second-div {
+    outline-width: 1px;
+    outline-style: solid;
+}
+
+.third-div {
+    outline-width: medium;
+    outline-style: dashed;
+}
+
+.fourth-div {
+    outline-width: 3px;
+    outline-style: dashed;
+
+}
+
+.fifth-div {
+    outline-width: thick;
+    outline-style: double;
+}
+
+.sixth-div {
+    outline-width: 5px;
+    outline-style: double;
+}
+
+p {
+    padding: 10px;
+    margin: 0 0 20px;
+    border: 1px solid black;
+}
+
+.paragraph-1 {
+    outline-width: 5px;
+    outline-style: solid;
+    outline-color: red;
+    /* outline:5px solid red */
+}
+
+.paragraph-2 {
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: green;
+    /* outline:5px dashed green */
+}
+
+.paragraph-3 {
+    outline-width: 5px;
+    outline-style: dotted;
+    outline-color: blue;
+    /* outline:5px dotted blue */
+}

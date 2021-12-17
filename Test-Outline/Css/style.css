@@ -1,0 +1,27 @@
+/* 
+Outline Prperty :
+-outile:outline-width + outline-style + outline-color
+
+*/
+
+
+
+
+.first-div {
+    width: 400px;
+    height: 60px;
+    padding: 10px;
+    margin: 20px 0 0 0;
+    text-align: center;
+    border: 1px solid black;
+    outline: 10px solid green;
+}
+
+.second-div {
+    width: 400px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    outline: 10px solid red;
+}

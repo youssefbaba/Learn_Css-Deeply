@@ -1,0 +1,24 @@
+.parent div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+}
+
+.parent .normal {
+    background-color: red;
+}
+
+.parent .special {
+    background-color: blue;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.clear {
+    clear: both;
+}

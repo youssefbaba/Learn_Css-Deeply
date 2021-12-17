@@ -1,0 +1,18 @@
+/* 
+property cursor 
+*/
+button {
+    background-color: transparent;
+    color: red;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span {
+    cursor: pointer;
+}
+
+p {
+    cursor: move;
+}

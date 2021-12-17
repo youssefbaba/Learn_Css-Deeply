@@ -1,0 +1,34 @@
+/* table 1 */
+.table-1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-1,
+.table-1 td,
+.table-1 th {
+    border: 1px solid black;
+}
+
+/* table 2 */
+
+.table-2 {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.table-2,
+.table-2 td,
+.table-2 th {
+    border: 1px solid black;
+}
+
+.table-2 td {
+    padding: 5px;
+}
+
+.table-2 th {
+    padding: 20px;
+    /* height: 60px; */
+}

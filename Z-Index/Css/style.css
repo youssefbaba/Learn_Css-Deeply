@@ -1,0 +1,38 @@
+/* 
+z-index : order of elements  => nidam taba9at 
+- default value is z-index:auto = 0
+- z-index work for all type of position o  mkiykhdamch sans position
+- kol makan z-index dyal element kbir par rapport a les autres kolma howa li kiyji fou9 manhom o fi 7alat kano deux elements 3andhom nafss z-index hadik ssa3a 
+    kinchiw ltartib dyalhom tabi3i li kayn fi code html
+-ila bghina chi element nkhalih akhir element kan3tih z-index:-1 
+
+
+*/
+
+div {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    width: 100px;
+    position: absolute;
+}
+
+.one {
+    background-color: red;
+    top: 24px;
+    left: 21px;
+    z-index: 10;
+}
+
+.two {
+    background-color: green;
+    top: 16px;
+    left: 15px;
+    z-index: 5;
+}
+
+
+.three {
+    background-color: blue;
+    z-index: 10;
+}

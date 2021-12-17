@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Of Page</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+    <p>Change the radio buttons below to see the generated shorthand and its effect.</p>
+    <form action="#">
+        <div class="font-style-div">
+            <div>
+                <input type="radio" name="font-style" id="normal" value="normal" checked onchange="SetFontText()">
+                <label for="normal">normal</label>
+            </div>
+            <div>
+                <input type="radio" name="font-style" id="italic" value="italic" onchange="SetFontText()">
+                <label for="italic">italic</label>
+            </div>
+            <div>
+                <input type="radio" name="font-style" id="oblique" value="oblique" onchange="SetFontText()">
+                <label for="oblique">oblique</label>
+            </div>
+        </div>
+        <div class="font-variant-div">
+            <div>
+                <input type="radio" name="font-variant" id="normal" value="normal" checked onchange="SetFontText()">
+                <label for="normal">normal</label>
+            </div>
+            <div>
+                <input type="radio" name="font-variant" id="small-caps" value="small-caps" onchange="SetFontText()">
+                <label for="small-caps">small-caps</label>
+            </div>
+        </div>
+
+        <div class="font-size-div">
+            <div>
+                <input type="radio" name="font-size" id="12px" value="12px" onchange="SetFontText()">
+                <label for="12px">12px</label>
+            </div>
+            <div>
+                <input type="radio" name="font-size" id="16px" value="16px" checked onchange="SetFontText()">
+                <label for="16px">16px</label>
+            </div>
+            <div>
+                <input type="radio" name="font-size" id="24px" value="24px" onchange="SetFontText()">
+                <label for="24px">24px</label>
+            </div>
+        </div>
+        <div class="font-family-div">
+            <div>
+                <input type="radio" name="font-family" id="courier" value="courier" checked onchange="SetFontText()">
+                <label for="courier">courier</label>
+            </div>
+            <div>
+                <input type="radio" name="font-family" id="serif" value="serif" onchange="SetFontText()">
+                <label for="serif">serif</label>
+            </div>
+            <div>
+                <input type="radio" name="font-family" id="sans-serif" value="sans-serif" onchange="SetFontText()">
+                <label for="sans-serif">sans-serif</label>
+            </div>
+            <div>
+                <input type="radio" name="font-family" id="Arial" value="Arial" onchange="SetFontText()">
+                <label for="Arial">Arial</label>
+            </div>
+            <div>
+                <input type="radio" name="font-family" id="monospace" value="monospace" onchange="SetFontText()">
+                <label for="monospace">monospace</label>
+            </div>
+            <div>
+                <input type="radio" name="font-family" id="cursive" value="cursive" onchange="SetFontText()">
+                <label for="cursive">cursive</label>
+            </div>
+        </div>
+    </form>
+    <p id="special">Hello Youssef Baba</p>
+    <script>
+        function SetFontText() {
+
+            var style_font = document.getElementsByName('font-style');
+            var value_style_font;
+            for (var i = 0; i < style_font.length; i++) {
+                if (style_font[i].checked) {
+                    value_style_font = style_font[i].value;
+                }
+            }
+            document.getElementById("special").style.fontStyle = value_style_font;
+
+
+            var variant_font = document.getElementsByName('font-variant');
+            var value_variant_font;
+            for (var i = 0; i < variant_font.length; i++) {
+                if (variant_font[i].checked) {
+                    value_variant_font = variant_font[i].value;
+                }
+            }
+            document.getElementById("special").style.fontVariant = value_variant_font;
+
+
+            var size_font = document.getElementsByName('font-size');
+            var value_size_font;
+            for (var i = 0; i < size_font.length; i++) {
+                if (size_font[i].checked) {
+                    value_size_font = size_font[i].value;
+                }
+            }
+            document.getElementById("special").style.fontSize = value_size_font;
+
+
+            var family_font = document.getElementsByName('font-family');
+            var value_family_font;
+            for (var i = 0; i < family_font.length; i++) {
+                if (family_font[i].checked) {
+                    value_family_font = family_font[i].value;
+                }
+            }
+            document.getElementById("special").style.fontFamily = value_family_font;
+
+        }
+    </script>
+</body>
+
+</html>

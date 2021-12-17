@@ -1,0 +1,43 @@
+/* 
+Property Border :
+    - border-top:[border-width]+[border-style]+[border-color]
+    - border-right:[border-width]+[border-style]+[border-color]
+    - border-bottom:[border-width]+[border-style]+[border-color]
+    - border-left:[border-width]+[border-style]+[border-color]
+    - border: [border-width]=>([border-top-width]+[border-right-width]+[border-bottom-width]+[border-left-width])+
+              [border-style]=>([border-top-style]+[border-right-style]+[border-bottom-style]+[border-left-style])+
+              [border-color]=>([border-top-color]+[border-right-color]+[border-bottom-color]+[border-left-color])+
+    - example : border:1px solid red 
+    - border-width : [border-top-width]+[border-right-width]+[border-bottom-width]+[border-left-width]
+    - border-style : [border-top-style]+[border-right-style]+[border-bottom-style]+[border-left-style]
+    - border-color : [border-top-color]+[border-right-color]+[border-bottom-color]+[border-left-color]
+*/
+
+div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    border-top: 2px solid red;
+    border-right: 2px dotted dodgerblue;
+    border-bottom: 2px solid red;
+    border-left: 2px dotted dodgerblue;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+    border: 2px solid red;
+    border-width: 2px;
+    border-width: 2px 4px;
+    border-width: 2px 4px 6px;
+    border-width: 2px 4px 6px 5px;
+    border-style: solid;
+    border-style: solid dotted;
+    border-style: solid dotted double;
+    border-style: solid dotted double dashed;
+    border-color: red;
+    border-color: red green;
+    border-color: red green blue;
+    border-color: red green blue dodgerblue;
+
+}

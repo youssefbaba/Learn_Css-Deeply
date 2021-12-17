@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Of Page</title>
+    <link rel="stylesheet" href="Css/test-1.css">
+</head>
+
+<body>
+    <div class="first-div" onclick="displayed()">
+        Click here to show panel
+    </div>
+    <div class="second-div" id="second-div">
+        <p>This panel contains a &#60;div&#62; element, which is hidden by default (<span>display: none</span>).</p>
+        <p>It is styled with CSS, and we use JavaScript to show it (change it to (<span>display: block</span>).</p>
+    </div>
+    <script>
+        function displayed() {
+            document.getElementById("second-div").style.display = "block"
+        }
+    </script>
+</body>
+
+</html>

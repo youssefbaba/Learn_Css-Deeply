@@ -1,0 +1,21 @@
+.first-div {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.second-div {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: jomhuria;
+    src: url("../fonts/Jomhuria-Regular.ttf");
+}
+
+.third-div {
+    font-family: jomhuria;
+    font-weight: 400;
+}

@@ -1,0 +1,33 @@
+/* 
+Position Relative 
+    - hnaya element kiytpositiona par rapport lrasso  :  
+        -example : position:relative;left:10px;bottom:20px =>  kiy3ni hadchi ana element hnaya ghadi yt7arak 10px ntila9ane man janb left dyalo o 20px
+            ntila9ane man janb ta7tani dyalo
+
+*/
+a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+.first-link {
+    background-color: red;
+}
+
+.second-link {
+    background-color: blue;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.third-link {
+    background-color: green;
+}

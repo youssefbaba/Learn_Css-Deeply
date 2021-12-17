@@ -1,0 +1,32 @@
+/* Selector {
+
+    PropertyOne: value1;
+    PropertyTwo: value2;
+    PropertyThree: value3;
+} */
+
+
+/* Declaration  Stylesheet using selector class */
+
+.paragraph-one {
+    color: red;
+    font-size: 20px;
+}
+
+
+/* Declaration Stylesheet using  selector  id but not the best practice 
+using id for stylesheet
+*/
+
+#paragraph-two {
+    color: green;
+    font-size: 20px;
+}
+
+
+/* Declaration Stylesheet using  selector name of element */
+
+div {
+    color: blue;
+    font-size: 20px;
+}

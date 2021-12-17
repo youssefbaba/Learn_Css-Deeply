@@ -1,0 +1,22 @@
+div {
+    /* Color Name */
+    color: red;
+    /* Color Hexa Code */
+    color: #ff0000;
+    /* Color rgb => Red Green Blue */
+    background-color: red;
+    color: white;
+    background-image: url("../images/image_1.png");
+    /* Default value */
+    /* background-repeat: repeat; */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+    /* background-attachment: fixed; */
+    /* background-position: right bottom; */
+    background-size: cover;
+
+
+}

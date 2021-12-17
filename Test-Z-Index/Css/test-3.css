@@ -1,0 +1,74 @@
+/* 
+- z-index => used for specify z-order of an element 
+- z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) 
+    and flex items (elements that are direct children of display: flex elements).
+- z-index work of all type of position property
+- z-index  default value of html element positionned is z-index:auto = 0
+- z-index kolma kant kbira kolma element howa fou9ani o fi7alat kano 2 elements 3andahom nafss z-index hadik 
+    ssa3a kinmchiw normal  flow dyalhom ya3ni position normal dyalhom fi code html
+- ila bghina nkhaliw wa7ad element howa li lour khassni n3atih z-index:-1
+
+*/
+
+
+
+.container div {
+    position: relative;
+}
+
+.container .black-box {
+    width: 800px;
+    border: 1px solid black;
+    height: 80px;
+    margin: 60px auto 0;
+    z-index: 1;
+}
+
+.container .gray-box {
+    background-color: #d3d3d3;
+    height: 60px;
+    width: 600px;
+    margin: auto;
+    z-index: 3;
+    bottom: 34px;
+}
+
+.container .green-box {
+    background-color: #90ee90;
+    height: 100px;
+    width: 200px;
+    z-index: 2;
+    left: 40%;
+    bottom: 124px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper .dashed-box {
+    border: 1px dashed black;
+    height: 100px;
+    z-index: 1;
+    position: relative;
+}
+
+.wrapper .gold-box {
+    width: 800px;
+    margin: auto;
+    background-color: yellow;
+    z-index: 3;
+    bottom: 60px;
+    position: relative;
+}
+
+.wrapper .green-box {
+    height: 100px;
+    width: 200px;
+    background-color: #90ee90;
+    z-index: 2;
+    position: absolute;
+    top: -29px;
+    right: 108px;
+
+}

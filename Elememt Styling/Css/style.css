@@ -1,0 +1,26 @@
+/* For Targeting All paragraph  */
+
+p {
+    color: red;
+}
+
+
+/* For Targeting All element the class special   */
+
+.special {
+    color: green;
+}
+
+
+/* For Targeting All paragraph  the class special   */
+
+p.special {
+    color: blue;
+}
+
+
+/* For Targeting All div  the class special   */
+
+div.special {
+    color: silver;
+}

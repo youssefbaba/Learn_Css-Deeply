@@ -1,0 +1,79 @@
+/* 
+property vertical-align is used to set vertical alignment of inline and inline-block and table-cell elements  not for block level element
+    - syntax vertical-align:[baseline , top , bottom , middle , text-top , text-bottom  , px , % ... ]
+
+*/
+p {
+    background-color: #f0f0f0;
+}
+
+.one img,
+td.one {
+    vertical-align: baseline;
+}
+
+.two img,
+td.two {
+    vertical-align: baseline;
+    vertical-align: top;
+}
+
+.three img,
+td.three {
+    vertical-align: baseline;
+    vertical-align: bottom;
+}
+
+.four img,
+td.four {
+    vertical-align: baseline;
+    vertical-align: middle;
+}
+
+.five img,
+td.five {
+    vertical-align: baseline;
+    vertical-align: text-top;
+}
+
+.six img,
+td.six {
+    vertical-align: baseline;
+    vertical-align: text-bottom;
+}
+
+.seven img,
+td.seven {
+    vertical-align: baseline;
+    vertical-align: 10px;
+}
+
+.eight img,
+td.eight {
+    vertical-align: baseline;
+    vertical-align: -10px;
+}
+
+.nine img {
+    vertical-align: baseline;
+    vertical-align: 20%;
+}
+
+.ten img {
+    vertical-align: baseline;
+    vertical-align: -20%;
+}
+
+table,
+td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 30px 20px;
+}

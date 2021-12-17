@@ -1,0 +1,23 @@
+div {
+    background-color: #f0f0f0;
+    width: 300px;
+    margin: 0 0 40px;
+    padding: 10px;
+}
+
+.second-div,
+.third-div,
+.fourth-div {
+    /* white-space: normal; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.third-div:hover {
+    white-space: normal;
+}
+
+.fourth-div:hover {
+    overflow: visible;
+}

@@ -1,0 +1,53 @@
+p {
+    color: red;
+    text-align: center;
+}
+
+
+/* 
+
+._user-name {}  => Valid
+
+*/
+
+
+/*
+
+.-user-name {}  => Valid
+
+*/
+
+
+/* 
+
+.1user-name {} => Invalid
+
+ */
+
+
+/* 
+
+.@user-name {} => invalid
+
+*/
+
+
+/*
+
+.user@name {} => Invalid
+
+*/
+
+
+/*
+
+._user10name {}  => Valid
+
+*/
+
+
+/*
+
+.u {}  => Valid
+
+*/

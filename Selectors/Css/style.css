@@ -1,0 +1,43 @@
+p {
+    color: red;
+    text-align: center;
+}
+
+
+/*  Not Best Practice to use Id Selector  */
+
+#special {
+    color: green;
+}
+
+.center-bold {
+    color: royalblue;
+    font-weight: bold;
+}
+
+p.specific {
+    color: slateblue;
+    font-size: 40px;
+}
+
+div.right {
+    text-align: right;
+    font-weight: bold;
+}
+
+div.small {
+    font-size: 20px;
+}
+
+div.large {
+    font-size: 100px;
+}
+
+.class-one,
+.class-two,
+.class-three {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

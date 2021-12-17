@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Cairo;
+    src: url("../fonts/Cairo-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+    font-family: Sofia;
+    src: url("../fonts/Sofia-Regular.ttf");
+}
+
+
+.first-div {
+    font-family: 'Cairo', sans-serif;
+}
+
+.second-div {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.third-div {
+    font-family: 'Sofia', cursive;
+}

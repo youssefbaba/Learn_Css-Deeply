@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.first-paragraph {
+    font-style: normal;
+}
+
+.second-paragraph {
+    font-style: italic;
+}
+
+.third-paragraph {
+    font-style: oblique;
+}

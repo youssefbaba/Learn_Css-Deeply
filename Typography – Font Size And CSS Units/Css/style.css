@@ -1,0 +1,67 @@
+/* 
+-default font-size  for web page  is 16px .
+-Css Units
+    -px
+    -em => Time : 1em = 1 x font-size dyal container parent, 2em = 2 x font-size dyal container parent
+    -rem => root time : and root howa element html   : 1rem = 1 x font size dyal element html
+    -percentage =>  % of font size the parent
+    -vw => view port width  : 1vw = 1% man width dyal view port 
+    -vmin
+    -vh => view port height : 1vh = 1% man height dyal view port 
+
+
+
+1em = 16px this is wrong 
+*/
+html {
+    font-size: 30px;
+}
+
+body {
+    font-size: 20px;
+}
+
+/* 
+1em = 1 x 20px = 20px
+*/
+.first-div {
+    font-size: 1em;
+}
+
+/* 
+2em = 2 x 20px = 40px
+*/
+
+.first-div span {
+    font-size: 2em;
+}
+
+/* 
+1rem =  1 x 30px = 30px
+*/
+.second-div {
+    font-size: 1rem;
+}
+
+/* 
+2rem =  2 x 30px = 60px
+*/
+.second-div {
+    font-size: 2rem;
+}
+
+.parent {
+    font-size: 40px;
+}
+
+/* 
+50% = 40px / 2 = 20px
+
+ */
+.parent .child {
+    font-size: 50%;
+}
+
+.third-div {
+    font-size: 5vw;
+}

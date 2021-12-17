@@ -1,0 +1,64 @@
+/* 
+width property
+- default value of width is auto 
+    - for inline element  width = width of content element 
+    - for  block element width full width of container parent
+-units for width [px , em , rem , % , auto , inhirit]
+-width:400px => min-width:400px + max-width:400px  => kiy3ni ana width dyal element makhassouch ykoune 9al man 400px  o fi nafss wa9t makhassouch  yfout 400px 
+-min-width:400px => (400px to 100% width of parent container) ya3ni ana  width dyal element mkhassouch ykoune 9al man 400px o fi 7alat kant imkaniya dyal ana element ghadi ytmdad  horizontally ya3ni ghadi ytzad lih width ma3andich mochkil  howa 7or yakhdod width li 9ado
+-max-width:600px => (width of content area to 600px )ya3ni ana element makhassouch yfout had width wakha fi 7alat ana element kiytmdada horizontally  ya3ni kiytzad  width dyalo 
+*/
+/* 
+height property
+- default value of height is auto  => ya3ni kiybda man height of content element o kiymchi 7tal infini sans limite
+-units for width [px,em,rem,%,auto,inhirit]
+- height:40px => min-height:40px + max-height:40px => ya3ni ana height dyal element makhasouch ykoune 9al man 40px o mkhassouch yfout 40px 
+-min-height:40px => ya3ni ana element makhassch ykoune 3ando height 9al man 40px o fi 7alat element tmdad vertcally ya3ni tzad lih height machi choghli , yakhod height li bgha
+-max-height:100px => ya3ni ana element makhassouch yfout had height wakha ykoune element kiytmdad vertically ya3ni kiytzad lih height dyalo 
+*/
+/* 
+width:fit-content
+    - element kiyb9a block element makin7awlouch enline-block o width dyalo  kiykoune 9ad contenu li fih
+*/
+
+
+.special {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    /* fixed width */
+    /* 
+    width: 400px; 
+    */
+    /* Range width */
+    /* 
+    min-width: 400px;
+    max-width: 600px; 
+    */
+
+
+}
+
+.normal {
+    background-color: red;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+    width: 400px;
+    /* fixed height */
+    /* 
+    height: 40px; 
+    */
+    /* range height */
+    min-height: 40px;
+    max-height: 100px;
+
+}
+
+.seventh-div {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+}

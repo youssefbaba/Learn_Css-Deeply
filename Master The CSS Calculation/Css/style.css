@@ -1,0 +1,68 @@
+/* 
+Calc
+    - si ona X element le nombre d'espace avant et apres est X + 1  et l'space between est X - 1
+
+*/
+body {
+    margin: 0;
+}
+
+
+.parent .child {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    /* width: calc((100% - 10%) / 4);
+    margin-left: 2%; */
+    /* width: calc((100% - 12%) / 3);
+    margin-left: 3%; */
+    /* width: calc((100% - 24%) / 5);
+    margin-left: 4%; */
+    width: calc((100% - 60px) / 5);
+    margin-left: 10px;
+    text-align: center;
+    float: left;
+}
+
+
+/*  
+    4 elements so 5 spaces for any space 2%  => 5 x 2% = 10%
+
+Content width Is : 100%
+5 spaces of  2%   => 5 x 2% = 10% from content width
+90% Available space 
+4 elements  the width is 90% / 4
+
+
+*/
+/*  
+
+    3 elements so 4 spaces  for any space 3% => 4 x 3% = 12%
+
+
+Content width Is : 100%
+4 spaces 3% for only space  => 4 x 3% = 12% from content width
+88% Available space 
+3 elements  the width is 98% / 4
+
+
+*/
+/*  
+    5 elements so 6 spaces  of 4% =>  6 x 4% = 24% 
+
+Content width Is : 100%
+6 spaces 4% for only space  => 6 x 4% = 24% from content width
+76% Available space 
+5 elements  the width is 76% / 4
+
+
+*/
+/*  
+    5 elements so 6 spaces  of 10px =>  6 x 10px = 60px
+
+Content width Is : 100%
+6 spaces 10px for only space  => 6 x 10px = 60px from content width
+100% - 60px  Available space 
+5 elements  the width is 100% - 60px / 4
+
+
+*/

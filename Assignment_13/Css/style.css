@@ -1,0 +1,18 @@
+/* Method One*/
+/* .parent .child span {
+    color: red;
+} */
+
+/* Method Two */
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+}
+
+.parent p,
+.title {
+    color: green;
+}

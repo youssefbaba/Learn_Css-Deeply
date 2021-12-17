@@ -1,0 +1,48 @@
+/* 
+display:inline 
+    - width of element  = width of content 
+    - Do not respect width and height
+    - respect padding and margin just right and left (padding-right, padding-left, margin-right, margin-left)
+    - do not add line break after and before element => so the elements can sit next to other elements
+
+display:block 
+    - full width  if not specific width 
+    - respect padding and margin and heigh and width 
+    - add line break after and before element => so the elements cannot sit next to other elements
+
+display:inline-block
+    -  width of element = width of content
+    - respect margin and padding and height and width 
+    - do not add line break after and before element => so the elements can sit next to other elements
+
+*/
+
+span.first-class {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+span.second-class {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+span.third-class {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid blue;
+    background-color: yellow;
+}

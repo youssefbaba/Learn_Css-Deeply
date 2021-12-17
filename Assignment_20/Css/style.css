@@ -1,0 +1,24 @@
+.first-div,
+.second-div {
+    border: 2px solid;
+    padding: 20px;
+    margin: 0 auto 40px;
+    width: 50%;
+}
+
+.first-div {
+    border-color: dodgerblue;
+}
+
+.second-div {
+    border-color: #ff5722;
+}
+
+.first-div p,
+.second-div p {
+    background-color: #f0f0f0;
+    padding: inherit;
+    border: inherit;
+    text-align: center;
+    margin: 0;
+}

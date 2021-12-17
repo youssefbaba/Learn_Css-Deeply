@@ -1,0 +1,32 @@
+l
+/*
+- length is a number followed by  units example 20px , 2em , 1.5rem ... 
+- The em and rem  and vw units are practical in creating perfectly  responsive layout ! 
+
+*/
+
+html {
+    font-size: 18px;
+}
+
+/* absolute length*/
+h1 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 25px;
+    line-height: 50px;
+    background-color: dodgerblue;
+    color: white;
+    margin: 0 0 40px;
+}
+
+/* relative length */
+div {
+    font-size: 2em;
+}
+
+div span {
+    font-size: 1.5rem;
+}

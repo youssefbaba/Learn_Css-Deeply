@@ -1,0 +1,11 @@
+/* 
+-overflow:auto => overflow-x:auto +  overflow-y:auto
+- the value auto of overflow kat3ni anaho ila kan overflow dir scroll sinon matdirch scroll (add scrollbars only when necessary)
+*/
+div {
+    background-color: #eee;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 900px;
+    overflow: auto;
+}

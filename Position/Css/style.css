@@ -1,0 +1,104 @@
+/* 
+Position 
+    -Direction for positoning element is top left right bottom
+    -Static =>  default position for element  makiy2atrouch fih les directions top et bottom et left et right o kiyb9a elment fi blassto 
+        o kiyssta3mal for reset other type of position.
+    -Relative => hnaya element kiyt7arak par rapport lrasso 
+        -example : position:relative;
+                   bottom:10px;
+                   left:20px   => hadchi kiy3ni ana element ghadi yt7arak 10px ntila9ane  man bottom  dyalo o 20px ntila9ane man left dyalo
+     
+    -Absolute => hnaya element kiywala kharij workflow b7ala  ghir mfloter fi page o kiyt7arak par rapport a element parent dyalo
+    o ila bghit n7arak wa7ad child bi position absolute  par rapport a parent dyalo  darori khass ykoune position dyal parent position relative
+    -Fixed => element kiyt7arak bona2ane 3la page bi ghad nadar 3la howa fine kaine et  plus kiyb9a fixed   mali kitdir scroll
+    -Sticky =>  mali kandir scroll  fi wa7ad position ghadi yb9a element fixe
+
+*/
+body {
+    min-height: 5000px;
+}
+
+.one,
+.two,
+.three {
+    color: white;
+    width: 100px;
+    padding: 10px;
+}
+
+.one {
+    background-color: red;
+    /* 
+    margin-top: 10px;
+     */
+    /* 
+    position: static;
+    top: 100px;
+    left: 20px; 
+    */
+    /* 
+    position: relative;
+    top: 10px;
+    left: 10px; 
+    */
+    position: absolute;
+
+    /* left: 0;
+    top: 0; */
+
+
+    /* right: 0;
+    top: 0; */
+
+
+    /* left: 0;
+    bottom: 0; */
+
+
+    /* right: 0;
+    bottom: 0; */
+
+
+}
+
+.two {
+    background-color: green;
+
+}
+
+.three {
+    background-color: blue;
+
+}
+
+.parent {
+    height: 300px;
+    width: 600px;
+    margin: 20px auto;
+    border: 2px solid black;
+    position: relative;
+}
+
+.parent .first-child {
+    padding: 10px;
+    width: 100px;
+    color: white;
+    background-color: dodgerblue;
+    /* position: absolute; */
+    /* top: 20px;
+    left: 20px; */
+    /* right: 0;
+    bottom: 0; */
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+
+}
+
+.parent .second-child {
+    padding: 10px;
+    width: 100px;
+    color: white;
+    background-color: tomato;
+
+}

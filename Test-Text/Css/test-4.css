@@ -1,0 +1,52 @@
+/* 
+Property text-align is used to set horizontal alignement of text
+    - syntax : text-align:[left , center , right , justify  ..]
+    -  default value is text-align:left if direction of page is ltr and  text-direction:right if direction of page is rtl
+    -  
+
+*/
+div {
+    width: 600px;
+    margin: 40px auto;
+    background-color: #eee;
+}
+
+.first-div {
+    direction: ltr;
+}
+
+.second-div {
+    direction: rtl;
+}
+
+.first-div .one {
+    /* text-align: left; */
+}
+
+.first-div .two {
+    text-align: center;
+}
+
+.first-div .three {
+    text-align: right;
+}
+
+.second-div .one {
+    text-align: left;
+}
+
+.second-div .two {
+    text-align: center;
+}
+
+.second-div .three {
+    /* text-align: right; */
+}
+
+.child {
+    border: 1px solid green;
+    width: 300px;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+}

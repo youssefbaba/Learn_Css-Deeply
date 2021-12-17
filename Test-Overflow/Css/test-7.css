@@ -1,0 +1,30 @@
+/* 
+-overflow-x => overflow of direction x
+-overflow-y => overflow of direction y
+- si on a specifie une seul direction automatiquement d'autre direction prend la valeur auto
+    - overflow-x:hidden=>overflow-x:hidden and overflow-y:auto
+
+
+*/
+
+.first-div {
+    background-color: #eee;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 900px;
+    /* overflow-x: visible; */
+    /* overflow-x: hidden; */
+    /* overflow-x: scroll; */
+    /* overflow-x: auto; */
+    /* overflow-y: visible; */
+    /* overflow-y: hidden; */
+    /* overflow-y: scroll; */
+    overflow-y: auto;
+}
+
+.second-div {
+    background-color: #eee;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}

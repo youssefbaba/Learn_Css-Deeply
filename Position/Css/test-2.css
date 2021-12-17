@@ -1,0 +1,13 @@
+body {
+    min-height: 5000px;
+}
+
+div {
+    color: white;
+    padding: 10px;
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    position: sticky;
+    top: 20px;
+}

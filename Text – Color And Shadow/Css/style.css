@@ -1,0 +1,15 @@
+/* 
+Text Color
+    -color :[color name , hexa code color , rgb value  , rgba value]
+Text Shadow
+    - syntaxe => text-shadow: H-Shadow  V-Shadow Blur Color
+*/
+
+div {
+    width: 50%;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: rebeccapurple;
+    text-shadow: 1px 1px 1px #e91e63;
+}

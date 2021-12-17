@@ -1,0 +1,28 @@
+/* 
+Shorthand propert font
+- font:[font-style]+[font-variant]+[font-weight]+[font-size]+[font-familly]   order important
+The [font-size] and [font-family] values are required. If one of the other values is missing, their default value are used.
+    - font-style => default value is normal
+    - font-variant => default value is normal
+    - font-weight => default value is normal = 400px
+    - font-size => default value is 16px or font-size of element parent
+    - font-familly => default value depends on user agent
+*/
+
+.first-div {
+    /* Valid */
+    font: 20px 'Cairo', sans-serif;
+    /* No Valid */
+    font: 20px;
+    /* No Valid */
+    font: 'Cairo', sans-serif;
+    /* Valid */
+    font: italic 20px 'Cairo', sans-serif;
+    /* Valid */
+    font: italic small-caps 20px 'Cairo', sans-serif;
+    /* Valid */
+    font: italic small-caps bold 20px 'Cairo', sans-serif;
+
+
+
+}

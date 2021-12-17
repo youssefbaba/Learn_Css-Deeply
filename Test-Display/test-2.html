@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Of Page</title>
+    <link rel="stylesheet" href="Css/test-2.css">
+</head>
+
+<body>
+    <div class="box-1" id="box-1">
+        <span>Box 1</span>
+        <img src="images/image_1.jpg" alt="image_1">
+        <button onclick="removed()">Remove</button>
+    </div>
+    <div class="box-2" id="box-2">
+        <span>Box 2</span>
+        <img src="images/image_2.jpg" alt="image_2">
+        <button onclick="hided()">Hide</button>
+    </div>
+    <div class="box-3" id="box-3">
+        <span>Box 3</span>
+        <img src="images/image_3.jpg" alt="image_3">
+        <button onclick="reset_all()">Reset All</button>
+    </div>
+    <script>
+        function removed() {
+            document.getElementById("box-1").style.display = "none"
+        }
+
+        function hided() {
+            document.getElementById("box-2").style.visibility = "hidden"
+        }
+
+        function reset_all() {
+
+            document.getElementById("box-1").style.display = "inline-block"
+            document.getElementById("box-2").style.visibility = "visible"
+        }
+    </script>
+</body>
+
+</html>

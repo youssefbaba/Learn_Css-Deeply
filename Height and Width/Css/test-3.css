@@ -1,0 +1,32 @@
+.first-div {
+    border: 1px solid green;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.test-special {
+    width: 800px;
+    height: 400px;
+    background-color: red;
+}
+
+.test-special p {
+    /* px */
+    /* 
+    width: 400px;
+    height: 100px; 
+    */
+    /* % */
+
+    width: 50%;
+    height: 30%;
+
+    /* inherit */
+    /*
+     width: inherit;
+    height: inherit; 
+    */
+    background-color: green;
+    margin-left: 20px;
+}

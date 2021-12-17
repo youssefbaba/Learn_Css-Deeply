@@ -1,0 +1,53 @@
+/* 
+Text Decoration
+    - syntax  text-decoration:[none , overline , underline , line-through..]
+    - default value is text-decoration:none
+Text Transformation
+    - syntax text-transform:[none , lowercase , uppercase  , capitalize ...]
+    - default value is text-transform:none
+
+*/
+div {
+    background-color: #f0f0f0;
+    margin: 40px 0;
+    padding: 10px;
+}
+
+.first-div {
+    /* text-decoration: none; */
+    /* text-decoration: line-through; */
+    /* text-decoration: underline; */
+    text-decoration: overline;
+}
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    display: inline-block;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+a.special {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.second-div {
+    /* text-transform: none; */
+    /* text-transform: lowercase; */
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
+}

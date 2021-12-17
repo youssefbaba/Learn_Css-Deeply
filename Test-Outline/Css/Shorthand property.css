@@ -1,0 +1,26 @@
+/* 
+Shorthand Property :
+
+*/
+div {
+    padding: 10px;
+    margin: 0 0 20px;
+}
+
+.first-div {
+    outline: dashed;
+    /* ourline:medium dashed black */
+}
+
+.second-div {
+    outline: dotted red;
+    /* outline:medium dotted red */
+}
+
+.third-div {
+    outline: 5px solid yellow;
+}
+
+.fourth-div {
+    outline: thick double blue;
+}

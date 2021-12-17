@@ -1,0 +1,12 @@
+.div-1 {
+    color: white;
+    background-color: red;
+    background-image: url("../images/avatar-03.png");
+    /* background-repeat: repeat; */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    background-position: right top;
+
+}

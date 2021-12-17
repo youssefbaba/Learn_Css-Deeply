@@ -1,0 +1,22 @@
+/* 
+Color prperty is used for to set the color of te
+    -  using Color Name , hexa code color , rgb value 
+       The default text color for a page is defined in the body selector.
+*/
+body {
+    background-color: #d3d3d3;
+}
+
+.first-div h1 {
+    color: white;
+    background-color: #000000;
+}
+
+.first-div p {
+    color: blue;
+}
+
+.first-div div {
+    color: white;
+    background-color: blue;
+}

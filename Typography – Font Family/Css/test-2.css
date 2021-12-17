@@ -1,0 +1,12 @@
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+.paragraph {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: PlayfairDisplay;
+    font-weight: 700;
+    font-style: italic;
+}

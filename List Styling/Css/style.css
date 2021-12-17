@@ -1,0 +1,32 @@
+/* 
+-list-style type => pour spicify type  dyal les markers dyal ul wach decimal , lower-roman ,.........
+-list-style position => pour spicify  position dyal les markers dyal ul wach outside ola inside ya3ni wach dakhal  wasst  li ola khakharaj manha
+-list-style image =>  pour spicify  hadak merker dyal ul sous forme dyal image
+
+
+list-style is shorthand property
+
+list-style:[list-style-type]+[list-style-position]+[list-style-image];
+
+*/
+ul {
+    list-style-type: lower-roman;
+    /* list-style-position: outside; */
+    list-style-position: inside;
+    /* list-style-image: url("../../img_forest.jpg"); */
+
+}
+
+ul li {
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+/*
+best practice 
+ */
+/* ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} */

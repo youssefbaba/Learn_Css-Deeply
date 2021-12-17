@@ -1,0 +1,45 @@
+body {
+    min-height: 5000px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    /* width: fit-content; */
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    padding: 20px;
+    border: 2px solid;
+}
+
+.first-link {
+    background-color: dodgerblue;
+    border-color: red;
+}
+
+.second-link {
+    background-color: yellow;
+    border-color: blue;
+    /* position: static;
+    top: 20px;
+    left: 20px; */
+    /* position: relative;
+    top: 40px;
+    left: 40px; */
+    /* position: absolute;
+    top: 40px;
+    left: 40px; */
+    /* position: fixed;
+    top: 60px;
+    right: 60px; */
+    position: sticky;
+    top: 40px;
+}
+
+.third-link {
+    background-color: dodgerblue;
+    border-color: red;
+}

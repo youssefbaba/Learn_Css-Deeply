@@ -1,0 +1,52 @@
+/* 
+- default value of width is auto
+    - for inline element width =  width of contenu d'element
+    - for block element width =  100% width of container li fih
+- width : 400px => min-width:400px and max-width:400px : makhassch ykoune width dyalak 9al man 400px o fi nafss wa9t makhassouch yfout 400px wakha fi 7alat width dyal contenu dyalak fat 400px
+- min-width:400px =>  form 400px to 100%  : makhassch ykoune width dyalak 9al man 400px o fi 7alat contenu dyalak width dyalo fat 400px  hadik ssa3a fout 400px 7tal 100%
+- max-width:600px => from width of content to 600px : kiyabda width man width dyal contenu dyal element 7tal 600px makhassakch tfoutha wakha fi 7alat contenu  dyalak width dyalo  fat  600px
+*/
+/* 
+- default value of height is auto => ya3ni kiymchi  man height of contenu d'elemeny 7tal infini
+- height : 40px => min-height:40px and max-height:40px : makhassch ykoune height dyalak 9al man 40px o fi nafss wa9t makhassouch yfout 40px
+- min-height:40px =>  form 40px to  infini  : makhassch ykoune height dyalak 9al man 40px o fi 7alat contenu dyalak  height dyalo fat 40px  hadik ssa3a fout 40px 7tal infini pad de probleme
+- max-height:100px => from height of content to 100px : kiyabda height man height dyal contenu dyal element 7tal 100px makhassakch tfoutha 
+*/
+
+/* 
+width:fit content
+    -element kiyb9a block element blama ndir lih inline-block o width dyalo kiykoune 9ado 9ad contenu dyalo
+*/
+
+
+.normal-div {
+    background-color: dodgerblue;
+    padding: 10px;
+    display: inline-block;
+    /* Fix Width */
+    /*
+     width: 400px;
+      */
+    /* Range width */
+    /*
+     min-width: 400px;
+    max-width: 600px;
+     */
+    width: 400px;
+    /* fixed height */
+    /* 
+    height: 40px;
+     */
+    /* Range Height */
+    min-height: 40px;
+    max-height: 100px;
+
+}
+
+
+.special {
+    background-color: dodgerblue;
+    padding: 10px;
+    width: fit-content;
+
+}

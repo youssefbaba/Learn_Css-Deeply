@@ -1,0 +1,30 @@
+div {
+    border: 1px solid green;
+    width: 50%;
+    padding: 10px;
+    margin: 0 0 40px;
+}
+
+.first-div {
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.second-div {
+    letter-spacing: 2px;
+}
+
+.third-div {
+    letter-spacing: -1px;
+}
+
+.fourth-div {
+    line-height: 1;
+    line-height: 1.6;
+}
+
+.fifth-div {
+    word-spacing: 10px;
+    word-spacing: -5px;
+    line-height: 1.6;
+}

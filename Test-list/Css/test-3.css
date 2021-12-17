@@ -1,0 +1,159 @@
+/* 
+-list-style-type => used for specify type of list item marker 
+-list-style-image =>  used for specify an images as a list item marker
+- list-style-position => used for specify position of marker wach inside list item ola outside list item
+- shorthand property : list-style:[list-style-type]+[list-style-position]+[list-style-image]
+    -order is imporatant and default value of list-style-type is disc and default value of list-style-position is outside and default value of list-style-image is none
+
+
+
+*/
+
+.unordered-list-1 {
+    list-style-type: circle;
+}
+
+.unordered-list-2 {
+    list-style-type: square;
+}
+
+.ordered-list-1 {
+    list-style-type: decimal;
+}
+
+.ordered-list-2 {
+    list-style-type: upper-roman;
+}
+
+.ordered-list-3 {
+    list-style-type: lower-latin;
+}
+
+.unordered-lis-3 {
+    background-color: #add8e6;
+    border: 2px solid blue;
+    padding: 5px 5px 5px 40px;
+}
+
+.unordered-lis-3 li {
+    background-color: #ffffe0;
+    list-style-type: circle;
+}
+
+.unordered-lis-3 li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.unordered-lis-4 {
+    background-color: #eeeeee;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #b4b4b4;
+}
+
+.unordered-lis-4 li {
+    padding: 5px 10px;
+}
+
+.unordered-lis-4 li:not(:last-child) {
+    border: 1px solid #b4b4b4;
+}
+
+.unordered-lis-5 {
+    list-style-image: url("https://via.placeholder.com/20x20/F00/FFF");
+}
+
+.unordered-lis-6 {
+    list-style-type: square;
+    list-style-position: outside;
+    width: 200px;
+
+}
+
+.unordered-lis-6 li {
+    border: 0.5px solid black;
+
+}
+
+.unordered-lis-6 li:not(:last-child) {
+    border-bottom-color: transparent;
+
+}
+
+.unordered-lis-7 {
+    list-style-type: square;
+    width: 200px;
+    list-style-position: inside;
+}
+
+.unordered-lis-7 li {
+    border: 0.5px solid black;
+}
+
+.unordered-lis-7 li:not(:last-child) {
+
+    border-bottom-color: transparent;
+}
+
+.unordered-lis-8 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.unordered-list-9 {
+    list-style: square inside url("https://via.placeholder.com/20x20/F00/FFF");
+    /* list-style: square inside; */
+}
+
+.ordered-list-10 {
+    background-color: #ff9999;
+    padding: 20px 20px 20px 40px;
+}
+
+.ordered-list-10 li {
+    background-color: #ffe5e5;
+    padding: 5px 10px;
+}
+
+.unordered-list-11 {
+    background-color: #3399ff;
+    padding: 20px;
+    list-style-type: square;
+}
+
+.unordered-list-11 li {
+    background-color: #cce5ff;
+    padding: 5px;
+
+}
+
+.unordered-list-11 li:not(:last-child) {
+    margin-bottom: 5px;
+
+}
+
+.special-1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    border-left: 5px solid red;
+    padding: 10px 20px;
+}
+
+.special-2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.special-2 li {
+    border: 0.5px solid black;
+    padding: 10px;
+}
+
+.special-2 li:not(:last-child) {
+    border-bottom-color: transparent;
+}

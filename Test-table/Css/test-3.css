@@ -1,0 +1,159 @@
+.table-1 {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.table-1,
+.table-1 th,
+.table-1 td {
+    border: 1px solid black;
+}
+
+/* .table-1 td {
+    text-align: center;
+} */
+
+.table-1 th {
+    text-align: left;
+}
+
+.table-2 {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.table-2,
+.table-2 th,
+.table-2 td {
+    border: 1px solid black;
+}
+
+.table-2 td {
+    height: 60px;
+    /* vertical-align: bottom; */
+    /* vertical-align: top; */
+    vertical-align: middle;
+}
+
+.table-3 {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+
+.table-3 th,
+.table-3 td {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.table-3 th {
+    text-align: left;
+}
+
+.table-4 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-4 th,
+.table-4 td {
+    border-bottom: 0.5px solid #777;
+    padding: 15px;
+}
+
+.table-4 th {
+    text-align: left;
+}
+
+/* .table-4 tr:last-child td {
+    border-bottom-color: transparent;
+
+} */
+
+.table-5 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-5 th,
+.table-5 td {
+    border-bottom: 0.5px solid #777;
+    padding: 15px;
+}
+
+/* .table-5 tr:hover {
+    background-color: #b4b4b4;
+    color: white;
+} */
+.table-5 tr:hover td,
+.table-5 tr:hover th {
+    background-color: #b4b4b4;
+    color: white;
+}
+
+.table-6 {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.table-6 th,
+.table-6 td {
+    border-bottom: 0.5px solid #777;
+    padding: 15px;
+}
+
+.table-6 th {
+    background-color: #04aa6d;
+    color: white;
+}
+
+/* 
+odd => impaire 
+even => paire
+
+*/
+
+
+.table-6 tr:nth-child(odd) td {
+    background-color: #f0f0f0;
+}
+
+.table-6 tr:nth-child(even) td {
+    background-color: rgba(253, 249, 249, 0.361);
+}
+
+
+.table-6 tr:hover th,
+.table-6 tr:hover td {
+    background-color: #b4b4b4;
+    color: white;
+}
+
+.container {
+    width: 600px;
+    border: 1px solid red;
+    overflow: auto;
+    margin: 60px auto;
+}
+
+.special {
+    border-collapse: collapse;
+}
+
+.special th,
+.special td {
+    border-bottom: 0.5px solid #777;
+    padding: 10px;
+}
+
+
+.special th {}
+
+.special tr:nth-child(odd) td {
+    background-color: #f0f0f0;
+}

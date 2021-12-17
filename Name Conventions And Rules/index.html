@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Of Page</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+    <!-- 
+        A valid Identifier should start with an underscore (_), a hyphen (-) or a letter (a-z)/(A-Z) which is followed by
+        any numbers, hyphens, underscores, letters.
+            - It cannot start with a digit.
+            - Two hyphens followed by a number is valid.
+        
+     -->
+    <!-- Identifiers : id , class -->
+    <div class="1st" style="color: red;">Starting with digit => Not Valid </div>
+    <div class="_st">Starting with underscore => Valid </div>
+    <div class="-st">Starting with hyphen => Valid </div>
+    <div class="st">Starting with lower case alphabet => Valid</div>
+    <div class="St">Starting with upper case alphabet => Valid</div>
+    <div class="--1st">Starting with double hyphen => Valid</div>
+    <div class="s">only one alphabet => Valid</div>
+    <div class="_1">underscore before digit => Valid</div>
+    <div class="-" style="color: red;">only hyphen => Not Valid </div>
+    <div class="--">double hyphen =>Valid</div>
+    <div class="_">only underscore => Valid</div>
+    <div class="__">double underscore => Valid</div>
+
+    <!--  Best Practice For Convention Name Of Identifier  in Css is Kbab Case  : user-test -->
+    <header class="section-header">
+        Header
+    </header>
+    <nav class="section-navigation">
+        Navigation
+    </nav>
+    <footer class="section-footer">
+        Footer
+    </footer>
+
+</body>
+
+</html>

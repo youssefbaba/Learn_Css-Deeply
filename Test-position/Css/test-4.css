@@ -1,0 +1,32 @@
+/* 
+position fixed 
+    - hanaya element kiyt7arak par rapport a viewport et toujours kiyb9a fise fi hadak position wakha page kitscrolli
+        it always stays in the same place even if the page is scrolled.
+
+*/
+body {
+    min-height: 5000px;
+}
+
+a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: dodgerblue;
+    text-decoration: none;
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.fixed-div {
+    background-color: red;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 10px;
+}

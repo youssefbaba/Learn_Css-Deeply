@@ -1,0 +1,7 @@
+.first-div {
+    background-color: green;
+    color: white;
+    height: 100px;
+    /* overflow: scroll; */
+    overflow: auto;
+}

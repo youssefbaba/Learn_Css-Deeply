@@ -1,0 +1,36 @@
+/* 
+Text Spacing
+-Letter Spacing
+-Indentation
+-Line Height
+-Word Spacing 
+-White Space
+-Word break
+
+*/
+div {
+    background-color: #f0f0f0;
+    padding: 0 20px;
+    margin: 0 0 40px;
+}
+
+.first-div {
+    letter-spacing: 1px;
+}
+
+.second-div {
+    text-indent: 20px;
+}
+
+.fourth-div p {
+    line-height: 1.6;
+}
+
+.fifth-div {
+    width: 300px;
+    /* white-space: normal; */
+    /* white-space: nowrap; */
+    /* word-break: normal; */
+    /* word-break: break-all; */
+    word-break: break-word;
+}

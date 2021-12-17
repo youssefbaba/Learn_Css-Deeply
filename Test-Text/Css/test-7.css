@@ -1,0 +1,40 @@
+/* 
+property vertical-align is used to set vertical alignment of inline and inline-block  elements not  for block level element
+    - syntax vertical-align:[baseline , top , bottom , middle , text-top , text-bottom ... ]
+
+*/
+
+
+p.one img {
+    vertical-align: baseline;
+}
+
+p.two img {
+    vertical-align: top;
+}
+
+p.three img {
+    vertical-align: bottom;
+}
+
+p.four img {
+    vertical-align: middle;
+}
+
+p.five img {
+    vertical-align: text-top;
+}
+
+p.six img {
+    vertical-align: text-bottom;
+}
+
+p.seven img {
+    vertical-align: 10px;
+    vertical-align: -10px;
+}
+
+p.eight img {
+    vertical-align: 10%;
+    vertical-align: -10%;
+}

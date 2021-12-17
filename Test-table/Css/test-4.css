@@ -1,0 +1,39 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    border-bottom: 2px solid #04aa6d;
+}
+
+table th,
+table td {
+    padding: 15px;
+}
+
+table th {
+    border: 0.5px solid white;
+    color: white;
+    background-color: #04aa6d;
+    text-align: left;
+
+}
+
+table td {
+    border: 0.5px solid #b4b4b4;
+
+}
+
+table tr:nth-child(odd) td {
+    background-color: #f0f0f0;
+}
+
+table tr:hover td {
+    background-color: rgba(180, 180, 180, 0.548);
+}
+
+table caption {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+}

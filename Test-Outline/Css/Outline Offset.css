@@ -1,0 +1,8 @@
+.first-div {
+    padding: 10px;
+    margin: 20px;
+    background-color: yellow;
+    border: 2px solid blue;
+    outline: 2px solid red;
+    outline-offset: 10px;
+}

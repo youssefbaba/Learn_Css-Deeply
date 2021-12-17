@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Of Page</title>
+    <link rel="stylesheet" href="Css/test-1.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+</head>
+
+<body>
+    <p>Top Of Page</p>
+    <a href="#" onclick="scrollTop()" id="scroll-link"><i class="fas fa-angle-double-up"></i></a>
+    <script>
+        //Get the link:
+        mylink = document.getElementById("scroll-link");
+
+        // When the user scrolls down 20px from the top of the document, show the link
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mylink.style.display = "block";
+            } else {
+                mylink.style.display = "none";
+            }
+        }
+        // When the user clicks on the link, scroll to the top of the document
+        function scrollTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
+</html>

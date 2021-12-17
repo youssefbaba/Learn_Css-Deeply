@@ -1,0 +1,16 @@
+div {
+    width: 300px;
+    margin: 10px auto;
+    background-color: #787878;
+    font-weight: bold;
+    padding: 20px;
+    color: black;
+}
+
+.one {
+    background-color: rgba(120, 120, 120, 0.1);
+}
+
+.two {
+    opacity: 0.1;
+}

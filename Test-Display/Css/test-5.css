@@ -1,0 +1,18 @@
+.links {
+    background-color: dodgerblue;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.links li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}

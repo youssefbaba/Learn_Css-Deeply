@@ -1,0 +1,17 @@
+div {
+    width: 500px;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: blueviolet;
+}
+
+
+.assign-1-shape-2 {
+    opacity: 0.5;
+
+}
+
+.assign-1-shape-3 {
+    opacity: 0.1;
+}

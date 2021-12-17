@@ -1,0 +1,10 @@
+/* 
+overflow-hidden => overflow-x:hidden + overflow-y:hidden
+*/
+div {
+    background-color: #eee;
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    overflow: hidden;
+}

@@ -1,0 +1,7 @@
+.first-div {
+    background-color: red;
+    padding: 10px;
+    display: inline-block;
+    min-width: 400px;
+    max-width: 800px;
+}

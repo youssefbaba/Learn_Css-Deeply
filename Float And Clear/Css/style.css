@@ -1,0 +1,30 @@
+/* 
+Float 
+Clear
+- toujours mali ndir float khassni ndir man wrah clear darori
+*/
+
+
+.parent {
+    background-color: red;
+    padding: 10px;
+    /* overflow: hidden; */
+    /* height: 60px; */
+
+
+}
+
+.parent div {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+    /* display: inline-block; */
+    width: 25%;
+    float: left;
+    /* height: 100px; */
+
+}
+
+.clear {
+    clear: both;
+}

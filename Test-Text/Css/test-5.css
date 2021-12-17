@@ -1,0 +1,39 @@
+/* 
+text-align-last is used to set horizontal alignement of last line 
+    - default value is left id direction of page is ltr ans right if direction of page is rtl
+
+
+*/
+body {
+    /* direction: rtl; */
+    direction: ltr;
+}
+
+.normal {
+    width: 60%;
+    margin: 40px auto;
+}
+
+.first-p {
+    text-align-last: left;
+}
+
+.second-p {
+    text-align-last: center;
+}
+
+.third-p {
+    text-align-last: right;
+}
+
+.fourth-p {
+    text-align-last: justify;
+}
+
+
+
+.two,
+.four {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}

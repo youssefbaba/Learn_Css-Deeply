@@ -1,0 +1,43 @@
+.links-1 li {
+    position: relative;
+}
+
+.links-1 {
+    list-style: none;
+    padding: 0;
+}
+
+.links-1 li {
+    padding-left: 1.3em;
+}
+
+.links-1 li.home:before {
+    position: absolute;
+    content: "\f015";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-weight: 900;
+    left: 0;
+
+
+}
+
+.links-1 li.about:before {
+    position: absolute;
+    content: "\f2bb";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-weight: 900;
+    left: 0;
+
+}
+
+.links-1 li.contact:before {
+    position: absolute;
+    content: "\f2c1";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-weight: 900;
+    left: 0;
+
+}

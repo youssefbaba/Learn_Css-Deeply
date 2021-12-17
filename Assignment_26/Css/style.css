@@ -1,0 +1,49 @@
+div.parent {
+    width: 400px;
+    margin: 60px auto;
+    background-color: #eeeeee;
+    border: 2px solid;
+    border-color: #f66a60 #03a9f4;
+    padding: 20px;
+    position: relative;
+}
+
+div.parent span {
+    position: absolute;
+    display: inline-block;
+    background-color: #03a9f4;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+div.parent span.top-left,
+div.parent span.bottom-left {
+    left: -15px;
+    border-right: 2px solid #f66a60;
+}
+
+div.parent span.top-left {
+    top: -15px;
+}
+
+div.parent span.bottom-left {
+    bottom: -15px;
+}
+
+div.parent span.top-right,
+div.parent span.bottom-right {
+    right: -15px;
+    border-left: 2px solid #f66a60;
+}
+
+div.parent span.top-right {
+    top: -15px;
+}
+
+div.parent span.bottom-right {
+    bottom: -15px;
+}

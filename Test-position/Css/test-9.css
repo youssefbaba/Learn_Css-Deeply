@@ -1,0 +1,19 @@
+.box {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    top: 100px;
+    left: 25px;
+}
+
+.outer {
+    width: 500px;
+    height: 300px;
+    border: 1px solid red;
+    overflow: auto;
+    padding-left: 150px;
+}

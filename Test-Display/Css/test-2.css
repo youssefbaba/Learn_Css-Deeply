@@ -1,0 +1,29 @@
+ div {
+     width: 120px;
+     padding: 5px;
+     border: 1px solid black;
+     text-align: center;
+     display: inline-block;
+     margin: 20px;
+ }
+
+ div img,
+ div button {
+     width: 100%;
+ }
+
+ div span,
+ div button {
+     display: block;
+ }
+
+ div button {
+     border: none;
+     background-color: dodgerblue;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+     color: white;
+ }

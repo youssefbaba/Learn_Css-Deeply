@@ -1,0 +1,48 @@
+/* 
+- z-index not work if do not exist position 
+-z-index : default value is auto = 0 => ya3ni ay element  html darna lih position rah z-index  par defaut dyalo hiya 0
+- z-index  work for all type of position 
+- z-index element li 3ando akbar z-index how li kaykoune fou9  o fi 7alat kano 2 elements 3andhom nafss z-index hadek ssa3a 
+    kinchiw  tartib dyalhom fi flow normal ya3ni fi code html
+- ila bghina wa7a element nkhaliwh howa lkhar kan3tih z-index = -1
+*/
+
+.absolute-div {
+    width: 150px;
+    height: 150px;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.first-div {
+    background-color: red;
+    top: 52px;
+    left: 48px;
+    /* z-index: 0; */
+    z-index: 4;
+}
+
+.second-div {
+    background-color: blue;
+    top: 38px;
+    left: 32px;
+    /* z-index: 0; */
+    z-index: 3;
+}
+
+.third-div {
+    background-color: green;
+    /* z-index: 0; */
+    z-index: 4;
+    top: 22px;
+    left: 69px;
+}
+
+.fourth-div {
+    background-color: yellow;
+    color: black;
+    z-index: -1;
+}

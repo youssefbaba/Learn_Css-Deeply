@@ -1,0 +1,14 @@
+.first-div {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.second-div {
+    font-variant: small-caps;
+    font-family: 'Cairo', sans-serif;
+}
+
+.special {
+    font-variant: small-caps;
+    font-family: 'Tajawal', sans-serif;
+}

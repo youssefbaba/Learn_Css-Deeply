@@ -1,0 +1,38 @@
+div {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-size: bold;
+    width: 200px;
+    padding: 10px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.first-div {
+    cursor: help;
+}
+
+.second-div {
+    cursor: pointer;
+}
+
+.third-div {
+    cursor: wait;
+}
+
+.fourth-div {
+    cursor: grab;
+}
+
+.fifth-div {
+    cursor: zoom-in;
+}
+
+.sixth-div {
+    cursor: move;
+}
+
+.seven-div {
+    cursor: cell;
+}

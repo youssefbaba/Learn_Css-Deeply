@@ -1,0 +1,41 @@
+div {
+    padding: 10px;
+    margin: 0 0 20px;
+    border-width: 3px;
+}
+
+.first-div {
+    border-style: solid;
+    border-color: red;
+}
+
+.second-div {
+    border-style: dashed;
+    border-color: #00ff00;
+}
+
+.third-div {
+    border-style: dotted;
+    border-color: rgb(0, 0, 255);
+}
+
+p {
+    padding: 10px;
+    margin: 0 0 20px;
+    border-width: 3px;
+}
+
+.first-paragraph {
+    border-style: solid;
+    border-color: red green;
+}
+
+.second-paragraph {
+    border-style: dotted;
+    border-color: red green blue;
+}
+
+.third-paragraph {
+    border-style: dashed;
+    border-color: red blue green yellow;
+}

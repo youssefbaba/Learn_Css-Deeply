@@ -1,0 +1,42 @@
+/* 
+font-weight property is used fo set weight of font the text
+    -syntax : font-weight:[200,700,bold ......]
+
+*/
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+.paragraph-1 {
+    font-weight: 100;
+}
+
+.paragraph-2 {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.paragraph-3 {
+    font-weight: 400;
+}
+
+.paragraph-4 {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.paragraph-5 {
+    font-weight: 800;
+}
+
+.paragraph-6 {
+    font-weight: bold;
+}
+
+/* 
+For Reset  font weight bold to  normal
+font-weight:normal = font-weight:400
+*/
+h1 {
+    font-weight: normal;
+}

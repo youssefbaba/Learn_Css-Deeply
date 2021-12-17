@@ -1,0 +1,51 @@
+h1 {
+    /* 
+Color
+    -Color Namr
+    -Color rgb => RGB => Red Green Blue
+    -Color rgb alpha channel => RGBA =>  Red Green Blue alpha
+    -Color Hexa Code => RRGGBB 
+*/
+
+    /* Color Name */
+    color: red;
+    color: green;
+    color: blue;
+    color: black;
+    color: white;
+    /* Color rgb */
+    color: rgb(255, 0, 0);
+    color: rgb(0, 255, 0);
+    color: rgb(0, 0, 255);
+    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    /* Color rgb alpha channel */
+    color: rgba(255, 0, 0, 0.5);
+    color: rgba(0, 255, 0, 0.5);
+    color: rgba(0, 0, 255, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    /* Color Hexa Code */
+    color: #ff0000;
+    color: #00ff00;
+    color: #0000ff;
+    color: #000000;
+    color: #ffffff;
+
+
+
+
+
+
+}
+
+div {
+    color: white;
+    background-color: #ff0000;
+    background-image: url("../images/gallery-04.png");
+    /* background-repeat: repeat; */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    background-repeat: repeat;
+
+}

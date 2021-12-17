@@ -1,0 +1,52 @@
+table img {
+    width: 60px;
+    height: 60px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 2px solid green;
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table thead td {
+    color: white;
+    font-weight: bold;
+    background-color: #404040;
+    border-color: #b4b4b4;
+    padding: 10px;
+}
+
+table td {
+    border: 1px solid white;
+    text-align: center;
+    padding: 15px;
+    background-color: #eeeeee;
+}
+
+table tbody a {
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+table tbody a.view-link {
+    background-color: #03a9f4;
+}
+
+table tbody a.delete-link {
+    background-color: #f16086;
+}

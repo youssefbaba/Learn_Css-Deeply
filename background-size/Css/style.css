@@ -1,0 +1,46 @@
+/* 
+background-size:
+    - the default value of background-size is auto so it's rendered according to original width and height
+    - OneValue:
+        If you only provide one value (e.g. background-size: 400px) it counts for the width,
+        and the height is set to automatically by browser . You can use any CSS size units you like,including pixels,percentages,em ,rem ..... etc.
+    - TwoValue:
+        If you provide two values,the first sets the background image’s width and the second sets the height.
+    - Keywords 
+        -Aspect ratio=width /  height
+        -cover 
+            if (aspect ratio of container > aspect ratio of image)
+                 image-width=container width 
+                 image-height=aspect-ratio-preserved height
+             else
+                image-height=container height 
+                image-width=aspect-ratio-preserved width
+
+        -contain
+            if (aspect ratio of container > aspect ratio of image) 
+                image-height=container-height 
+                image-width=aspect-ratio-preserved width
+             else 
+                image-width=container width 
+                image-height=aspect-ratio-preserved height
+
+
+*/
+
+.container {
+    margin: 60px;
+    border: 2px solid red;
+    width: 1200px;
+    height: 1200px;
+    background-image: url("../images/team-03.jpg");
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    /* background-size: 100%; */
+    /* background-size: 50%; */
+    /* background-size: 70%; */
+    /* background-size: 200px; */
+    /* background-size: 500px; */
+    /* background-size: 500px 450px; */
+    /* background-size: 70% 55%; */
+    background-size: contain;
+}

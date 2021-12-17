@@ -1,0 +1,11 @@
+a {
+    display: block;
+    text-decoration: none;
+    background-color: #009688;
+    border-bottom: 5px solid #00514a;
+    color: white;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}

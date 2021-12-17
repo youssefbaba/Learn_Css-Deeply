@@ -1,0 +1,34 @@
+.first-div {
+    background-color: red;
+    width: 800px;
+    padding: 10px;
+    margin: 0 0 20px
+}
+
+.first-div p {
+    background-color: green;
+    color: white;
+    /* max-width: 500px; */
+    max-width: 60%;
+}
+
+.second-div {
+    background-color: #b0e0e6;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.third-div {
+    background-color: #b0e0e6;
+    max-width: 500px;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.fifth-div {
+    background-color: #b0e0e6;
+    width: 800px;
+    max-width: 500px;
+    height: 100px;
+}

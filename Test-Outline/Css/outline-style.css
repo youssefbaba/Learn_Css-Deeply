@@ -1,0 +1,40 @@
+/* 
+outline:outline_width + outline-style + outline-color
+    - ila makantch outline-style mdeclarya maghdich  ykoune 3andna outline
+    -default value of outline-width is medium 
+    -default value of outline-style is  none 
+    -default value of outline-color is  currentcolor = color of text
+
+*/
+
+
+div {
+    padding: 10px;
+    border: 2px solid blue;
+    margin: 20px 0;
+    color: red;
+}
+
+.first-div {
+    outline-style: dotted;
+}
+
+.second-div {
+    outline-style: dashed;
+}
+
+.third-div {
+    outline-style: solid;
+}
+
+.fourth-div {
+    outline-style: double;
+}
+
+.fifth-div {
+    outline-style: hidden;
+}
+
+.sixth-div {
+    outline-style: none;
+}
