@@ -1,0 +1,35 @@
+/* 
+Pseudo Elements
+*/
+.one span {
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.two::first-letter {
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* 
+first line in view port
+*/
+.three::first-line {
+    font-weight: bold;
+    color: green;
+}
+
+.four::selection {
+    background-color: black;
+    color: yellow;
+}
+
+/* default  value for secltion */
+::selection {
+    background-color: dodgerblue;
+    color: white;
+}

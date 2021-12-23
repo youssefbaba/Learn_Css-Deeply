@@ -1,0 +1,83 @@
+/* 
+Pseudo Classes
+- example
+    a:hover,
+    div:empty,
+    input[type="text"]:focus,
+    input[type="checkbox"]:checked 
+    a:visited
+    a:link
+    a:active
+- element empty is an element do not have child or content
+*/
+.one {
+    background-color: red;
+    color: white;
+}
+
+.two {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+}
+
+p.normal {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*  Invisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: blue;
+}
+
+/*  mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+
+/* input[type="checkbox"]:checked {
+    display: none;
+} */
+input[type="checkbox"]:checked+label {
+    color: blue;
+    font-weight: bold;
+}
+
+div:empty,
+p:empty {
+    border: 10px solid dodgerblue;
+}
+
+/* :empty {
+    border: 10px solid #009688;
+} */
+
+input[type="text"] {
+    border: 2px solid red;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #03a9f4;
+    outline: none;
+}
+
+p.special:active {
+    color: #ffa500;
+}

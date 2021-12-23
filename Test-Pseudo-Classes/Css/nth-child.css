@@ -1,0 +1,118 @@
+/* 
+
+- nth-child(X) => selectionner les  childs  ntila9ane 3la position dyalha wasst wa7ad element parent
+- example : keyword [odd,even] , number , serie An + B  tel que  n start with 0 
+    - ul li:nth-child(2) : ya3ni kinselectionne list item  tani
+    - p:nth-child(odd) , p:nth-child(2n +1 )  : ya3ni kinselectionne les elements p li homa impaire
+    - p:nth-child(even), p:nth-child(2n): ya3ni kinselectionne les elements p li homa paire
+ */
+.table-1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-1 th,
+.table-1 td {
+    padding: 10px;
+    border: 1px solid;
+}
+
+.table-1 th {
+    background-color: green;
+    color: white;
+    border-color: white;
+
+}
+
+.table-1 td {
+    border-color: #b4b4b4;
+}
+
+/* .table-1 tr:nth-child(2n + 1) td {
+    background-color: #efdcdc;
+} */
+
+.table-1 tr:nth-child(odd) td {
+    background-color: #efdcdc;
+}
+
+
+/* .table-1 tr:nth-child(2n) td {
+    background-color: rgba(238, 231, 231, 0.125);
+} */
+
+.table-1 tr:nth-child(even) td {
+    background-color: rgba(238, 231, 231, 0.125);
+}
+
+.table-1 tr:nth-child(6) td {
+    background-color: red;
+    color: white;
+}
+
+
+.table-1 tr:hover td {
+    background-color: #b4b4b4;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*  selectionni les list items  li homa fi position impaire */
+/* .links-1 li:nth-child(odd) {
+    color: dodgerblue;
+    background-color: yellow;
+    font-weight: bold;
+} */
+/*  selectionni les list items  li homa fi position impaire */
+/* .links-1 li:nth-child(2n + 1) {
+    color: dodgerblue;
+    background-color: yellow;
+    font-weight: bold;
+} */
+/* selectionni les lists items  li fi position paire */
+/* .links-1 li:nth-child(2n) {
+    color: dodgerblue;
+    background-color: yellow;
+    font-weight: bold;
+} */
+/* selectionni les lists items  li fi position paire */
+/* .links-1 li:nth-child(even) {
+    color: dodgerblue;
+    background-color: yellow;
+    font-weight: bold;
+} */
+/* selectionni list item li fi position 7 */
+/* .links-1 li:nth-child(7) {
+    color: dodgerblue;
+    background-color: yellow;
+    font-weight: bold;
+} */
+/*  hnaya kinselectionne les lists items li homa  des miltiples dyal 5 */
+/* .links-1 li:nth-child(5n) {
+    color: dodgerblue;
+    background-color: yellow;
+    font-weight: bold;
+} */
+/* start with 10 to infini */
+.links-1 li:nth-child(n+10) {
+    color: dodgerblue;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.links-1 li:nth-child(n+15) {
+    color: initial;
+    background-color: transparent;
+    font-weight: normal;
+}
+
+/*  any list item */
+/* .links-1 li:nth-child(n) {
+    color: dodgerblue;
+    background-color: yellow;
+    font-weight: bold;
+} */

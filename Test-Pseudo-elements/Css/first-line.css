@@ -1,0 +1,16 @@
+/* 
+first-line => applied  only of the block element
+*/
+/* .section-1 p {
+    width: 500px;
+    margin: auto;
+} */
+
+.section-1 ::first-line {
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+    /* invalid properties */
+    margin-left: 20px;
+    text-indent: 20px;
+}

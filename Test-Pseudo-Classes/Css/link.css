@@ -1,0 +1,36 @@
+/* 
+link => unvisited  element (a , area)
+    - :link => ya3ni any unvisited element 
+    - a:link => any unvisited link 
+
+
+*/
+a {
+    text-decoration: none;
+}
+
+.article-1 a:link {
+    color: #c00;
+}
+
+.article-1 a:visited {
+    color: #0c0;
+}
+
+.article-1 a:hover {
+    color: #00c
+}
+
+.article-1 a:active {
+    color: yellow;
+}
+
+.article-2 a:link {
+    color: #c00;
+    font-size: 20px;
+}
+
+.article-2 a:visited {
+    color: #0c0;
+    font-size: 20px;
+}

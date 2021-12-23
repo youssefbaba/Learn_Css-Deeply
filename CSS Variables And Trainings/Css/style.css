@@ -1,0 +1,46 @@
+/* 
+Css Variables
+    -Global Variable (Global Scope)  => accessible man ay blassa
+    -Local Variable  (Local Scope) => accessible ghir fi blassa li mdeclari fiha variable 
+- Decalaration : --NameOfVariable:value ;
+        example:    --main-color:red;
+using :       
+    var(Name Of Variable , Fullback Value)
+*/
+/* Declaration Global Variable  */
+:root {
+    --main-color: blue;
+    --main-padding: 10px;
+}
+
+.main {
+    background-color: var(--main-color, blue);
+    color: white;
+    padding: calc(var(--main-padding, 10px) + 10px);
+}
+
+h2 {
+    background-color: #eee;
+    color: var(--main-color, blue);
+    padding: var(--main-padding, 10px);
+}
+
+p {
+    border: 1px solid var(--main-color, blue);
+    color: var(--main-color, blue);
+    padding: var(--main-padding, 10px);
+}
+
+a:hover {
+    color: var(--main-color, blue);
+}
+
+/* Declaration Local Variable */
+.local {
+    --main-padding: 15px;
+    --main-color: red;
+    padding: calc(var(--main-padding, 15px) + 5px);
+    color: white;
+    border: 2px solid var(--main-color, red);
+    margin: var(--main-padding, 15px);
+}

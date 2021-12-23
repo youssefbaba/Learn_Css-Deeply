@@ -1,0 +1,94 @@
+/* span {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    font-weight: bold;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: calc(-170px / 2);
+    margin-top: -20px;
+    cursor: pointer;
+
+} */
+body {
+    margin: 0;
+
+}
+
+span {
+    display: block;
+    width: fit-content;
+    padding: 15px;
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+span::before {
+    position: absolute;
+    content: "This Is Tooltip Content ";
+    background-color: black;
+    color: white;
+    width: calc(100% + 110px);
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    /*left: calc(-110px / 2);
+    */
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    top: -60px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -ms-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+}
+
+span::after {
+    position: absolute;
+    content: "";
+    border: 10px solid;
+    border-color: black transparent transparent transparent;
+    /*left: calc(50% - 10px);*/
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -ms-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+}
+
+span:hover::before,
+span:hover::after {
+    opacity: 1;
+}

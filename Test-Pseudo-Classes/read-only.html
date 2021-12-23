@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Of Page</title>
+    <link rel="stylesheet" href="Css/read-only.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <form action="" class="form-1">
+        <div>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Enter your email" readonly>
+        </div>
+        <div>
+            <input type="password" name="password" id="Password" placeholder="Enter your password">
+        </div>
+        <div>
+            <textarea id="description" rows="3" placeholder="Description" readonly></textarea>
+        </div>
+        <div class="form-example">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <div class="first-div">
+        <p readonly>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, quo?</p>
+    </div>
+
+    <form action="" class="second-form">
+        <fieldset>
+            <legend>Check shipping details</legend>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" value="Mr Soft" readonly>
+                <p class="clear"></p>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" readonly>
+23 Elastic Way,
+Viscous,
+Bright Ridge,
+CA
+                </textarea>
+                <p class="clear"></p>
+            </div>
+            <div class="form-group">
+                <label for="code-zip">Zip/postal code:</label>
+                <input type="text" name="code-zip" id="code-zip" value="94708" readonly>
+                <p class="clear"></p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Check shipping details</legend>
+            <div class="form-group form-group-special">
+                <label for="confirmation">Send confirmation by SMS?</label>
+                <input type="checkbox" name="confirmation" id="confirmation">
+                <p class="clear"></p>
+
+            </div>
+            <div class="form-group">
+                <label for="instruction">Any special instructions?</label>
+                <textarea name="instruction" id="instruction"></textarea>
+                <p class="clear"></p>
+
+            </div>
+        </fieldset>
+        <div class="form-group-reset">
+            <input type="reset" value="Amend details">
+        </div>
+        <div class="form-group-submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <article>
+        <p contenteditable>This paragraph is editable; it is read-write. => lime</p>
+
+        <p>This paragraph is not editable; it is read-only. => red</p>
+    </article>
+</body>
+
+</html>

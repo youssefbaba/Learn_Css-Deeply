@@ -1,0 +1,61 @@
+/* 
+after is a inline element 
+before is a inline element 
+*/
+.section-1 p:first-child:after {
+    content: "<-- boring";
+    color: red;
+    text-transform: uppercase;
+}
+
+.section-1 p:last-child:after {
+    content: "<-- exciting !";
+    color: green;
+    text-transform: uppercase;
+}
+
+.section-2 span {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.section-2 span::after {
+    content: "This is a fancy orange box";
+    background-color: orange;
+    border: 2px dotted black;
+    border-top: none;
+    color: black;
+}
+
+.section-3 p {}
+
+.section-3 p span {
+    text-decoration: underline;
+    color: blue;
+    cursor: help;
+    position: relative;
+}
+
+
+.section-3 p span::after {
+    content: attr(data-descr);
+    background-color: yellow;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid black;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: none;
+    line-height: 1.5;
+    vertical-align: middle;
+    padding-left: 5px;
+
+}
+
+.section-3 p span:hover:after {
+    display: inline-block;
+
+}

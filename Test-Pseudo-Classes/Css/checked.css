@@ -1,0 +1,22 @@
+/* 
+-checked => represents any  element that is checked or toggled to an on state. for example  input radio , input checkbox , select
+- The user can engage this state by checking/selecting an element, or disengage it by unchecking/deselecting the element.
+*/
+
+input:checked+label {
+    color: red;
+}
+
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px orange;
+    margin-left: 25px;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+    margin-left: 25px;
+}
+
+option:checked {
+    color: red;
+}

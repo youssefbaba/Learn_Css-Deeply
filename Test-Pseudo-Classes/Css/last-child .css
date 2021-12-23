@@ -1,0 +1,45 @@
+/* 
+last child : last element in group of sibling elements inside element parent => akhir ibn fi wa7ad element parent
+*/
+p:last-child {
+    background-color: #ff0000;
+    color: white;
+    font-size: 20px;
+}
+
+p:first-child {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+
+/* body :last-child {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+body :first-child {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+} */
+
+ul li {
+    color: blue;
+}
+
+/* ul.links-1>li:last-child {
+    color: red;
+    border: 1px solid red;
+}
+
+ul.links-2>li:last-child {
+    color: red;
+    border: 1px solid red;
+} */
+
+ul li:last-child {
+    color: red;
+    border: 1px solid red;
+}

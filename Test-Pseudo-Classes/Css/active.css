@@ -1,0 +1,68 @@
+/*
+- :active => an element becomes active when you click on it
+
+*/
+a.link-1:active {
+    background-color: yellow;
+}
+
+p.first-paragraph {
+    color: red;
+}
+
+p.first-paragraph:active {
+    color: blue;
+}
+
+h1.first-heading:active {
+    color: red;
+
+}
+
+.first-button:active {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+}
+
+.second-paragraph a:link {
+    color: #c00
+}
+
+.second-paragraph a:visited {
+    color: #0c0
+}
+
+.second-paragraph a:hover {
+    color: #00c
+}
+
+.second-paragraph a:active {
+    color: #ccc
+}
+
+.second-paragraph:active {
+    background-color: gray;
+}
+
+form:active label {
+    color: red;
+}
+
+form button {
+    background: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+p.example-1 a:active,
+p.example-1 a:hover {
+    color: red;
+}
+
+p.example-2 a:active,
+p.example-2 a:hover {
+    font-size: 40px;
+}

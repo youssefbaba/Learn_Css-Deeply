@@ -1,0 +1,249 @@
+:root {
+    --main-color-blue: #2c6ccf;
+    --main-color-red: #cf2c2c;
+    --main-color-green: #35a014;
+    --main-color-chocolate: #cd661a;
+}
+
+/* Start Gloabl change */
+h3 {
+    margin: 20px 0;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+.first-div,
+.second-div,
+.third-div,
+.fourth-div {
+    margin: 20px 0;
+}
+
+/* End Gloabl change */
+
+/* Start common*/
+
+.first-div .color-blue h3,
+.second-div .color-blue h3,
+.third-div .color-blue h3,
+.fourth-div .color-blue h3 {
+    color: var(--main-color-blue);
+}
+
+.first-div .color-red h3,
+.second-div .color-red h3,
+.third-div .color-red h3,
+.fourth-div .color-red h3 {
+    color: var(--main-color-red);
+}
+
+.first-div .color-green h3,
+.second-div .color-green h3,
+.third-div .color-green h3,
+.fourth-div .color-green h3 {
+    color: var(--main-color-green);
+}
+
+.first-div .color-chocolate h3,
+.second-div .color-chocolate h3,
+.third-div .color-chocolate h3,
+.fourth-div .color-chocolate h3 {
+    color: var(--main-color-chocolate);
+}
+
+.first-div .color-blue span,
+.first-div .color-red span,
+.first-div .color-green span,
+.first-div .color-chocolate span,
+.second-div .color-blue span,
+.second-div .color-red span,
+.second-div .color-green span,
+.second-div .color-chocolate span,
+.third-div .color-blue span,
+.third-div .color-red span,
+.third-div .color-green span,
+.third-div .color-chocolate span,
+.fourth-div .color-blue span,
+.fourth-div .color-red span,
+.fourth-div .color-green span,
+.fourth-div .color-chocolate span {
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #b4b4b4;
+    position: relative;
+}
+
+.first-div .color-blue span::after,
+.first-div .color-red span::after,
+.first-div .color-green span::after,
+.first-div .color-chocolate span::after,
+.second-div .color-blue span::after,
+.second-div .color-red span::after,
+.second-div .color-green span::after,
+.second-div .color-chocolate span::after,
+.third-div .color-blue span::after,
+.third-div .color-red span::after,
+.third-div .color-green span::after,
+.third-div .color-chocolate span::after,
+.fourth-div .color-blue span::after,
+.fourth-div .color-red span::after,
+.fourth-div .color-green span::after,
+.fourth-div .color-chocolate span::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.first-div .color-blue span::after,
+.second-div .color-blue span::after,
+.third-div .color-blue span::after,
+.fourth-div .color-blue span::after {
+    background-color: var(--main-color-blue);
+
+}
+
+.first-div .color-red span::after,
+.second-div .color-red span::after,
+.third-div .color-red span::after,
+.fourth-div .color-red span::after {
+    background-color: var(--main-color-red);
+
+}
+
+.first-div .color-green span::after,
+.second-div .color-green span::after,
+.third-div .color-green span::after,
+.fourth-div .color-green span::after {
+    background-color: var(--main-color-green);
+
+}
+
+.first-div .color-chocolate span::after,
+.second-div .color-chocolate span::after,
+.third-div .color-chocolate span::after,
+.fourth-div .color-chocolate span::after {
+    background-color: var(--main-color-chocolate);
+
+}
+
+/*  End common */
+
+.first-div .color-blue span::before,
+.first-div .color-red span::before,
+.first-div .color-green span::before,
+.first-div .color-chocolate span::before,
+.second-div .color-blue span::before,
+.second-div .color-red span::before,
+.second-div .color-green span::before,
+.second-div .color-chocolate span::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    left: 0;
+    /*top: calc(-5px + 1px);
+    */
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.first-div .color-blue span::before,
+.first-div .color-red span::before,
+.first-div .color-green span::before,
+.first-div .color-chocolate span::before {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.first-div .color-blue span::before,
+.second-div .color-blue span::before {
+    background-color: var(--main-color-blue);
+}
+
+.first-div .color-red span::before,
+.second-div .color-red span::before {
+    background-color: var(--main-color-red);
+}
+
+.first-div .color-green span::before,
+.second-div .color-green span::before {
+    background-color: var(--main-color-green);
+}
+
+.first-div .color-chocolate span::before,
+.second-div .color-chocolate span::before {
+    background-color: var(--main-color-chocolate);
+}
+
+.third-div .color-blue span::before,
+.third-div .color-red span::before,
+.third-div .color-green span::before,
+.third-div .color-chocolate span::before,
+.fourth-div .color-blue span::before,
+.fourth-div .color-red span::before,
+.fourth-div .color-green span::before,
+.fourth-div .color-chocolate span::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    border: 6px solid;
+}
+
+.third-div .color-blue span::before,
+.third-div .color-red span::before,
+.third-div .color-green span::before,
+.third-div .color-chocolate span::before {
+    bottom: 100%;
+}
+
+.fourth-div .color-blue span::before,
+.fourth-div .color-red span::before,
+.fourth-div .color-green span::before,
+.fourth-div .color-chocolate span::before {
+    top: 100%;
+}
+
+.third-div .color-blue span::before {
+    border-color: transparent transparent var(--main-color-blue) transparent;
+}
+
+.third-div .color-red span::before {
+    border-color: transparent transparent var(--main-color-red) transparent;
+}
+
+.third-div .color-green span::before {
+    border-color: transparent transparent var(--main-color-green) transparent;
+}
+
+.third-div .color-chocolate span::before {
+    border-color: transparent transparent var(--main-color-chocolate) transparent;
+}
+
+.fourth-div .color-blue span::before {
+    border-color: var(--main-color-blue) transparent transparent transparent;
+}
+
+.fourth-div .color-red span::before {
+    border-color: var(--main-color-red) transparent transparent transparent;
+}
+
+.fourth-div .color-green span::before {
+    border-color: var(--main-color-green) transparent transparent transparent;
+}
+
+.fourth-div .color-chocolate span::before {
+    border-color: var(--main-color-chocolate)transparent transparent transparent;
+}

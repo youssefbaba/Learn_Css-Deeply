@@ -1,0 +1,58 @@
+.links-1 {
+    list-style: none;
+    margin: 0;
+}
+
+.links-1 li {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.links-1 li::before {
+    position: absolute;
+    content: "";
+    border: 8px solid;
+    border-color: transparent red transparent transparent;
+    top: 0;
+    left: -25px;
+
+}
+
+.links-2 {
+    list-style: none;
+    margin: 0;
+}
+
+.links-2 li {
+    position: relative;
+}
+
+.html::before {
+    content: "\f13b";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: -25px;
+
+}
+
+.css::before {
+    content: "\f38b";
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    font-weight: 400;
+    top: 0;
+    left: -25px;
+
+}
+
+.js::before {
+    content: "\f3b8";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: -25px;
+
+}

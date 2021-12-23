@@ -1,0 +1,33 @@
+/* 
+
+Prefixes Vendor:
+1- New Css Feature 
+2- Browsers Test The New Feature in Version X 
+3- Browsers Give To Devellopers Abillity to use it 
+4- Browsers fully Suppoted The New Feature , Not Use Prefixes
+
+ya3ni ila wa7ad new feature fi css khrjat , les browsres kiybdaw ytestiw fiha o kiy3tiw l7a9 les devellopers yssta3mlouha 3an tari9 prefixes 
+mali kitwala had feature fully supported  mkitb9ach khassha prifexise bach nssta3malha .
+
+ -webkit- => For Chrome  , Safari ,  New Opera Browsers 
+ -moz- => For Mozila Firefox
+ -ms- => For Microsoft : Ei , Edge
+ -o- => For Old Opera Browsers
+
+*/
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* 
+
+in example above  property width and height and background-color is fully supported  don massta3malnach prefixes vendor 
+but property border radius not fully supported donc khassna nssta3mlo prefixes vendor
+*/

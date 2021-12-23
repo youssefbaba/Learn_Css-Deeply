@@ -1,0 +1,94 @@
+/* 
+wride-write=>represents an element (such as input or textarea) that is editable by the user.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.form-1 {
+    width: 500px;
+    margin: auto;
+}
+
+
+.form-1 fieldset {
+    padding: 0;
+    margin: 0;
+}
+
+.form-1 fieldset legend {
+    margin-left: 40px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+
+}
+
+.form-1 .form-example {
+    margin: 20px 0;
+}
+
+.form-1 .form-example input,
+.form-1 .form-example label {
+    padding: 0;
+    margin: 0;
+
+}
+
+.form-1 .form-example input[type="text"],
+.form-1 .form-example input[type="email"],
+.form-1 .form-example input[type="password"],
+.form-1 .form-example textarea,
+.form-1 .form-example label {
+    float: left;
+    width: calc((100% - 120px)/2);
+    margin-left: 40px;
+}
+
+.form-1 .form-example input[type="text"],
+.form-1 .form-example input[type="email"],
+.form-1 .form-example input[type="password"] {
+    padding: 5px;
+}
+
+.form-1 .form-example textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* .form-1 .form-example-submit {
+    width: 20%;
+    margin: 40px auto;
+
+} */
+
+.form-1 .form-example-submit input[type="submit"] {
+    width: 20%;
+    padding: 5px;
+    display: block;
+    margin: auto;
+}
+
+.form-1 .form-example input:read-only {
+    background-color: red;
+    color: white;
+    border: 2px solid #f9f9f9;
+}
+
+.form-1 .form-example input:read-write {
+    background-color: #f0f0f0;
+}
+
+.clear {
+    clear: both;
+}
+
+article p:read-only {
+    background-color: red;
+    color: white;
+}
+
+article p:read-write {
+    background-color: lime;
+}

@@ -1,0 +1,40 @@
+/* 
+The :empty CSS pseudo-class represents any element that has no children. Children can be other element 
+    or text (including whitespace).CSS content do not affect whether an element is considered empty.
+*/
+:empty {
+    border: 10px solid green;
+}
+
+p.first-pargraph {
+    width: 100px;
+    height: 20px;
+    background-color: red;
+    border: none;
+}
+
+.box {
+    background: pink;
+    height: 80px;
+    width: 80px;
+}
+
+.box:empty {
+    background: lime;
+}
+
+p.before-paragraph span.one {
+    position: relative;
+
+}
+
+p.before-paragraph span.one::before {
+    position: absolute;
+    content: "before";
+    background-color: yellow;
+    width: 50px;
+    height: 20px;
+    top: 40px;
+    left: 0;
+
+}

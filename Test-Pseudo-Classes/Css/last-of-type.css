@@ -1,0 +1,41 @@
+/* 
+- first-child => awal ibn wasst wa7ad element parent 
+    - :first-child => aya element kifma bgha ykoune nou3o mais li howa awal ibn wasst wa7ad element parent
+    - p:first-child => ya3ni aya element p li howa ibn lwal wasst wa7ad element parent 
+- last-child => ibn lkhar wasst wa7ad element parent 
+    - :last-child => ya3ni ay element kifma bgha ykoune nou3o mais howa akhir ibn wasst wa7ad element parent 
+    - p:last-child => ya3ni ay element p li howa akhir ibn wasst wa7ad element parent
+- first-of-type => ya3ni lwal man nou3o wasst wa7ad element parent
+    - :first-of-type => ya3ni  ay element kifma bgha ykoune nou3 dyalo mais howa lwal man nou3 dyalo wasst wa7ad element parent
+    - p:first-of-type => ya3ni ay elment p li howa lwal man  ,ou3o wasst wa7ad element parent
+- last-of type => ya3ni lkhar man nou3o wasst wa7ad element parent
+    - :last-of-type => ya3ni ay element kifma bgha ykoune nou3o mais  howa  lkhar man nou3o wasst wa7ad element parent
+    - p:last-of-type => ya3ni ay element p li howa  lkhar man nou3o wasst wa7ad element parent
+*/
+/* body :last-of-type {
+    color: white;
+    background-color: red;
+    font-size: 20px;
+}
+
+body :first-of-type {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+} */
+p:last-of-type {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+p:first-of-type {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+
+article :last-of-type {
+    background-color: yellow;
+    color: red;
+}

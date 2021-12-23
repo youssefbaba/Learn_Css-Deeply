@@ -1,0 +1,24 @@
+/* 
+first-of-type =>lwal man hadak nou3  wasst wa7ad element parent
+example : p:first-of-type =>  awal p wasst wa7ad element parent
+*/
+/* first child man nou3 p wasst any element parent */
+p:first-of-type {
+    color: white;
+    background-color: red;
+    font-size: 20px;
+}
+
+/* last child man nou3 p wasst any element parent */
+p:last-of-type {
+    background-color: blue;
+    color: white;
+}
+
+article :first-of-type {
+    color: red;
+}
+
+article :last-of-type {
+    color: blue;
+}

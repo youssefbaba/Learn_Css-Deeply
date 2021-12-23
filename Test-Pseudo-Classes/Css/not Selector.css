@@ -1,0 +1,77 @@
+/* 
+not(element/selector) => every element that is NOT the specified element/selector
+    - example 
+        - ul li:not(last-child) =>  any list item man ghir list item li howa  ibn akhir  dyal wa7ad parent ul
+        - :not(div.first-div)  =>  ya3ni any element man ghir element div li 3andha class first-div
+        - p:not(:first-of-type)  =>  ya3ni any element p  man ghir  hadik p  li kitmtal hiya lwla man nou3ha wasst wa7ad elment parent
+        - p:not(:first-of-type):not(.special)  =>  ya3ni any element p  man ghir  hadik p  li kitmtal  first child wasst element parent dyalha o hadik p li 3andha class special
+    
+*/
+/* 
+wasst element li 3ando class article-1  ay element man ghir element p
+*/
+.article-1 :not(p) {
+    color: red;
+    font-size: 25px;
+}
+
+/* 
+wasst element li 3ando class article-2  element li kiymtal lkhar man nou3o wasst hadak element parent
+*/
+.article-2 p:not(:not(:last-of-type)) {
+    color: green;
+    font-size: 25px;
+}
+
+/* 
+wasst element li 3ando class article-3   ay element p man ghir li kiymtal awal child and li 3ando  class special
+*/
+.article-3 p:not(:first-child):not(p.special) {
+    color: blue;
+    font-size: 25px;
+}
+
+
+.first-div .fancy {
+    text-shadow: 2px 2px 3px gold;
+}
+
+/* 
+<p> elements that are not in the class `.fancy`
+wasst element li 3ando class first-div ay element p man ghir hadik p li 3andha class fancy
+*/
+.first-div p:not(.fancy) {
+    color: green;
+}
+
+/*
+Elements that are not <p> elements
+wasst element li 3ando class first-div ay element man ghir element p
+*/
+.first-div :not(p) {
+    text-decoration: underline;
+}
+
+/* 
+Elements that are not <div> and not <span> elements 
+wasst element li 3ando class first-div ay element man ghir element div o element span
+*/
+.first-div :not(div):not(span) {
+    font-weight: bold;
+}
+
+/* 
+Elements that are not <div>s or `.fancy`
+wasst element li 3ando class first-div ay element man ghir element div and any element 3ando class fancy
+ */
+.first-div :not(div):not(.fancy) {
+    text-decoration: overline;
+}
+
+/*
+ Elements inside an <h2> that aren't a <span> with a class of foo.
+ wasst element li 3ando class first-div o wasst h2 ay element man ghir hadik span li 3andha class foo
+  */
+.first-div h2 :not(span.foo) {
+    color: red;
+}

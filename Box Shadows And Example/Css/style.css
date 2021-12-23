@@ -1,0 +1,28 @@
+/* 
+H-Shadow | V-Shadow | Blur | Spread | Color | Inset
+
+*/
+
+/* 
+Test For Simple Shadow
+*/
+
+div {
+    width: 300px;
+    background-color: #eee;
+    padding: 20px;
+    margin: 60px auto;
+}
+
+.first-div {
+
+    /* box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 24%); */
+    box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 24%) inset;
+
+}
+
+.second-div {
+    box-shadow: 0px 0px 0px 10px red,
+        0px 0px 0px 20px green,
+        0px 0px 0px 30px blue;
+}

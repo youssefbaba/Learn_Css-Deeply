@@ -1,0 +1,47 @@
+/* 
+The Margin Collapse => howa mali kiytla9aw les margin vertical 
+1 - Only Vertical Margin Collapse
+2 - Bigger Margin Wins
+3 - Margin Collapsing With Elements Without Anything Between
+4 - Nesting Does Not Prevent Collapsing
+
+*/
+.parent {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: #eee;
+    margin: auto;
+}
+
+.parent .child {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.parent .one {
+    background-color: #ddd;
+}
+
+.parent .two {
+    background-color: #aaa;
+}
+
+.parent .two .up {
+    /* height: calc(50% - 20px); */
+    height: 80px;
+    background-color: red;
+    margin-bottom: 40px;
+}
+
+.parent .two .down {
+    /* height: calc(50% - 20px); */
+    height: 80px;
+    background-color: green;
+    margin-top: 20px;
+}

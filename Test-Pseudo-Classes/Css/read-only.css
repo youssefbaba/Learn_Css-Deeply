@@ -1,0 +1,132 @@
+/* 
+read-only => represents an element (such as input or textarea) that is not editable by the user.
+*/
+/* * {
+    box-sizing: border-box;
+} */
+.form-1 div {
+    margin: 0 0 40px;
+}
+
+.form-1 input:read-only,
+.form-1 textarea:read-only {
+    background-color: #f0f0f0;
+    border: 2px solid #b4b4b4;
+}
+
+.first-div p:read-only {
+    background-color: yellow;
+
+}
+
+.second-form {
+    width: 600px;
+    margin: auto;
+}
+
+.second-form fieldset {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.second-form fieldset legend {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-left: 40px;
+
+}
+
+.second-form .form-group {
+    margin: 20px 0;
+}
+
+.second-form .form-group label,
+.second-form .form-group input[type="text"],
+.second-form .form-group input[type="checkbox"],
+.second-form .form-group textarea {
+    padding: 0;
+    margin: 0;
+}
+
+.second-form .form-group label,
+.second-form .form-group input[type="text"],
+.second-form .form-group textarea {
+    float: left;
+    width: calc((100% - 120px)/2);
+    margin-left: 40px;
+}
+
+.second-form .form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.second-form .form-group-special {
+    position: relative;
+}
+
+.second-form .form-group-special input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.second-form .form-group-reset,
+.second-form .form-group-submit {
+    width: 60%;
+    margin: 20px auto 0;
+}
+
+.second-form .form-group-reset input[type="reset"],
+.second-form .form-group-submit input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+}
+
+.second-form .form-group textarea:hover,
+.second-form .form-group textarea:focus {
+    background-color: #f0f0f0;
+
+}
+
+.second-form .form-group-reset input[type="reset"]:hover,
+.second-form .form-group-reset input[type="reset"]:focus,
+.second-form .form-group-submit input[type="submit"]:hover,
+.second-form .form-group-reset input[type="submit"]:focus {
+    background-color: #f0f0f0;
+    border: 2px solid #f0f0f0;
+
+}
+
+.second-form .form-group input[type="text"],
+.second-form .form-group textarea:read-only {
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: none;
+}
+
+.second-form .form-group textarea:read-write {
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+article p {
+    font-size: 150%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+article p:read-only {
+    background-color: red;
+    color: white;
+}
+
+article p:read-write {
+    background-color: lime;
+}

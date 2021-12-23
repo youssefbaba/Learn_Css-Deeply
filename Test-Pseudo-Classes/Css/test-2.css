@@ -1,0 +1,46 @@
+p:first-child {
+    color: red;
+}
+
+p:last-child {
+    color: blue;
+}
+
+p span:first-child {
+    color: green;
+}
+
+p span:last-child {
+    color: #03a9f4;
+}
+
+form {
+    margin: 20px 0;
+    width: 400px;
+    position: relative;
+    margin: auto;
+}
+
+form div {
+    margin: 20px 0;
+}
+
+form div input[type="submit"] {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px 10px;
+}
+
+form div input:focus {
+    background-color: yellow;
+    color: black;
+}

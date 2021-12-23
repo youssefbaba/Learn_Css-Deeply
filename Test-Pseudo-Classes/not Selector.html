@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Of Page</title>
+    <link rel="stylesheet" href="Css/not Selector.css">
+</head>
+
+<body>
+    <article class="article-1">
+        <h2>Lorem, ipsum dolor. => red</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <span>span => red</span>
+        <span>span => red</span>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui. => red</div>
+        <ul>
+            <li>Html => red</li>
+            <li>Css => red</li>
+            <li>Js => red</li>
+        </ul>
+    </article>
+    <article class="article-2">
+        <h2>Nesting Negations</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur. => green</p>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque!</div>
+        <span>span</span>
+    </article>
+    <h2> Passing a list of selectors</h2>
+    <article class="article-3">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="special">Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur. => blue</p>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque!</div>
+        <p class="special">Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur. => blue</p>
+        <span>span</span>
+    </article>
+    <div class="first-div">
+        <p>I am a paragraph => color green ,font-weight bold </p>
+        <p class="fancy">I am so very fancy! => text-shadow ,font-weight bold </p>
+        <div>I am NOT a paragraph. => text-decoration underline</div>
+        <h2>
+            <span class="foo">foo inside h2 => text-decoration underline</span>
+            <span class="bar">bar inside h2 => text-decoration underline ,color red</span>
+        </h2>
+    </div>
+
+</body>
+
+</html>

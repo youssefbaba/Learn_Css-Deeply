@@ -1,0 +1,125 @@
+/*
+- Property  box-shadow used for add shadow to element
+- syntax   box-shadow:H-Shadow , V-Shadow , Blur , Speard  , color , inset or outset
+- default value of  box-shadow: 0 0 0 0 currentcolor(color of element) , outset
+-Simple box  shadow : box-shadow:0px 0px 0px 8px black; 
+-Multiple box shadow : box-shadow:0px 0px 0px 10px red,
+0px 0px 0px 20px blue;
+
+*/
+
+.first-div {
+    width: 400px;
+    padding: 20px;
+    background-color: yellow;
+    box-shadow: 10px 10px;
+    margin: 40px auto;
+}
+
+/* 
+box-shadow: 10px 10px; => blur=0 , spread=0 color=currentcolor , outset
+*/
+
+.second-div {
+    width: 400px;
+    padding: 20px;
+    background-color: yellow;
+    box-shadow: 10px 10px blue;
+    margin: 40px auto;
+}
+
+
+
+/* 
+ box-shadow: 10px 10px blue; => blur=0 ,spread=0,outset
+*/
+.third-div {
+    width: 400px;
+    padding: 20px;
+    background-color: yellow;
+    box-shadow: 10px 10px 5px 10px blue;
+    margin: 40px auto;
+}
+
+.fourth-div {
+    width: 400px;
+    padding: 20px;
+    background-color: #eee;
+    box-shadow: 0px 0px 5px 5px gray inset;
+    margin: 40px auto;
+}
+
+.fifth-div {
+    width: 400px;
+    padding: 20px;
+    background-color: #eee;
+    box-shadow: 0px 0px 5px 5px gray;
+    margin: 40px auto;
+}
+
+.special-div {
+    width: 200px;
+    height: 200px;
+    color: red;
+    background-color: #f0f0f0;
+    line-height: 200px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 40px auto;
+    box-shadow: 0px 0px 2px 10px red, 0px 0px 2px 20px blue;
+}
+
+.special-div-1 {
+    width: 200px;
+    height: 200px;
+    color: red;
+    background-color: #f0f0f0;
+    line-height: 200px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 60px auto;
+    box-shadow: -10px -10px 2px 0px red,
+        10px 10px 2px 0px blue;
+}
+
+.special-div-2 {
+    width: 600px;
+    padding: 30px;
+    margin: 40px auto;
+    border: 1px solid black;
+    background-color: #eee;
+    box-shadow: 5px 5px 0px 0px blue,
+        10px 10px 0px 0px red,
+        15px 15px 0px 0px green;
+}
+
+.special-div-3 {
+    width: 600px;
+    padding: 30px;
+    margin: 40px auto;
+    border: 1px solid black;
+    background-color: #eee;
+    box-shadow: 5px 5px 5px 0px blue,
+        10px 10px 5px 0px red,
+        15px 15px 5px 0px green;
+}
+
+
+/* 
+- Property box shadow is udes to add shadow to element 
+- syntax : box-shadow:H-Shadow , V-Shadow , Blur , Speard , color , inset or outset
+- default value is box-shadow:0 0 0 0 currentcolor(color of element) outset
+-One Box Shadow :
+    box-shadow : 5px 5px 2px 5px gray ;
+-multiple box shadow :
+    box-shadow:5px 5px 5px 5px red , 10px 10px 5px 5px blue;
+
+*/

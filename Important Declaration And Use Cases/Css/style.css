@@ -1,0 +1,12 @@
+/* 
+The !Important declaration => kindeclari lih bli had property rah mohima  kinssta3mlo  for overdding 3la ay property  fin mabghat tkoune kaina
+*/
+
+.one {
+    /* background-color: green; */
+    background-color: green !important;
+}
+
+.one {
+    background-color: blue;
+}

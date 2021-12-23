@@ -1,0 +1,13 @@
+div {
+    width: 300px;
+    height: 60px;
+    margin: 0 auto 40px;
+    background-color: #eeeeee;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+div:empty {
+    background-color: red;
+}

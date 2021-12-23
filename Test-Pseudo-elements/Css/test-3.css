@@ -1,0 +1,113 @@
+/* 
+- after this is a inline element
+- before this is a inline element 
+- because after and before are inline element so do not respect height and width  and margin and padding top and bottom 
+- so fi 7alat kna  mdairine position absolute fi had l7ala after ola before rah kharaj man flow normal dyalo donc kiyrespecti kolchi
+- o fi 7ala l3adiya khassni darori nkhdam bi display inline block ila  bghito yrespecti height and width and padding and margin
+
+
+*/
+.section-4 p {
+    width: 600px;
+    margin: auto;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.section-4 p.first-paragraph {
+    /* position: relative; */
+}
+
+.section-4 p.first-paragraph::before {
+    position: absolute;
+    content: "";
+    background-color: red;
+    width: 5px;
+    height: 100%;
+    display: inline-block;
+    top: 0;
+    right: -5px;
+}
+
+.section-4 p.second-paragraph {
+    width: 400px;
+    margin: auto;
+    background-color: #eee;
+    padding: 20px;
+
+}
+
+.section-4 p.second-paragraph {
+    position: relative;
+}
+
+.section-4 p.second-paragraph::before {
+    position: absolute;
+    content: "Youssef";
+    background-color: #eee;
+    width: 70px;
+    height: 25px;
+    top: calc(50% - (25px /2));
+    text-align: center;
+    line-height: 25px;
+    left: -90px;
+}
+
+
+.section-4 p.third-paragraph {
+    position: relative;
+}
+
+.section-4 p.third-paragraph::before {
+    position: absolute;
+    content: attr(data);
+    background-color: red;
+    color: white;
+    right: 85px;
+    bottom: 18px;
+    width: 90px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+
+}
+
+.section-4 {
+    counter-reset: counter-paragraph;
+}
+
+.section-4 p {
+    position: relative;
+}
+
+.section-4 p::after {
+    position: absolute;
+    counter-increment: counter-paragraph;
+    content: counter(counter-paragraph);
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+    left: 0;
+    top: calc(50% - (17px / 2));
+
+}
+
+p.fourth-paragraph::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    background: green;
+    display: inline-block;
+}
+
+p.fourth-paragraph::after {
+    content: "hello ";
+    color: white;
+    font-size: 60px;
+    background: salmon;
+    margin-bottom: 20px;
+}

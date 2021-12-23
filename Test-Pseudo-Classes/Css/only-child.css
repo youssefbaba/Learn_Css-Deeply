@@ -1,0 +1,30 @@
+/* 
+only-child => every element that is the only child of its parent => ibn lwa7id wasst wa7ad element parent
+example :
+    -p:only-child => p li hiya ibn wa7ad  wasst wa7ad element parent
+only-child = first-child = last-child = nth-child(1)=nth-last-child(1)
+*/
+
+p:only-child {
+    color: red;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+article div:only-child {
+    color: red;
+}
+
+article div {
+    display: inline-block;
+    margin: 6px;
+    outline: 1px solid;
+}
+
+.navigation li:only-child {
+    color: red;
+}
+
+.navigation ul:only-child {
+    background-color: yellow;
+}

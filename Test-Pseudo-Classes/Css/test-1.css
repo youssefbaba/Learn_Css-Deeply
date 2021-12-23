@@ -1,0 +1,108 @@
+/* 
+psesudo classes 
+-syntax
+    selector:pseudo-classe{
+        property:value
+    }
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+form input,
+form button {
+    margin: 20px 0;
+    width: 300px;
+    display: block;
+    padding: 10px;
+}
+
+form input {
+    border: 3px solid #cccccc;
+
+}
+
+form input:focus {
+    outline: none;
+    background-color: #555555;
+    caret-color: white;
+}
+
+form input:focus::placeholder {
+    color: #b4b4b4;
+
+}
+
+form button {
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+}
+
+form button:hover {
+    background-color: #2196f3;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*  unvisited Link */
+a:link {
+    color: #c00
+}
+
+/* visited link */
+a:visited {
+    color: #0c0
+}
+
+/* mouses over link */
+a:hover {
+    color: #00c
+}
+
+/* slected link */
+a:active {
+    color: #ccc
+}
+
+a.special-link:hover {
+    color: dodgerblue;
+}
+
+div.first-div {
+    background-color: #e91e63;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+div.first-div:hover {
+    background-color: #ff9800;
+}
+
+
+div.second-div {
+    color: red;
+    font-weight: bold;
+    width: 400px;
+}
+
+
+
+p.special-paragraph {
+    background-color: yellow;
+    padding: 10px;
+    width: 400px;
+    display: none;
+}
+
+div.second-div:hover+p.special-paragraph {
+    display: block;
+}
+
+body {
+    min-height: 2000px;
+}

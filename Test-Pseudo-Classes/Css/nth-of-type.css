@@ -1,0 +1,31 @@
+/* 
+nth-of-type(X) => matches elements based on their position among siblings of the same type (tag name).
+X => keyword [odd , even] , number , seris An +B tel que n strat with 0 
+
+*/
+.first-div p:nth-of-type(2n+1) {
+    color: red;
+}
+
+.first-div div:nth-of-type(2n + 1) {
+    color: green;
+}
+
+.first-div p:nth-of-type(2n) {
+    color: blue;
+}
+
+.first-div div:nth-of-type(2n) {
+    color: orange;
+}
+
+.first-div :nth-of-type(1) {
+    font-weight: bold;
+}
+
+/* .first-div .fancy:nth-of-type(3) {
+        text-decoration: underline;
+    } */
+.first-div .fancy:nth-of-type(2n +1) {
+    text-decoration: underline;
+}

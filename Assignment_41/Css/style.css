@@ -1,0 +1,16 @@
+/* Declaration Of Global Variable  */
+/* :root {
+    --main-color: #009688;
+    --main-padding: 10px;
+} */
+
+div {
+    border: 2px solid var(--main-color, black);
+    color: var(--main-color, red);
+    padding: var(--main-padding, 10px);
+
+}
+
+div:not(:last-child) {
+    margin-bottom: var(--main-padding, 10px);
+}

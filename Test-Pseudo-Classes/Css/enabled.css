@@ -1,0 +1,22 @@
+.form-1 div {
+    margin: 0 0 40px;
+}
+
+.form-1 input:enabled {
+    background-color: #ffff00;
+    color: lime;
+}
+
+.form-1 input:disabled {
+    background-color: #b4b4b4;
+    color: rgb(60, 60, 60);
+}
+
+
+.form-1 option:enabled {
+    background-color: #f0f0f0;
+}
+
+.form-1 option:disabled {
+    background-color: red;
+}

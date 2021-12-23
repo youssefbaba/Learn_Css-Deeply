@@ -1,0 +1,51 @@
+/*
+pseudo element is used to style spicifies parts of an element
+for example style firstletter or firstline of  ana element
+insert content after or before the content of element
+
+*/
+p::first-line {
+    color: red;
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin-left: -10px;
+}
+
+p.third-paragraph::first-line {
+    color: red;
+    text-transform: uppercase;
+}
+
+p.third-paragraph::first-letter {
+    background-color: yellow;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+p.fourth-paragraph::first-line,
+p.fifth-paragraph::first-line {
+    color: blue;
+    background-color: yellow;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+p.fourth-paragraph::first-letter,
+p.fifth-paragraph::first-letter {
+    color: white;
+    background-color: red;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 3px;
+}

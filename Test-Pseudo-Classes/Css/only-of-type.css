@@ -1,0 +1,23 @@
+/* 
+only-of-type => ya3ni ibn lwa7id li man hadak nou3o  wasst wa7ad element parent
+ya3ni element li ma3andouch ikhwa man hadak nou3
+example
+    -p:only-of-type => ay element p li howa ibn lwa7id li man hadak nou3  wasst wa7ad element parent
+
+*/
+.article-1 p:only-of-type {
+    color: red;
+}
+
+.article-1 div:only-of-type {
+    color: blue;
+}
+
+.special-div :only-of-type {
+    color: green;
+}
+
+main :only-of-type {
+    color: red;
+    background-color: yellow;
+}

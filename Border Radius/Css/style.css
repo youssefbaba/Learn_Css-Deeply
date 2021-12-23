@@ -1,0 +1,75 @@
+/* 
+default value of border radius is 0
+example :
+hoda les shorthand dyal border radius 
+border radius : 10px ;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px
+
+border radius : 10px 20px ;
+    border-top-left-radius:10px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:20px
+
+border radius : 10px 20px 30px ;
+    border-top-left-radius:10px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:30px;
+    border-bottom-left-radius:20px
+
+border radius : 10px 20px 30px  40px;
+    border-top-left-radius:10px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:30px;
+    border-bottom-left-radius:40px;
+
+o n9dar nkhdam bi kol jiha bo7dha
+    example : border-bottom-right-radius:20px;
+border-top-left-radius:10px 15px ;
+    kit3ni anaho man jiht top rah 10px o man jiht left 15px
+
+
+
+*/
+.first-div {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    margin: 40px auto;
+    /*border-radius: 10px 20px 15px;
+    -webkit-border-radius: 10px 20px 30px 40px;
+    -moz-border-radius: 10px 20px 30px 40px;
+    -ms-border-radius: 10px 20px 30px 40px;
+    -o-border-radius: 10px 20px 30px 40px;
+    */
+    /*
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 40px;
+    */
+    border-radius: 10px 20px 30px 40px;
+}
+
+/* 
+bach n9ad chkal dyal disk khass ykoune 9ad width 9ad height
+o border radius 50%
+
+*/
+.second-div {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    margin: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

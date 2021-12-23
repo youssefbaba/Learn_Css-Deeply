@@ -1,0 +1,47 @@
+/* 
+selection => matches the portion of an element that is selected  or clicked by a user.
+marker => selects the marker of a list item
+*/
+p.first-paragraph::selection {
+    background-color: black;
+    color: yellow;
+
+}
+
+p.second-paragraph::selection {
+    background-color: red;
+    color: yellow;
+}
+
+/* body ::selection {
+    background-color: blue;
+    color: white;
+} */
+
+/* body ::marker {
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+} */
+ol li::marker {
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+}
+
+ul.links-1 li::marker {
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul.links-2 li {
+    padding-left: 10px;
+}
+
+ul.links-2 li::marker {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    color: dodgerblue;
+}

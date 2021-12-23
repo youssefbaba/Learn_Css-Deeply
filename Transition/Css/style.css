@@ -1,0 +1,70 @@
+/* 
+Transition
+    -Duration => transition-duration =>  hiya  ch7al dyal wa9t ghadi ystaghra9 had transition 
+        - default value is 0s 
+        - syntax  transition-duration:[1s , 0.5ms ..] 
+            
+    -Delay => transition-delay =>  hiya ch7al dyal wa9t kintssana 3ad kiydar had transition
+        - default value is 0s
+        - syntax transition-delay:[1s , 0.5ms ..]
+
+    -Property => transition-property => hiya chanahoma lkhawass li ghadi yt2appliqua 3lihom control dyal  had transition 
+        - default value is all
+        - syntax transition-property:[all | width | height... |width,height,margin-left| ....]
+
+    -Timing Function => transition-timing-function => kifach kiytam had transition
+        - default value is ease
+        - syntax transition-timing-function:[ease,linear,ease-in,ease-out,ease-in-out]
+            ease : kiybda bati2e o wasst kiyzrab o kiyssali bati2e
+            linear : bi chakl khati ya3ni kif bdya kif wasst kif nihaya
+            ease-in : kiybda bidaya bait2a o man wraha 3adi 
+            ease-out : kiykoune 3adi o fi la fin bati2e
+            ease-in-out : kiybda bati2e o  wasst 3adi o kiyssali bati2e
+-Shorthand  Property :
+    Transition : <transition-property><transition-duration><transition-timing-function><transition-delay>
+    default value : Transition : all 0s ease 0s
+*/
+.one {
+    background-color: #f0f0f0;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    /*transition-duration: 1s;
+    *//*transition-duration: 3s;
+    *//*transition-delay: 2s;
+    *//*transition-delay: 0.5s;
+    *//*transition-property: all;
+    *//**//*transition-property: margin-left, margin-top;
+    *//*transition-property: width;
+    *//*transition-timing-function: ease;
+    *//*transition-timing-function: linear;
+    *//*transition-timing-function: ease-in;
+    *//*transition-timing-function: ease-out;
+    *//*transition-timing-function: ease-in-out;
+    *//*transition: width 3s ;
+    transition: all 0.5s 2s linear;
+    /*transition: width 3s, height 1s;
+    *//*transition: width 3s, height 1s;
+    */transition: all 0.5s linear 1s;
+    -webkit-transition: all 0.5s linear 1s;
+    -moz-transition: all 0.5s linear 1s;
+    -ms-transition: all 0.5s linear 1s;
+    -o-transition: all 0.5s linear 1s;
+}
+
+.one:hover {
+    /* margin-left: 20px; */
+    /* margin-top: 20px; */
+    width: 400px;
+    height: 200px;
+}
+
+
+
+/* 
+
+- transition:width 3s=>transition-property=width,transition-duration=3s,transition-timing-function = ease , transition-delay = 0s
+- transition-duration=3s;transition-property=width,height;=>transition-duration: 3s,3s;transition-property=width,height;
+
+*/
