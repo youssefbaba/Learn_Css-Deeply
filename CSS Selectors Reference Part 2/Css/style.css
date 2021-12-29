@@ -1,0 +1,73 @@
+/* 
+- Element1 + OtherElement => Next Selector : ya3ni kintar9iti OtherElement li kayn directement man ba3d Element1
+        div + p => kintar9iti any element p li kayn directement man ba3d element div 
+
+- Element1 ~ OtherElement => Sibling  : any OtherElement li homa ikhwa dyal element1 ya3ni m3ah fi nafss column
+
+-[attribute1] =>  kintar9iti any element   li 3ando hadak attribute attribute1
+    example : [title]
+-[attribute1="value1"] =>  kintar9iti any element  li 3ando hadak attribute attribute1 o value dyalo value1
+    example : [title="S01"]
+- Element1[attribute1] => kintar9iti  any element element1  li 3ando hadak attribute attribute1
+    example : div[title]
+- element1[attribute1="value1"] => ya3ni  kintar9iti any element  element1 li  3ando attribute attribute1 o value dyalo value1
+    example input[type="text"]
+- [attribute1~="value1"] => Contains A Word : ya3ni kintar9iti any element li 3ando attribute attribute1 li kiy7tawi 3la hadik klma value1 mnfassla
+- Element1[attribute1~="value1"] => Contains A Word : ya3ni kintar9iti any element Element1 li 3ando attribute attribute1 li kiy7tawi 3la hadik klma value1 mnfassla
+- [attribute1*="value1"] => Contains A String : ya3ni kintar9iti any element li  3andha attribute attribute1 o kiy7tawi 3la string value1
+- Element1[attribute1*="value1"] => Contains A String : ya3ni kintar9iti any element Element1 li  3andha attribute attribute1 o kiy7tawi 3la string(joz2e man kalma) value1
+
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div+p {
+    color: red;
+}
+
+p~div {
+    color: green;
+}
+
+[title] {
+    color: blue;
+}
+
+div[title] {
+    color: orange;
+}
+
+div[title="S01"] {
+    color: gray;
+}
+
+div[title~="Div"] {
+    color: lime;
+}
+
+div[title*="Div"] {
+    color: maroon;
+}
+
+div[title^="S0"] {
+    color: olive;
+}
+
+/* 
+
+> : direct child => ya3ni ibn mobachir 
++ : next selector => ya3ni element li ba3do directement
+~ : sibling => ya3ni ikhwa dyal element
+[attribute] => ya3ni kintar9iti any element 3ando hadik attribute
+Element1[attribute] => ya3ni kintar9iti any element element1 li 3ando  attribute
+Element1[attribute="value1"] => ya3ni kintar9iti any element element1  li 3ando hadik attribute o value dyalha value1
+Element[attribute~="value1"] => Contains A Word : ya3ni attribute kiy7tawi 3la  hadak word value1  li tkoune manfassla
+Element[attribute*="value1"] => Contains A String 
+Element[attribut^="value1"] => Start With A String
+*/

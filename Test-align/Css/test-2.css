@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+/*  Center Vertically */
+/* using padding */
+.first-div {
+    width: 50%;
+    margin: 40px auto;
+    border: 1px solid green;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/*  using height case 1 : content is one  line*/
+.second-div {
+    width: 50%;
+    border: 1px solid green;
+    margin: 40px auto;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+}
+
+/*  using height case 2 : content is mre thaan one  line*/
+.third-div {
+    width: 50%;
+    border: 1px solid green;
+    margin: 40px auto;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+}
+
+.third-div p {
+    line-height: 1.6;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+.fourth-div {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    margin: 40px auto;
+    height: 140px;
+    border: 1px solid green;
+}
+
+.fourth-div p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fifth-div {
+    width: 50%;
+    margin: 40px auto;
+    border: 1px solid green;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

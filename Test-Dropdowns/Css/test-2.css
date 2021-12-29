@@ -1,0 +1,99 @@
+/* Method One */
+/* ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    background-color: rgba(4, 170, 109, 0.8);
+    width: fit-content;
+    position: relative;
+}
+
+.dropdown-content {
+    background-color: #f9f9f9;
+    width: 140%;
+    display: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    position: absolute;
+    z-index: 1;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.dropdown-content li a {
+    color: black;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f0f0f0;
+}
+
+ul li a.test {
+    text-align: center;
+}
+
+.dropdown li a.test:hover {
+    background-color: #04aa6d;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+/* Method Two */
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown>a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(4, 170, 109, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.dropdown>a:hover {
+    background-color: rgb(4, 170, 109);
+}
+
+.dropdown-content {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 140%;
+    display: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.dropdown-content li {
+    border-bottom: 0.5px solid #b4b4b4;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

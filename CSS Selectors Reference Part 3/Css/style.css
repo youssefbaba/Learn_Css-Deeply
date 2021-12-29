@@ -1,0 +1,49 @@
+/* 
+:first-child => ibn lwal wasst wa7ad element parent
+:last-child => ibn akhir wasst wa7ad element parent
+:first-of-type => lwal man nou3 dyalo (tag name) wasst wa7ad element parent ya3ni kin9arno wasst groupe dyal  element naw3 li b7alo (tag name)
+:last-of-type=>lkhar man nou3 dyalo (tag name) wasst wa7ad element parent ya3ni kin9arno wasst groupe dyal element naw3 li b7alo (tag name)
+:only-child =>  ibn wa7id wasst wa7ad  element parent
+:only-of-type => lwa7id man nou3o wasst wa7da element parent
+
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p:first-child {
+    color: red;
+}
+
+p:last-child {
+    color: green;
+}
+
+div:last-child {
+    color: red;
+}
+
+p:first-of-type {
+    color: lime;
+}
+
+p:last-of-type {
+    color: gray;
+}
+
+/* 
+p:only-child {} */
+
+p:only-of-type {
+    color: hotpink;
+}
+
+/* 
+
+*/

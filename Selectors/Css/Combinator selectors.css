@@ -1,0 +1,33 @@
+/* 
+- Combinators Selectors :
+- descendant element => element inside other element
+- >  direc child => ibn mobachir
+- + Next Selector => ya3ni element li man ba3di directement
+-  ~ Next Sibling => ya3ni ikhwa dyali  li man ba3di directement
+*/
+
+div.test-descendant-selector p {
+    background-color: yellow;
+}
+
+div.test-direct-child>p {
+    color: blue;
+}
+
+article div+p {
+    color: red;
+}
+
+main div~p {
+    color: green;
+}
+
+
+/* 
+
+- descendant selector : ya3ni element inside other element y9dar ykoune hadak element direct  child ola machi direct child 
+- > direct child : ya3ni ibn mobachir dyal element parent 
+- + Next selector : ya3ni element li man ba3di directement
+- ~ Next sibling : ya3ni ikhwa dyal element li kaynine ba3do 
+
+*/

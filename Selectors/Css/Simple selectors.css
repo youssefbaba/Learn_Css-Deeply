@@ -1,0 +1,90 @@
+/* 
+Simple selectors => select elements based on nametag or id or class ma3a 7tiram specifity
+- for nametag  your specifity is (0,0,0,1) => 1
+- for id your specifity is (0,1,0,0) => 100
+- for class your specifity is (0,0,1,0) => 10
+donc 100 > 10 > 1 : id >  class  > nametag  
+- * => select all element html on the page
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.myclass {
+    color: red;
+}
+
+#id {
+    color: green;
+}
+
+p {
+    color: blue;
+}
+
+
+#mytest {
+    color: lime;
+}
+
+.mytest {
+    color: magenta;
+}
+
+#test {
+    color: orange;
+}
+
+.test {
+    color: maroon;
+}
+
+h1 {
+    color: red;
+}
+
+div {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+    color: blue;
+}
+
+#center {
+    color: green;
+    text-align: center;
+}
+
+.color-red {
+    color: red;
+}
+
+section .center {
+    text-align: center;
+    color: red;
+}
+
+section .large {
+    font-size: 200%;
+}
+
+/* section .center.large {
+    font-size: 200%;
+} */
+
+/*  Grouping */
+article h1,
+article h2,
+article p {
+    color: red;
+    text-align: center;
+}
+
+article p {
+    font-size: 20px;
+}

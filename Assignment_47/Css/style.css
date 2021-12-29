@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    background-color: #f0f0f0;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container form .customer {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.container form .customer .left-part {
+    width: calc(50% - 40px);
+}
+
+.container form .customer .right-part {
+    flex: 1;
+}
+
+.container form .customer label {
+    font-size: 18px;
+    color: #3c3c3c;
+    position: relative;
+}
+
+.container form .customer input,
+.container form .customer textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    caret-color: gray;
+    border-radius: 5px;
+    margin: 10px 0 15px 0;
+    padding: 15px 0 15px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.container form .customer label.required:after {
+    position: absolute;
+    content: "*";
+    color: red;
+    right: -10px;
+    font-size: 18px;
+}
+
+.container form .customer textarea {
+    resize: none;
+    height: 142px;
+}
+
+.container form .submit input {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #009688;
+    font-size: 18px;
+    font-weight: bold;
+    border-color: #009688;
+    transition: 0.3s;
+
+}
+
+.container form .submit input:hover {
+    background-color: rgba(0, 150, 135, 0.8);
+    border-color: rgba(0, 150, 135, 0.8);
+    outline: none;
+}
+
+::placeholder {
+    color: gray;
+}

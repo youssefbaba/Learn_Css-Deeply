@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+}
+
+.container a {
+    display: inline-block;
+    background-color: #218c74;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 0 20px -30px;
+    position: relative;
+
+}
+
+.container a::before {
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-color: transparent #218c74 transparent transparent;
+    border-width: 0px 10px 10px 0px;
+    top: 100%;
+    left: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+}
+
+.container a {
+    display: inline-block;
+    background-color: #218c74;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 0 20px -30px;
+    position: relative;
+
+}
+
+.container a::before {
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-color: transparent #218c74 transparent transparent;
+    border-width: 0px 10px 10px 0px;
+    top: 100%;
+    left: 0;
+}
+
+.container .first-main {
+    margin-bottom: 40px;
+}
+
+.container .first-main .form-check {
+    background-color: #f0f0f0;
+    padding: 15px;
+    position: relative;
+}
+
+.container .first-main .form-check:not(:last-child) {
+    margin-bottom: 10px;
+
+}
+
+.container .first-main .form-check label {
+    cursor: pointer;
+    user-select: none;
+    margin-left: 30px;
+    transition: 0.5s;
+}
+
+.container .first-main .form-check label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #9f9f9f;
+    position: absolute;
+    left: 10px;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+
+.container .first-main .form-check label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.container .first-main .form-check label input[type="checkbox"]:checked+span {
+    background-color: #2196f3;
+    border-radius: 2px;
+    border-color: white;
+}
+
+.container .first-main .form-check label span::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 7px;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    border-color: transparent white white transparent;
+    top: 50%;
+    left: 50%;
+    transform: rotate(45deg) translate(-100%, -25%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .first-main .form-check label input[type="checkbox"]:checked+span::before {
+    opacity: 1;
+}
+
+/* Start Second Main */
+.container .second-main .form-check {
+    background-color: #f0f0f0;
+    padding: 15px;
+    position: relative;
+}
+
+.container .second-main .form-check:not(:last-child) {
+    margin-bottom: 10px;
+
+}
+
+.container .second-main .form-check label {
+    cursor: pointer;
+    user-select: none;
+    margin-left: 30px;
+    transition: 0.5s;
+}
+
+.container .second-main .form-check label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #9f9f9f;
+    position: absolute;
+    left: 10px;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+
+.container .second-main .form-check label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.container .second-main .form-check label span::before {
+    content: "";
+    position: absolute;
+    background-color: #2196f3;
+    height: 12px;
+    width: 12px;
+    border-radius: 2px;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.container .second-main .form-check label input[type="checkbox"]:checked+span::before {
+    transform: scale(1);
+}
+
+/* End Second Main */
+
+/* Start Third Main */
+
+.container .third-main {
+    margin-top: 40px;
+}
+
+.container .third-main .form-check {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+    position: relative;
+}
+
+.container .third-main .form-check:not(:last-child) {
+    margin-bottom: 10px;
+
+}
+
+.container .third-main .form-check label {
+    cursor: pointer;
+    user-select: none;
+    margin-left: 40px;
+}
+
+.container .third-main .form-check input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9f9f9f;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.container .third-main .form-check input[type="checkbox"]::before {
+    position: absolute;
+    content: "";
+    background-color: #2196f3;
+    border-radius: 2px;
+    height: 12px;
+    width: 12px;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.container .third-main .form-check input[type="checkbox"]:checked:before {
+    transform: scale(1);
+}
+
+.container .third-main .form-check input[type="checkbox"]:checked+label {
+    text-decoration: line-through;
+}
+
+/* End Third Main */

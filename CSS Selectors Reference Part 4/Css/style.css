@@ -1,0 +1,112 @@
+/* 
+- :not(Selector) => ya3ni man ghir had selector
+- :not(:not(selector))  =>   ya3ni hadak selector
+- :not(selector1):not(seelctor2) => grouping
+- :nth-child() => ra9m dyal wa7ad child wasst wa7ad element parent
+
+*/
+/*  tout  les paragraph man ghir ay ibn lwal wasst wa7d elment parent */
+/* p:not(:first-child) {
+    color: red;
+} */
+
+/*  tous les paragraph man  ghir  paragraph li 3andha  class special */
+/* p:not(p.special) {
+    color: blue;
+} */
+
+/*  tout les paragraph  man ghir elements li 3andha  class special */
+/* p:not(.special) {
+    color: blue;
+} */
+
+/* grouping : tout les paragraphs  man ghir les  elements first child o  paragraph li 3andha class special */
+/* p:not(:first-child):not(p.special) {
+    color: red;
+} */
+
+/*  ya3ni hadik paragraph li 3andha class special */
+/* p:not(:not(p.special)) {
+    color: blue;
+} */
+
+/* p:nth-child(4) {
+    color: lime;
+} */
+
+#id {
+    color: maroon;
+}
+
+.class {
+    color: red;
+}
+
+
+.myclass {
+    color: lime;
+}
+
+#myid {
+    color: green;
+}
+
+
+h1 {
+    color: blue;
+}
+
+/*  hnaya les  li  li kaynine ma bine position 4 et 10 */
+ul li:nth-child(n+4):nth-child(-n+10) {
+    color: red;
+}
+
+
+.test p:nth-of-type(2n+1) {
+    color: red;
+}
+
+
+.test p:nth-of-type(2n) {
+    color: blue;
+}
+
+
+.test p:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.test p.fancy:nth-of-type(2n+1) {
+    text-decoration: underline;
+}
+
+p:nth-last-child(2) {
+    color: red;
+}
+
+/* 
+:nth-child(4) => hnaya child li position dyalo 4
+:nth-child(even) , :nth-child(2n) => hnaya les childs li fi position paire
+:nth-child(odd) , nth-child(2n + 1)  => hnaya les childs li fi position  impaire
+-  nth-child t9dar takhod number or keyword or serie An + B tel than n  strat with 0
+:nth-child(n+6) => hnaya kinbda man child li position dyalo 6 7tal akhir child
+:nth-child(-n + 6) => hnaya kinbda man child li positio dyalo 6 7tal awal  child
+:nth-child(n) => tout les childs
+:nth-child(n+4):nth-child(-n +10) => hnaya kintar9iti les childs li kaynine ma bine poistion 4 et position  10
+
+*/
+
+/* 
+p:not(selector)=> hnaya tout les paragraph man ghir  hadak selector 
+:not(:not(selector)) => hnaya  kin9oul lih hadak selector
+:not(selector1):not(selector2) => hanya  grouping  
+*/
+
+/* 
+:nth-of-type() => hnaya positionement dyal  element wasst group dyal ikhwa dyalo li man nou3 dyalo ( tag name)
+
+*/
+/* 
+:nth-last-child() : hnaya le position dyal  element wasst group dyal ikhwa dyalo walakine kinbda  l7ssab man akhir child 
+:nth-last-of-type() : hnaya position dyal element wasst man  group dyal ikhwa li man nou3 dyalo walakine kinbda l7ssab man akhir element fi group
+*/

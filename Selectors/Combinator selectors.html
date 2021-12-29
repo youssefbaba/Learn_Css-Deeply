@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Of Page</title>
+    <link rel="stylesheet" href="Css/Combinator selectors.css">
+</head>
+
+<body>
+    <div class="test-descendant-selector">
+        <p>Paragraph 1 <span style="color: blue;">Direct child</span> => background-yellow</p>
+        <p>Paragraph 2 <span style="color: blue;">Direct child</span> => background-yellow</p>
+        <section>
+            <p>Paragraph 3 <span style="color: blue;">Not Direct child</span> => background-yellow</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur. <span style="color: blue;"> Not Direct child</span> =>
+                    background-yellow</p>
+            </div>
+        </section>
+    </div>
+    <div class="test-direct-child">
+        <p>Lorem ipsum dolor sit amet. => blue</p>
+        <p>Lorem ipsum dolor sit amet. => blue</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </section>
+        <p>Lorem ipsum dolor sit amet. => blue</p>
+    </div>
+    <article>
+        <div>
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+        </div>
+        <p>Paragraph 3. After a div. => red</p>
+        <p>Paragraph 4. After a div.</p>
+        <div>
+            <p>Paragraph 5 in the div.</p>
+            <p>Paragraph 6 in the div.</p>
+        </div>
+        <p>Paragraph 7. After a div.=> red</p>
+        <p>Paragraph 8. After a div.</p>
+    </article>
+    <main>
+        <p>Paragraph 1.</p>
+
+        <div>
+            <p>Paragraph 2.</p>
+        </div>
+
+        <p>Paragraph 3. => green</p>
+        <code>Some code.</code>
+        <p>Paragraph 4. => green</p>
+    </main>
+</body>
+
+</html>

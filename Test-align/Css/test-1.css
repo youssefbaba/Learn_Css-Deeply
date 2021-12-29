@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Center Horizontaly  */
+/* Method One */
+.first-div {
+    width: 40%;
+    border: 1px solid green;
+    padding: 20px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* center image */
+img {
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+
+/* Method Two */
+/* .second-div {
+    width: 40%;
+    width: 600px;
+    border: 1px solid green;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -20%;
+} */
+
+/* Method Three  */
+/* .third-div {
+    width: 40%;
+    border: 1px solid green;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+
+/* .fourth-div {
+    width: 30%;
+    border: 1px solid green;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+
+} */
+
+
+/* .fifth-div {
+    width: 30%;
+    border: 1px solid green;
+    padding: 20px;
+    float: right;
+}
+
+.clear {
+    clear: both;
+} */
+
+.sixth-div img {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.sixth-div {
+    width: 50%;
+    border: 1px solid green;
+}
+
+.clear {
+    clear: both;
+}

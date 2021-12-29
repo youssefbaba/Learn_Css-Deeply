@@ -1,0 +1,67 @@
+/* Center Horizontally */
+.first-div {
+    width: 40%;
+    border: 1px solid green;
+    padding: 40px 10px;
+    margin: 40px auto;
+    text-align: center;
+
+}
+
+img.image-1 {
+    max-width: 500px;
+    display: block;
+    margin: 40px auto;
+}
+
+/* .second-div {
+    width: 40%;
+    border: 1px solid green;
+    padding: 40px 0;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -20%;
+} */
+/* .second-div {
+    width: 40%;
+    border: 1px solid green;
+    padding: 40px 0;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+/* .third-div {
+    width: 40%;
+    border: 1px solid green;
+    padding: 40px 0;
+    text-align: center;
+    position: absolute;
+    right: 0;
+} */
+/* .third-div {
+    width: 40%;
+    border: 1px solid green;
+    padding: 40px 0;
+    float: right;
+}
+
+.clear {
+    clear: both;
+} */
+
+.fourth-div {
+    border: 1px solid green;
+    width: 40%;
+}
+
+.fourth-div img {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}

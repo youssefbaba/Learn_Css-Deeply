@@ -1,0 +1,9 @@
+/* Method One */
+div:not(div.no-need):not(:last-child):nth-child(2) div {
+    color: red;
+}
+
+/* Method Two */
+/* div:not(div.no-need):not(:last-child):nth-child(2) div:last-child {
+    color: red;
+} */

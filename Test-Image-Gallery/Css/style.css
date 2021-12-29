@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container .card {
+    width: calc((100% - 90px)/4);
+    float: left;
+    background-color: white;
+    border: 0.2px solid #b4b4b4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 3px;
+}
+
+.clear {
+    clear: both;
+}
+
+.container .card:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.container .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.container .card p {
+    text-align: center;
+}
+
+.container .card:hover {
+    border-color: black;
+
+}

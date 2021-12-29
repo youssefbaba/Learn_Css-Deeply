@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #2196f3;
+    --main-color-text: gray:
+}
+
+.container {
+    width: 320px;
+    background-color: var(--main-color);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .sign-up {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.container .sign-up header h3 {
+    text-align: center;
+}
+
+.container .sign-up .body div.form-group {
+    position: relative;
+}
+
+::placeholder {
+    color: var(--main-color-text);
+
+}
+
+.container .sign-up .body input {
+    width: 100%;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid var(--main-color-text);
+    caret-color: var(--main-color-text);
+}
+
+
+.container .sign-up .body div.form-group i {
+    position: absolute;
+    color: var(--main-color-text);
+    font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.container .sign-up .body input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 6px 0;
+    border-radius: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.container .sign-up .login p {
+    text-align: center;
+    margin: 20px 0 40px 0;
+    font-size: 14px;
+}
+
+.container .sign-up .login p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+
+}
+
+.container .sign-up .social {
+    text-align: center;
+}
+
+.container .sign-up .social p {
+    color: var(--main-color-text);
+    font-weight: bold;
+}
+
+.container .sign-up .social div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+.container .sign-up .social div span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.container .sign-up .social div span.facebook {
+    background-color: #3b5998;
+}
+
+.container .sign-up .social div span.twitter {
+    background-color: #1da1f2;
+}
+
+.container .sign-up .social div span.google-plus {
+    background-color: #db4437;
+}
+
+.container .sign-up .social div span i {
+    color: white;
+
+}

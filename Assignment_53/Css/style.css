@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --main-color: #fc5103;
+    --sub-main-color: #b4b4b4;
+}
+
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+table thead tr th {
+    background-color: var(--main-color);
+    color: white;
+    padding: 25px;
+    border-right: 0.1px solid rgba(255, 255, 255, 0.4);
+}
+
+table tbody tr td {
+    border-right: 0.1px solid rgba(252, 82, 3, 0.4);
+    padding: 20px;
+    text-align: center;
+}
+
+table tbody tr:nth-child(2n) td {
+    background-color: #f8eded;
+}
+
+table tbody tr:nth-child(2n+1) td {
+    background-color: #fafafa;
+}
+
+table tbody tr:first-child td:not(:first-child) span:nth-child(1) {
+    font-size: 55px;
+    color: var(--main-color);
+    margin-right: 10px;
+    position: relative;
+    font-weight: bold;
+}
+
+table tbody tr:first-child td:not(:first-child) span:nth-child(1)::before {
+    position: absolute;
+    content: "$";
+    top: 10px;
+    left: -15px;
+    font-size: 20px;
+    color: #3c3c3c;
+    font-weight: bold;
+}
+
+table tbody tr:first-child td:not(:first-child) span:nth-child(1)::after {
+    position: absolute;
+    content: "99";
+    top: 10px;
+    transform: translateX(50%);
+    font-size: 20px;
+    color: #3c3c3c;
+    font-weight: bold;
+}
+
+table tfoot tr td {
+    text-align: center;
+    padding: 20px;
+    border-right: 0.1px solid rgba(252, 82, 3, 0.4);
+}
+
+table tfoot tr td a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+table tfoot tr td:nth-child(4) a {
+    background-color: var(--main-color);
+}
+
+table tbody tr td:first-child,
+table tbody tr:first-child td span:nth-child(2) {
+    color: var(--sub-main-color);
+}
+
+table tbody tr:nth-child(n+2):nth-child(-n+3) td:not(:first-child) {
+    color: #3c3c3c;
+    font-weight: bold;
+}

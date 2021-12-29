@@ -1,0 +1,27 @@
+/* Method One */
+/* .parent>.child:nth-child(2) {
+    color: red;
+} */
+
+/* Method Two */
+.parent>.child:last-child {
+    color: red;
+}
+
+/* Method Three*/
+/* .parent>.child:last-of-type {
+    color: red;
+} */
+
+/* Method Four*/
+/* .parent>.child:last-of-type {
+    color: red;
+} */
+/* Method Five*/
+/* .parent>.child:nth-last-child(1) {
+    color: red;
+} */
+/* Method Six*/
+/* .parent>.child:nth-last-of-type(1) {
+    color: red;
+} */

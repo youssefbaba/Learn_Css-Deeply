@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container header {
+    background-color: #1abc9c;
+    padding: 60px 10px 20px 10px;
+}
+
+.container header h1 {
+    margin: 0;
+}
+
+.container section {
+    padding: 10px;
+}
+
+.container nav {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container nav ul li {
+    float: left;
+}
+
+.container nav ul li a {
+    display: inline-block;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.container nav ul li:not(:first-child) a:hover {
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.container nav ul li:first-child a {
+    background-color: #04aa6d;
+}
+
+.container p.clear {
+    clear: both;
+}

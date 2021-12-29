@@ -1,0 +1,7 @@
+* {
+    margin: 0;
+}
+
+div>:not(:first-child):not(:last-child):not(h3) {
+    color: red;
+}

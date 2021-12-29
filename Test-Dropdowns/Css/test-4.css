@@ -1,0 +1,37 @@
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown>img {
+    width: 100px;
+    height: 100px;
+}
+
+.dropdown-content {
+    background-color: #f0f0f0;
+}
+
+.dropdown-content {
+    width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dropdown-content .info p {
+    margin: 0;
+    text-align: center;
+    padding: 15px 0;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

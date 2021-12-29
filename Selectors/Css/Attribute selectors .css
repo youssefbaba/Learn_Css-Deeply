@@ -1,0 +1,71 @@
+/* 
+[attribute1] => select element using attribut : ya3ni ghadi nselectionner tous les elements li 3andhom attribut attribute1
+[attribute1="value1"] => ya3ni ghadi nselectionner tout les elements  li 3andhom attribute attribute1 o value yal value1
+element1[attribute1] => ya3ni kintar9iti tous les elements  element1 o 3andhom attribute attribute1
+element1[attribute1="value1"] => ya3ni kintar9iti tout les  elements  element1 o 3andhom attribute attribute1 o value dyalo value1
+element1[attribute1~="value1"] : Contains A word 
+element1[attribut1*="value1"] : Contains A String
+
+*/
+.section-1 a[target] {
+    background-color: yellow;
+}
+
+.section-2 [title] {
+    color: red;
+}
+
+.section-2 p[title="test"] {
+    color: blue;
+}
+
+.section-3 [title~="flow"] {
+    color: lime;
+}
+
+.section-4 [title*="flower"] {
+    color: orange;
+}
+
+
+.section-5 [class|="top"] {
+    color: maroon;
+}
+
+
+.section-6 [class^="top"] {
+    color: violet;
+}
+
+
+.section-7 [class$="test"] {
+    color: red;
+}
+
+form input[type="text"] {
+    color: blue;
+    background-color: yellow;
+    border-color: blue;
+}
+
+form input[type="email"] {
+    color: yellow;
+    background-color: blue;
+    border-color: red;
+}
+
+/* 
+[attribute1] => hnaya  kintar9iti tous les elements li 3andhom attribute attribute1
+[attribute1="value1"] => hnaya kintar9iti tous les elements li 3andhom attribute attribute1 o value dyalo value 1
+element1[attribute1] => hnaya kintar9iti tous les elements element1 li 3andhom attribute attribute1 
+element1[attribute1="value1"] => hnaya kintar9iti tous les elements element1 li 3andhom attribute attribute1  o value dyalo hiya value1
+element1[attribute1~="value1"] => Contain A Word => kintar9iti tous les elements element1 li  3andhom attribute attribute1 o kiy7tawi 3la hadik lklma value1 manfassla bo7dha
+element1[attribute1*="value1"] =>  Contain A String => hnaya  kintar9iti tous les elements element1 3andhom attribute attribute1 o kiy7tawi 3la hadak joz2e dyal klma value 
+element1[attribute1^="value1"] => start width A value  => hnaya  kintar9iti tous les elements element1 3andhom attribute attribute1 o kiybda bi hadik value1 
+element1[attribute1$="value1"] =>  End With A value => hnaya  kintar9iti tous les elements element1 3andhom attribute attribute1 o kiyssali bi  value1
+element1[attribute1|="value1"] => hnaya  kintar9iti tous les elements element1 3andhom attribute attribute1 tel que attribute1 howa exactemeny hadik value1 ola kiybda bi value1 man wraha - oman wraha li kane
+
+
+
+
+*/

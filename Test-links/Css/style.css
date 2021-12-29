@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    margin-bottom: 40px;
+}
+
+.first-div a.link-1:link {
+    color: #3c3c3c;
+}
+
+.first-div a.link-1:hover {
+    color: green;
+}
+
+.second-div a.link-2:link {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+.second-div a.link-2:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+.third-div a.link-3 {
+    text-decoration: none;
+    width: fit-content;
+    display: inline-block;
+    padding: 7px 10px;
+    border: 1px solid green;
+    color: #3c3c3c;
+}
+
+.third-div a.link-3:hover {
+    background-color: green;
+    color: white;
+}
+
+.fourth-div a.link-4 {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    opacity: 0.6;
+    width: fit-content;
+    display: inline-block;
+    padding: 7px 10px;
+    border: 1px solid red;
+}
+
+.fourth-div a.link-4:hover {
+    opacity: 1;
+}
+
+/* 
+best paractice one =>  :link  two =>  :visited  three => :hover  four=> :active
+
+*/
+section a:link {
+    color: #c00;
+}
+
+section a:visited {
+    color: #0c0;
+}
+
+section a:hover {
+    color: #00c;
+}
+
+section a:active {
+    color: black;
+}
+
+/*  
+text-decoration is mostly used for  remove underlines from links
+*/
+main a:link {
+    color: #c00;
+    text-decoration: none;
+}
+
+main a:visited {
+    color: #0c0;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #00c;
+    text-decoration: underline;
+}
+
+main a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+
+article a:link {
+    color: #c00;
+    text-decoration: none;
+    background-color: #0c0;
+}
+
+article a:visited {
+    color: #0c0;
+    text-decoration: none;
+    background-color: #c00;
+}
+
+article a:hover {
+    color: #00c;
+    text-decoration: underline;
+    background-color: yellow;
+}
+
+article a:active {
+    color: black;
+    text-decoration: underline;
+    background-color: wheat;
+}
+
+.section-1 a:link,
+.section-1 a:visited {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.8);
+    padding: 7px 20px;
+    border: 1px solid rgba(255, 0, 0, 0.8);
+}
+
+.section-1 a:hover,
+.section-1 a:active {
+    background-color: red;
+}
+
+.section-2 a:link,
+.section-2 a:visited {
+    color: blue
+}
+
+.section-2 .one a:hover,
+.section-2 .one a:active {
+    color: orange;
+}
+
+.section-2 .two a:hover,
+.section-2 .two a:active {
+    font-size: 20px;
+}
+
+.section-2 .three a:hover,
+.section-2 .three a:active {
+    background-color: yellow
+}
+
+.section-2 .four a:hover,
+.section-2 .four a:active {
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 14px;
+}
+
+.section-2 .five a:hover,
+.section-2 .five a:active {
+    text-decoration: none;
+}
+
+.section-3 a:link,
+.section-3 a:visited {
+    display: inline-block;
+    width: fit-content;
+    padding: 7px 20px;
+    border: 1px solid green;
+    text-decoration: none;
+    color: black;
+}
+
+.section-3 a:hover,
+.section-3 a:active {
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+
+}

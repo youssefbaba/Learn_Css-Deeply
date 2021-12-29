@@ -1,0 +1,91 @@
+.container {
+    width: 90%;
+    border: 0.5px solid #b4b4b4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    background-color: white;
+    padding: 5px;
+}
+
+.container a {
+    display: block;
+    width: fit-content;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #336c7c;
+    padding: 15px;
+    text-decoration: none;
+    margin-bottom: 40px;
+
+}
+
+.container .featured-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    padding: 5px 5px 5px 40px;
+}
+
+.container .featured-products .card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+}
+
+.container .featured-products .card img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.container .featured-products .card .info {
+    text-align: center;
+}
+
+.container .featured-products .card .info>div:first-child {
+    color: #8e8085;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+
+.container .featured-products .card .info>div:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+
+}
+
+.container .featured-products .card .info>div:last-child div {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3c7896;
+}
+
+.container .featured-products .card .info>div:last-child div:first-of-type,
+.container .featured-products .card .info>div:last-child div:last-of-type {
+    flex-grow: 1;
+    height: 1.5px;
+    background-color: #9f9f9f;
+    margin: 0 10px;
+}
+
+.container .featured-products .card:nth-child(2) .info>div:last-child div:nth-child(2) {
+    text-decoration: line-through;
+    font-weight: normal;
+    color: #8e8085;
+    margin-right: 10px;
+    font-size: initial;
+}
+
+.container .featured-products .card:nth-child(2) .info>div:last-child div:nth-child(3) {
+    color: #fe572e;
+
+}

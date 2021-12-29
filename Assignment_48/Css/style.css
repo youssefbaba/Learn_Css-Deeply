@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --main-color-background: #f0f0f0;
+    --main-padding: 60px;
+    --main-color-text: #616161;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.main {
+    background-color: var(--main-color-background);
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Start Header  */
+.container header {
+    align-items: center;
+    background-color: white;
+}
+
+.container header .logo a {
+    text-decoration: none;
+    color: var(--main-color-text);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container header nav ul {
+    display: flex;
+}
+
+.container header nav ul li {}
+
+.container header nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: var(--main-color-text);
+}
+
+/* End Header  */
+/* Start Info Services */
+
+.main .container .info-services {
+    text-align: center;
+}
+
+.main .container .info-services h2 {
+    font-size: 40px;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+}
+
+.main .container .info-services h2 span {
+    color: #03a9f4;
+}
+
+.main .container .info-services p {
+    line-height: 1.8;
+    font-size: 20px;
+    color: var(--main-color-text);
+    margin-top: 20px;
+}
+
+/* End Info Services */
+/* Start Services */
+.container .services {
+    background-color: white;
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.container .services .box {
+    text-align: center;
+    flex: 0 0 380px;
+}
+
+.container .services .box img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.container .services .box .info h3 {
+    color: var(--main-color-text);
+
+}
+
+.container .services .box .info p {
+    color: var(--main-color-text);
+    line-height: 1.8;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* End Services */
+/* Start About Us */
+.main .container .about-us {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .container .about-us .left-part {
+    flex-basis: 40%;
+}
+
+.main .container .about-us .left-part img {
+    max-width: 100%;
+}
+
+.main .container .about-us .right-part {
+    flex: 1;
+}
+
+.main .container .about-us .right-part h3 {
+    font-size: 30px;
+}
+
+.main .container .about-us .right-part p {
+    line-height: 1.8;
+    font-size: 18px;
+    color: var(--main-color-text);
+    margin: 10px 0;
+}
+
+/* End About Us */
+/* Start Static */
+.container .static {
+    padding-bottom: var(--main-padding);
+    padding-top: var(--main-padding);
+    gap: 20px;
+}
+
+.container .static .box {
+    text-align: center;
+    flex: 0 0 380px;
+    color: white;
+    padding: 20px 0;
+}
+
+.container .static .box:first-child {
+    background-color: #b33939;
+}
+
+.container .static .box:nth-child(2) {
+    background-color: #227093;
+}
+
+.container .static .box:last-child {
+    background-color: #218c74;
+}
+
+.container .static .box span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+/* End Static */
+/* Start Skills  */
+.main .container .skills h2 {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.main .container .skills>div {
+    display: flex;
+    gap: 10px;
+}
+
+.main .container .skills>div div:first-of-type {
+    flex-basis: 10%;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main .container .skills>div div:last-of-type {
+    flex: 1;
+    height: 30px;
+    background-color: white;
+    position: relative;
+}
+
+.main .container .skills>div div:last-of-type span {
+    display: inline-block;
+    height: 100%;
+    background-color: #03a9f4;
+    position: relative;
+}
+
+.main .container .skills>div div:last-of-type span::after {
+    position: absolute;
+    content: attr(data);
+    color: white;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main .container .skills>div:not(:last-child) {
+    margin-bottom: 20px;
+
+}
+
+/* End Skills  */
+/* Start Footer */
+.main-footer {
+    background-color: #333333;
+    /* height: 60px; */
+}
+
+.main-footer .container footer {
+    align-content: center;
+    color: white;
+
+}
+
+.main-footer .container footer div {
+    padding: 20px;
+}
+
+.main-footer .container footer div:first-child span {
+    color: #03a9f4;
+}
+
+/* End Footer */

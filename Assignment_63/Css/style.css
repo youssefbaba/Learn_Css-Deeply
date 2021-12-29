@@ -1,0 +1,7 @@
+* {
+    margin: 0;
+}
+
+div:first-child>div:nth-of-type(2) {
+    color: red;
+}

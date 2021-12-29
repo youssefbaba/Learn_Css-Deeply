@@ -1,0 +1,75 @@
+/* 
+Center Vertically 
+*/
+* {
+    box-sizing: border-box;
+}
+
+.first-div {
+    width: 50%;
+    margin: 40px auto;
+    border: 1px solid green;
+    padding: 40px;
+    text-align: center;
+}
+
+/* fi 7alat kan centenu ghir one line */
+.second-div {
+    width: 50%;
+    margin: 40px auto;
+    border: 1px solid green;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+
+}
+
+/*  fi 7alat kan contenu ktar man one line  kin7ot contenu wasst element paragraph*/
+.third-div {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid green;
+    text-align: center;
+    height: 120px;
+    line-height: 120px;
+
+}
+
+.third-div p {
+    line-height: 1.6;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+
+.fourth-div {
+    width: 50%;
+    margin: 400px auto 0;
+    border: 1px solid green;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.fourth-div p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fifth-div {
+    width: 600px;
+    border: 1px solid green;
+    margin: 40px auto;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

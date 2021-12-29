@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    background-color: #e7f3fb;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.container .card {
+    flex-basis: 280px;
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container .card span {
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+}
+
+.container .card span::before {
+    position: absolute;
+    content: "$";
+    font-size: 25px;
+    left: -20px;
+}
+
+.container .card a:first-of-type {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    margin: 20px 0 25px -50px;
+    border-radius: 0 10px 10px 0;
+    width: 140px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container .card-one a:first-of-type {
+    background-color: #13c8a6;
+}
+
+.container .card-two a:first-of-type {
+    background-color: #efcb53;
+}
+
+.container .card-three a:first-of-type {
+    background-color: #555fae;
+}
+
+.container .card a:first-of-type::before {
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-width: 0px 0px 10px 10px;
+    left: 0;
+    bottom: 100%;
+}
+
+.container .card-one a:first-of-type::before {
+    border-color: transparent transparent #13c8a6 transparent;
+}
+
+.container .card-two a:first-of-type::before {
+    border-color: transparent transparent #efcb53 transparent;
+}
+
+.container .card-three a:first-of-type::before {
+    border-color: transparent transparent #555fae transparent;
+}
+
+.container .card p {
+    color: #616161;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.container .card a:last-of-type {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    width: 140px;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 15px;
+}
+
+.container .card-one a:last-of-type {
+    background-color: #13c8a6;
+}
+
+.container .card-two a:last-of-type {
+    background-color: #efcb53;
+}
+
+.container .card-three a:last-of-type {
+    background-color: #555fae;
+}
+
+.container .card-two {
+    position: relative;
+    top: 20px;
+}
+
+.container .card-three {
+    position: relative;
+    top: 40px;
+}

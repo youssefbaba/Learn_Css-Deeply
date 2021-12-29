@@ -1,0 +1,84 @@
+/* 
+Css Selectors :
+
+- * => all html element
+    example : * {
+                    box-sizing: border-box;
+            }
+    kita3ni jami3 les elements html li kaynine wasst page dyali ghada t2appliqua 3lihom hadik property dyal box-sizing
+
+- ElementTagName => kita3ni kintar9iti all elements li homa  ElementTagName
+    example : p {
+                color:red;
+            }
+    kita3ni jami3 ElementTagName p li homa les paragraphs  ghadi n2appliqui 3lihom hadik property color:red;
+
+Element1  OtherElement => kita3ni kintar9iti all OtherElement li kayn inside Element1 y9dar ykoune hadak OtherElement  wasst element akhor kayn wasst element1
+    example : div p {
+                font-size:18px;
+            }
+    kita3ni jami3 les paragraphs li kaynine wasst element div o y9dar tkoune hadik paragraph wasst element akhor li kayn wasst div
+
+- .class-name => ya3ni kintar9iti  any element li 3ando hadik class class-name
+    example : .test { 
+                color:red;
+            }
+    ya3ni  kintar9iti any element li 3ando  class  test
+
+- #id-name => ya3ni kintar9iti  any element  li 3ando had id id-name
+    example : #test{
+                color:red
+            }
+    ya3ni kintar9iti any element 3ando hadik id id-name
+
+- .parent .child  => kita3ni kitar9iti any element 3ando hadik class cid kayn wasst  element li 3ando class parent o y9dar hadak element lia 3ando class child ykoune wssat element akhor 
+- .class-one.class-two => ya3ni kitar9iti any element 3ando had les deux class "class-one class-two"
+- .class-one  div => kintar9iti any div li kayna wasst element li 3ando class class-one  o t9dar tkoune hadik div 
+                kayn directement wasst hadak element  li 3ando class class-one ola t9dar tkoune kayn wasst element akhor li kayn howa wasst hadak
+                element li 3ando class class-one
+
+-.class-one div , .class-two p => hnaya kayn grouping 
+- ElementTagName.class-name => hanaya kintar9iti any ElementTagName li 3ando hadik class class-name
+            example : p.class-name{....}
+
+-.parent > .child => direct child  : ya3ni kintar9iti any element 3ando class child li  howa direct child dyal element li 3ando class parent
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.test span {
+    color: red;
+}
+
+.parent .child {
+    color: blue;
+}
+
+.card.card-one {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.class-one div {}
+
+.class-one div,
+.class-two p {}
+
+p.class-name {}
+
+
+.parent .child {
+    color: red;
+}
+
+.parent>.child {
+    color: green;
+}

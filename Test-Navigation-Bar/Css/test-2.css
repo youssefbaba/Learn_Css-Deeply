@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    background-color: #f1f1f1;
+}
+
+nav ul li:first-child {
+    background-color: #04aa6d;
+}
+
+nav ul li:hover:not(:first-child) {
+    background-color: #616161;
+}
+
+nav ul li:first-child a,
+nav ul li:not(:first-child):hover a {
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 10px;
+}

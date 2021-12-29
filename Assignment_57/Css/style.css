@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  hnaya kin9oul lih jib liya div li 3andha class main o class test */
+div.main.test {
+    color: red;
+}

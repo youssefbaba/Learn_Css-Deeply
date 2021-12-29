@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    background-color: #20bfa9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card {
+    flex-basis: 350px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.container .card .header {
+    height: 100px;
+    background-color: #282828;
+    border-radius: 10px 10px 0 0;
+    padding-top: 20px;
+}
+
+.container .card .header h2 {
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.container .card .header h2 span {
+    color: #49ab50;
+}
+
+.container .card .info {
+    width: calc(100% - 80px);
+    background-color: white;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    bottom: 40px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container .card .info h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.container .card .info ul {
+    list-style: none;
+}
+
+.container .card .info ul li {
+    position: relative;
+    padding: 5px;
+}
+
+.container .card .info ul li::before {
+    position: absolute;
+    content: "";
+    background-color: #f73859;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+}
+
+.container .card .info a {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    text-decoration: none;
+    color: white;
+    background-color: #f73859;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.container .card-one,
+.container .card-two {
+    position: relative;
+}
+
+.container .card-one::after {
+    position: absolute;
+    content: "";
+    background-color: white;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: -80px;
+    transform: translateX(50%);
+}
+
+.container .card-two::before {
+    content: "Or";
+    position: absolute;
+    background-color: white;
+    color: #20bfa9;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -80px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+
+}

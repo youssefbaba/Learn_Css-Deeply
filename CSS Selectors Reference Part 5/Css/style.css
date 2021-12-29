@@ -1,0 +1,56 @@
+/* 
+- :root =>  element html or tag html 
+- :checked => element  mali kintchikih as a  input radio , input checkbox , select option 
+- empty => ya3ni element mafihch child   o child howa  other element or text o spacewhite(esapce)  kiy3tabar text
+- :disabled => ya3ni had champ inactivated not  read  not write  o makiytsubmitach
+- :required => ya3i ana  had elment rah required ijbari
+- :focus => ya3ni mali kandir 3liha clic o clic kitdar bi mouse ola keyboard  tab
+- :selection => mali kinselectionner ola kincliki 3la wa7ad partie of element  kit22aplique hada code css
+::placeholder
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form div {
+    margin: 40px;
+}
+
+form input[type="checkbox"]:checked+label {
+    color: blue;
+    font-size: 20px;
+}
+
+form input:disabled {
+    background-color: #f0f0f0;
+    color: red;
+}
+
+form input:required+span::before {
+    content: "*";
+    color: red;
+}
+
+form input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+form ::placeholder {
+    color: lime;
+    padding-left: 20px;
+}
+
+.test :empty {
+    border: 10px solid red;
+}
+
+.test-2 p:first-child::selection,
+.test-2 p:last-child::selection {
+    color: red;
+    background-color: yellow;
+}
