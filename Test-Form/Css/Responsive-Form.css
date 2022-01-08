@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+form .form-group label {
+    font-size: 20px;
+    color: black;
+}
+
+form .form-group label.required::after {
+    content: "*";
+    color: red;
+    position: relative;
+    left: 5px;
+
+}
+
+form .form-group input[type="text"],
+form .form-group input[type="email"],
+form .form-group input[type="password"],
+form .form-group select,
+form .form-group textarea,
+form .form-submit input[type="submit"] {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid #b4b4b4;
+    background-color: #f0f0f0;
+    outline: none;
+    font-size: 20px;
+    padding: 20px 40px;
+    color: black;
+}
+
+form .form-group input[type="text"]:focus,
+form .form-group input[type="email"]:focus,
+form .form-group input[type="password"]:focus,
+form .form-group select:focus,
+form .form-group textarea:focus {
+    background-color: #f9f9f9;
+}
+
+form .form-group textarea {
+    padding: 20px;
+    resize: none;
+    height: 140px;
+}
+
+form .form-group select {
+    padding: 20px;
+}
+
+form .form-submit input[type="submit"] {
+    background-color: rgba(4, 170, 109, 0.9);
+    border: 1px solid #04aa6d;
+    color: white;
+    cursor: pointer;
+}
+
+form .form-submit input[type="submit"]:hover {
+    background-color: #04aa6d;
+}
+
+::placeholder {
+    color: black;
+}
+
+form .form-group input[type="text"],
+form .form-group input[type="email"],
+form .form-group input[type="password"] {
+    background-position: 10px 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+
+}
+
+form .form-group input[type="text"] {
+    background-image: url('../user.svg');
+}
+
+form .form-group input[type="email"] {
+    background-image: url('../email.svg');
+}
+
+form .form-group input[type="password"] {
+    background-image: url('../password.svg');
+}
+
+/* Medium Devices */
+
+@media(min-width:601px) {
+    form .form-group {
+        display: flex;
+        align-items: center;
+    }
+
+    form .form-group label {
+        display: block;
+        width: 30%;
+        margin-right: 40px;
+    }
+
+    form .form-group input[type="text"],
+    form .form-group input[type="email"],
+    form .form-group input[type="password"],
+    form .form-group select,
+    form .form-group textarea {
+        display: block;
+        width: calc(70% - 40px);
+    }
+
+
+    form .form-submit input[type="submit"] {
+        display: block;
+        width: 140px;
+        text-align: center;
+        padding: 20px;
+        margin-left: calc(100% - 140px);
+
+    }
+
+}

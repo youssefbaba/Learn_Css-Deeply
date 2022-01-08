@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #b4b4b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .child {
+    width: 70%;
+    height: 70%;
+    background-color: red;
+    display: flex;
+}
+
+.parent .child .first-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+    padding: 10px 0 10px 10px;
+}
+
+.parent .child .first-div div {
+    background-color: yellow;
+    height: calc(50% - 10px);
+    width: 100%;
+}
+
+.parent .child .second-div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    /* gap: 20px; */
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.parent .child .second-div div {
+    background-color: yellow;
+    height: 80px;
+    width: calc((100% - 60px)/4);
+}

@@ -1,0 +1,18 @@
+body {
+    counter-reset: counter-heading2;
+}
+
+h2 {
+    counter-increment: counter-heading2;
+}
+
+h2::before {
+    content: "Number : "counter(counter-heading2)" ";
+}
+
+/* 
+- counter-reset:counter-name  =>  create and reset (mise a zero ) counter name 
+- counter-increment:counter-name => incrementation the value of a counter
+- content : counter(counter-name, counter-style) / counters(counter-name, string , counter-style)  => display the value of a counter
+
+*/

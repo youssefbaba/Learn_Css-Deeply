@@ -1,0 +1,73 @@
+/* 
+specifity => (inline-style ,id selector , [class selector, pseudo class , attribute selector] , [element selector , pseudo element] )
+
+inline-style => (1,0,0,0) = 1000 
+id selector => (0,1,0,0) = 100
+[class selector , pseudo class , attribute selector] => (0,0,1,0) = 10
+[element selector , pseudo element] => (0,0,0,1) = 1
+so 1000 > 100 > 10 > 1
+
+
+- kolma kant specifity dyal selector  kbira kolma les properties dyalo homa  li kaydiro overreding  
+-  fi 7alat kano 3andna 2 selector 3andhom nafss specifity  hadik ssa3a kinmchiw order dyalhom ( ya3ni position dyalhom fi code css)
+- The universal selector (*) has no specificity value (0, 0, 0, 0)
+- The pseudo-class :not() adds no specificity by itself,only what’s inside it’s parentheses.
+*/
+
+/*  specifity = 102 */
+ul#summer-drinks li {
+    font-weight: normal;
+    font-size: 12px;
+    color: black;
+}
+
+/*  specifity = 102 */
+ul#summer-drinks li {
+    color: blue;
+    font-size: 20px;
+
+}
+
+/*  specifity = 10 */
+
+.favorite {
+    color: red;
+    font-weight: bold;
+}
+
+/*  specifity = 112 */
+ul#summer-drinks li.favorite {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+/* 
+
+nav#ul li.active a => (0,1,1,3)
+
+
+ */
+/* 
+
+body.ie7 .col_3 h2~h2[title="link"] =>(0,0,3,3)
+
+ */
+
+/* 
+
+#footer *:not(nav:first-child) li =>(0,1,1,2)
+
+
+*/
+/* 
+
+< li style="colore:red;"> => (1,0,0,0)
+
+*/
+
+/* 
+
+ul > li ul li ol li::first-letter => (0,0,0,7)
+*/

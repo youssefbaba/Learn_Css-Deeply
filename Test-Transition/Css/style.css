@@ -1,0 +1,64 @@
+/* 
+Property Transition => fi l7ala l3adiya mali kandir wa7ad action  kiytra wa7ad transition donc ana khassni nt7akam fi hadak transition 
+-Duration => time of transition from one state to an other state : ch7al dyal wa9t ghadi ysstaghra9 had transition
+    -transition-duration:[1s , 0.5s , .....]  default value is 0
+
+-Property  => chnahiya property  li ghadi ndir ndir 3lih control de transition
+    -transition-property:[width,margin-left,.......] default value is all
+
+-Delay => ch7al dyal time ghadi ytssna hadak element 3ad ydir hadik transition
+    -transition-delay:[1s , 0.5s , .....] default value is 0
+
+-Timing Function => kifach kiytra hadak transition
+    -transition-timing-function:[ease,linear,ease-in,ease-out,ease-in-out] default value is ease
+    -ease : kiybda bati2e o fi lwasst kiyzarbi o kiyssali bati2e
+    -linear : bi chakl khati
+    -ease-in : kiybda  bidaya bati2a o kiykml 3adi
+    -ease-out :  kiykoune 3adi o kiyssali bati2e
+    -ease-in-out :  kiybda  bidaya bati2a  o wasst 3adi o kiyssali  bati2e
+-Shorthand Property :
+    - transition:[transition-property]+[transition-duration]+[transition-timing-function]+[transition-delay]
+    fi 7alat makantch chi property kiatkhod default value dyalha
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.one {
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    /* transition-duration: 3s; */
+    /* transition-delay: 0.2s; */
+    /* transition-property: all; */
+    /* transition-property: margin-left, margin-top; */
+    /* transition-property: width; */
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+
+    transition: width 1s, height 0.5s;
+    /* 
+    transition-duration:1s 0.5s;
+    transition-property:width,height;
+    transition-timing-function:ease,ease;
+    transition-delay:0s,0s;
+    
+    */
+    transition: all 0.5s ease-in-out 1s;
+
+
+
+}
+
+.one:hover {
+    /* margin-left: 40px;
+    margin-top: 40px; */
+    width: 300px;
+    height: 150px;
+}

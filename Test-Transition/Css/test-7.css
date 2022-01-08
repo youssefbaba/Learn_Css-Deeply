@@ -1,0 +1,28 @@
+.parent:hover .first-child {
+    width: 300px;
+}
+
+.parent:hover .second-child {
+    width: 300px;
+}
+
+.parent .first-child {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transition: width 1s ease-in-out;
+    margin: 40px 0;
+}
+
+.parent .second-child {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    transition: width 1s 1s ease-in-out;
+    margin: 40px 0;
+}
+
+.parent {
+    height: 320px;
+    border: 1px solid red;
+}

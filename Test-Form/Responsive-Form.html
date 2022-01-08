@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Of Page</title>
+    <link rel="stylesheet" href="Css/Responsive-Form.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+</head>
+
+<body>
+    <form action="#">
+        <div class="form-group">
+            <label for="user-name" class="required">User Name</label>
+            <input type="text" name="user-name" id="user-name" placeholder="Your User Name" required>
+            <!-- <i class="fas fa-user"></i> -->
+        </div>
+        <div class="form-group">
+            <label for="email" class="required">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <!-- <i class="fas fa-envelope"></i> -->
+        </div>
+        <div class="form-group">
+            <label for="password" class="required">Password</label>
+            <input type="password" name="password" id="password" placeholder="Create Complex Password" required>
+            <!-- <i class="fas fa-lock"></i> -->
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="Japon">Japon</option>
+                <option value="Sweden" selected>Sweden</option>
+                <option value="Canada">Canada</option>
+                <option value="Switzerland">Switzerland</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea name="description" id="description" placeholder="Write Here"></textarea>
+        </div>
+        <div class="form-submit">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+</body>
+
+</html>

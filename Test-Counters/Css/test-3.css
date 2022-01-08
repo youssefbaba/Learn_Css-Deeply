@@ -1,0 +1,15 @@
+ol {
+    counter-reset: counter-list-item;
+}
+
+li {
+    counter-increment: counter-list-item;
+}
+
+li::marker {
+    content: counters(counter-list-item, ".", upper-alpha) ") ";
+}
+
+li::before {
+    content: counters(counter-list-item, ".", decimal-leading-zero)" == "counters(counter-list-item, ".", lower-alpha);
+}

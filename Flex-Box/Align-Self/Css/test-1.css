@@ -1,0 +1,57 @@
+/* 
+Property align-self => katdir alignement dyal specific flex item au niveau dyal cross axes
+    - default value is a auto  => la valeur predefinier sur align-items 
+    - syntax : align-self:[flex-start , flex-end , center , baseline , stretch]
+
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: brown;
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .item {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    flex-basis: 100px;
+}
+
+.container .item1 {
+    background-color: blue;
+    align-self: flex-start;
+}
+
+.container .item2 {
+    background-color: darkcyan;
+}
+
+.container .item3 {
+    background-color: red;
+    align-self: flex-end;
+}
+
+.container .item4 {
+    background-color: orange;
+    align-self: stretch;
+}
+
+.container .item5 {
+    background-color: #03a9f4;
+    align-self: center;
+}
+
+.container .item6 {
+    background-color: #795548;
+}

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    max-width: 400px;
+    padding: 15px;
+    background-color: #f6f3eb;
+    display: flex;
+    gap: 15px;
+}
+
+.box .box-info {
+    flex: 1;
+}
+
+.box .box-info h3 {
+    margin: 0;
+}

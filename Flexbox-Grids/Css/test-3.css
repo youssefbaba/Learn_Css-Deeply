@@ -1,0 +1,194 @@
+/* Method One */
+/* * {
+    box-sizing: border-box;
+}
+
+.container>div {
+    border: 1px solid red;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.container>div>div {
+    border: 1px solid blue;
+    background-color: #2f4f4f;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.container .parent-two>div:nth-child(1),
+.container .parent-twelve>div:nth-child(2) {
+    flex-basis: 5vw;
+}
+
+.container .parent-two>div:nth-child(2),
+.container .parent-three>div:nth-child(2),
+.container .parent-four>div:nth-child(2),
+.container .parent-five>div:nth-child(2),
+.container .parent-six>div:nth-child(2),
+.container .parent-seven>div:nth-child(2),
+.container .parent-eight>div:nth-child(2),
+.container .parent-nine>div:nth-child(2),
+.container .parent-ten>div:nth-child(2),
+.container .parent-eleven>div:nth-child(2),
+.container .parent-twelve>div:nth-child(1),
+.container .parent-one>div,
+.container .parent-thirteen>div {
+    flex: 1;
+}
+
+.container .parent-three>div:nth-child(1) {
+    flex-basis: 10vw;
+}
+
+.container .parent-four>div:nth-child(1) {
+    flex-basis: 20vw;
+}
+
+.container .parent-five>div:nth-child(1) {
+    flex-basis: 30vw;
+}
+
+.container .parent-six>div:nth-child(1) {
+    flex-basis: 40vw;
+}
+
+.container .parent-seven>div:nth-child(1) {
+    flex-basis: 50vw;
+}
+
+.container .parent-eight>div:nth-child(1) {
+    flex-basis: 60vw;
+}
+
+.container .parent-nine>div:nth-child(1) {
+    flex-basis: 70vw;
+}
+
+.container .parent-ten>div:nth-child(1) {
+    flex-basis: 80vw;
+}
+
+.container .parent-eleven>div:nth-child(1) {
+    flex-basis: 90vw;
+} */
+
+/* Method Two */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container>div {
+    border: 1px solid red;
+    display: flex;
+    gap: 10px;
+}
+
+.container>div>div {
+    border: 1px solid blue;
+    background-color: #2f4f4f;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.container .parent-one>div,
+.container .parent-thirteen>div {
+    flex: 1;
+}
+
+.container .parent-two>div:nth-child(1) {
+    flex: 1;
+}
+
+.container .parent-two>div:nth-child(2) {
+    flex: 11;
+}
+
+.container .parent-three>div:nth-child(1) {
+    flex: 2;
+}
+
+.container .parent-three>div:nth-child(2) {
+    flex: 10;
+}
+
+.container .parent-four>div:nth-child(1) {
+    flex: 3;
+}
+
+.container .parent-four>div:nth-child(2) {
+    flex: 9;
+}
+
+.container .parent-five>div:nth-child(1) {
+    flex: 4;
+}
+
+.container .parent-five>div:nth-child(2) {
+    flex: 8;
+}
+
+.container .parent-six>div:nth-child(1) {
+    flex: 5;
+}
+
+.container .parent-six>div:nth-child(2) {
+    flex: 7;
+}
+
+.container .parent-seven>div:nth-child(1) {
+    flex: 6;
+}
+
+.container .parent-seven>div:nth-child(2) {
+    flex: 6;
+}
+
+.container .parent-eight>div:nth-child(1) {
+    flex: 7;
+}
+
+.container .parent-eight>div:nth-child(2) {
+    flex: 5;
+}
+
+.container .parent-nine>div:nth-child(1) {
+    flex: 8;
+}
+
+.container .parent-nine>div:nth-child(2) {
+    flex: 4;
+}
+
+.container .parent-ten>div:nth-child(1) {
+    flex: 9;
+}
+
+.container .parent-ten>div:nth-child(2) {
+    flex: 3;
+}
+
+.container .parent-eleven>div:nth-child(1) {
+    flex: 10;
+}
+
+.container .parent-eleven>div:nth-child(2) {
+    flex: 2;
+}
+
+.container .parent-twelve>div:nth-child(1) {
+    flex: 11;
+}
+
+.container .parent-twelve>div:nth-child(2) {
+    flex: 1;
+}

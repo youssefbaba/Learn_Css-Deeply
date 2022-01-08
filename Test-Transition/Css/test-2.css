@@ -1,0 +1,18 @@
+div {
+    text-transform: uppercase;
+    width: 60px;
+    padding: 8px 0;
+    text-align: center;
+    background-color: #d2e298;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 1s ease-in-out;
+}
+
+div:hover {
+    background-color: #2196f3;
+    width: 120px;
+    padding: 16px 0;
+    font-size: 30px;
+}

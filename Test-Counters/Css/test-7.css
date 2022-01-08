@@ -1,0 +1,23 @@
+body {
+    counter-reset: counter-number-heading1;
+}
+
+h1 {
+    counter-reset: counter-number-heading2;
+}
+
+h1 {
+    counter-increment: counter-number-heading1;
+}
+
+h2 {
+    counter-increment: counter-number-heading2;
+}
+
+h1::before {
+    content: " Section "counter(counter-number-heading1) " . ";
+}
+
+h2::before {
+    content: counter(counter-number-heading1)"."counter(counter-number-heading2)" ";
+}

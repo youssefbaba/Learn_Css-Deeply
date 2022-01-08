@@ -1,0 +1,11 @@
+body {
+    counter-reset: counter-number-heading;
+}
+
+h3 {
+    counter-increment: counter-number-heading;
+}
+
+h3::before {
+    content: "Number : "counter(counter-number-heading)" ";
+}

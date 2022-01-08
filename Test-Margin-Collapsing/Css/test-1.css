@@ -1,0 +1,21 @@
+.parent {
+    width: 100%;
+    margin: auto;
+}
+
+.parent .child {
+    float: left;
+    width: calc((100% - 140px)/6);
+    margin-left: 20px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    background-color: #eee;
+    text-align: center;
+    padding: 10px 0;
+}
+
+p.clear {
+    clear: both;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}

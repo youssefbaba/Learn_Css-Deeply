@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    max-width: 400px;
+    background-color: #f6f3eb;
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+}
+
+.card .card-img {
+    order: 1;
+}
+
+.card .card-info {
+    flex: 1;
+}
+
+.card .card-info h3 {
+    margin: 0;
+}
+
+.card .card-info p {}

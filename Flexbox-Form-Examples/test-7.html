@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-7</title>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="Css/test-7.css">
+</head>
+
+<body>
+
+    <form action="#">
+        <div class="part-left">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="town">Town you were born in</label>
+                <input type="text" name="town" id="town">
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="message_1">Message</label>
+                <textarea name="message" id="message_1"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+        <div class="part-right">
+            <div>
+                <label for="message_2">Message</label>
+                <textarea name="message" id="message_2"></textarea>
+            </div>
+        </div>
+    </form>
+    <script>
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                document.getElementById("message_2").disabled = true;
+                document.getElementById("message_1").disabled = false;
+            } else {
+                document.getElementById("message_1").disabled = true;
+                document.getElementById("message_2").disabled = false;
+            }
+        }
+        var x = window.matchMedia("(max-width:575px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+    </script>
+</body>
+
+</html>

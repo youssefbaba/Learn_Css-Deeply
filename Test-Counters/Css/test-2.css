@@ -1,0 +1,20 @@
+/* 
+counters => enables nested counters  => kitssma7 lina ndiro nested counters 
+counters(counter-name ,string) => Here default value of counter-style is decimal
+counters(counter-name , string , counter-style)
+*/
+ol {
+    counter-reset: counter-list-item;
+}
+
+li {
+    counter-increment: counter-list-item;
+}
+
+li::marker {
+    content: counters(counter-list-item, ".", upper-roman) ") ";
+}
+
+li::before {
+    content: counters(counter-list-item, ".", decimal) " == "counters(counter-list-item, ".", lower-roman);
+}

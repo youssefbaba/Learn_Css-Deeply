@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+form .form-group label {
+    font-size: 20px;
+    color: black;
+}
+
+form .form-group label.required::after {
+    content: "*";
+    color: red;
+    position: relative;
+    left: 5px;
+}
+
+form .form-group input[type="text"],
+form .form-group input[type="email"],
+form .form-group input[type="password"],
+form .form-group select,
+form .form-group textarea,
+form .form-submit input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    font-size: 20px;
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+}
+
+form .form-group input[type="text"],
+form .form-group input[type="email"],
+form .form-group input[type="password"],
+form .form-group select,
+form .form-group textarea {
+    background-color: #f0f0f0;
+    border-color: red;
+    caret-color: red;
+}
+
+form .form-group input[type="text"]:focus,
+form .form-group input[type="text"]:hover,
+form .form-group input[type="email"]:focus,
+form .form-group input[type="email"]:hover,
+form .form-group input[type="password"]:focus,
+form .form-group input[type="password"]:hover,
+form .form-group select:hover,
+form .form-group textarea:focus,
+form .form-group textarea:hover {
+    background-color: #f9f9f9;
+    border-color: red;
+    caret-color: red;
+}
+
+form .form-group input[type="text"],
+form .form-group input[type="email"],
+form .form-group input[type="password"],
+form .form-submit input[type="submit"] {
+    padding: 20px 40px;
+}
+
+form .form-group select {
+    padding: 20px;
+    color: red;
+}
+
+form .form-group textarea {
+    height: 140px;
+    resize: none;
+    padding: 20px;
+}
+
+form .form-submit input[type="submit"] {
+    background-color: rgba(4, 170, 109, 0.9);
+    color: white;
+    border-color: rgba(4, 170, 109, 0.9);
+}
+
+form .form-submit input[type="submit"]:hover {
+    background-color: #04aa6d;
+    border-color: #04aa6d;
+}
+
+::placeholder {
+    font-size: 20px;
+    color: red;
+}
+
+form .form-group select.color-black {
+    color: #000000;
+}
+
+form .form-group input[type="text"],
+form .form-group input[type="email"],
+form .form-group input[type="password"] {
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+    background-size: 20px;
+}
+
+form .form-group input[type="text"] {
+    background-image: url("../images/user-1.svg");
+}
+
+form .form-group input[type="email"] {
+    background-image: url("../images/email-1.svg");
+}
+
+
+form .form-group input[type="password"] {
+    background-image: url("../images/password-1.svg");
+}
+
+
+@media(min-width:992px) {
+    form .form-group label {
+        display: block;
+        width: 30%;
+        margin-right: 40px;
+    }
+
+    form .form-group input[type="text"],
+    form .form-group input[type="email"],
+    form .form-group input[type="password"],
+    form .form-group select,
+    form .form-group textarea {
+        width: calc(70% - 40px);
+    }
+
+    form .form-group {
+        display: flex;
+        align-items: center;
+    }
+
+    form .form-submit input[type="submit"] {
+        width: 140px;
+        margin-left: calc(100% - 140px);
+
+    }
+
+}

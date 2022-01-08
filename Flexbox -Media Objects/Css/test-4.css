@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #f6f3eb;
+    display: flex;
+    max-width: 380px;
+    padding: 15px;
+    gap: 15px;
+}
+
+.card-one {
+    margin-bottom: 40px;
+}
+
+.card-one .card-img span {
+    font-size: 60px;
+
+}
+
+.card-two .card-img i {
+    font-size: 70px;
+
+}
+
+.card .card-info {
+    flex: 1;
+}
+
+.card .card-info h3 {
+    margin: 0;
+}

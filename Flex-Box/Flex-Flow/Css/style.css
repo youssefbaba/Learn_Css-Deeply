@@ -1,0 +1,52 @@
+/* 
+Property flex-fow is a shorthand  for
+    flex-flow = [flex-direction]+[flex-wrap]
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: brown;
+    padding: 10px;
+    display: flex;
+    height: 400px;
+
+
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+
+
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+
+
+    /* flex-flow: row nowrap; */
+    /* flex-flow: row wrap; */
+    /* flex-flow: row wrap-reverse; */
+    /* flex-flow: row-reverse nowrap; */
+    /* flex-flow: row-reverse wrap; */
+    /* flex-flow: row-reverse wrap-reverse; */
+    /* flex-flow: column nowrap; */
+    /* flex-flow: column wrap; */
+    /* flex-flow: column wrap-reverse; */
+    /* flex-flow: column-reverse nowrap; */
+    /* flex-flow: column-reverse wrap; */
+    /* flex-flow: column-reverse wrap-reverse; */
+
+
+}
+
+.container .item {
+    background-color: coral;
+    padding: 20px 10px;
+    text-align: center;
+    margin: 7px;
+}

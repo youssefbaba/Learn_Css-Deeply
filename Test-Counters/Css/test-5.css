@@ -1,0 +1,11 @@
+body {
+    counter-reset: links;
+}
+
+a {
+    counter-increment: links;
+}
+
+a:empty::before {
+    content: "["counter(links)"]";
+}

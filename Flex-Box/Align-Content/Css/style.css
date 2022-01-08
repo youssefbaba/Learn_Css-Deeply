@@ -1,0 +1,87 @@
+/* 
+Property align-content => kikhdam 3la alignement dyal main axes ( row or column ) au niveau dyal  cross axes (row or column)
+    - default value is stretch
+    - syntax :  align-content:[stretch , flex-start , flex-end , center , space-between , space-around ,space-evenly]
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: brown;
+    /* padding: 10px; */
+    height: 422px;
+    /* display: flex; */
+    /* flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch; */
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+    /* align-content: stretch; */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* align-content: stretch; */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: space-around; */
+    align-content: space-between;
+
+
+
+
+}
+
+.container .item {
+    background-color: coral;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+.container .item1 {
+    /* background-color: goldenrod; */
+    background-color: red;
+}
+
+.container .item2 {
+    /* background-color: darkcyan; */
+    background-color: blue;
+
+}
+
+.container .item3 {
+    /* background-color: forestgreen; */
+    background-color: green;
+
+}
+
+.container .item4 {
+    /* background-color: lawngreen; */
+    background-color: black;
+}
+
+/* .container .item5 {
+    background-color: red;
+}
+
+.container .item6 {
+    background-color: blue;
+} */
+
+
+/* 
+justify-content : alignement dyal flex item au niveau dyal  main axes (row or column)  mali kiykouno les flex items mavhdinch espace kamal dyal main axes 
+align-items : alignement dyal flex item au niveau cross axes (row or column) mali kiykouno les flex items mavhadinch espace kamala dyal cross axes
+align-content :  alignement dyal  main axes au niveau dyal cross axes 
+
+
+*/

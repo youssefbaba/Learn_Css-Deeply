@@ -1,0 +1,26 @@
+/* 
+display:flex = make automatically  flex-direction:row; +  flex-wrap:nowrap;
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: brown;
+    padding: 17px;
+    /* display: flex; */
+    display: inline-flex;
+}
+
+.container .item {
+    background-color: coral;
+    padding: 10px;
+    margin: 7px;
+    /* float: left; */
+}
+
+/* p.clear {
+    clear: both;
+} */

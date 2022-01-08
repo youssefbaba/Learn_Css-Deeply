@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    line-height: 200px;
+    text-align: center;
+    position: relative;
+    transition: all 1s;
+}
+
+.parent:hover {
+    border-left: none;
+    border-right: none;
+}
+
+.parent:hover .one {
+    transform: rotate(90deg);
+}
+
+.parent:hover .two {
+    transform: rotate(-90deg);
+}
+
+.parent:hover .three {
+    transform: rotate(-90deg);
+}
+
+.parent:hover .four {
+    transform: rotate(90deg);
+}
+
+
+.one,
+.two,
+.three,
+.four {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transition: transform 1s;
+}
+
+.one {
+    background-color: red;
+    top: 0;
+    left: 0;
+    transform-origin: 0% 0%;
+    /* transform-origin: left top; */
+
+}
+
+.two {
+    background-color: yellow;
+    top: 0;
+    right: 0;
+    transform-origin: 100% 0%;
+    /* transform-origin: right top; */
+}
+
+.three {
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+    transform-origin: 0% 100%;
+    /* transform-origin: left bottom; */
+}
+
+.four {
+    background-color: green;
+    bottom: 0;
+    right: 0;
+    transform-origin: 100% 100%;
+    /* transform-origin: right bottom; */
+}

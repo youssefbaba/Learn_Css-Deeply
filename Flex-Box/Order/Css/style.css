@@ -1,0 +1,70 @@
+/*
+for flex items on a des proprietes par defaut
+    - order:0;
+    - flex-grow:0;
+    - flex-shrink:1;
+    - flex-basis:auto; 
+    - flex:0 1 auto; 
+    - align-self:auto;
+Property Order => ya3ni tartib dyal hadak flex item  kolma kant orderkbira kolma element kaykoune fi lkhar dyal la dirstion dyal main axes 
+    - default value is 0
+    - fi 7alat kano 2 element 3andhom nafss order hadik ssa3a kinmchiw positionement dyalhom fi code html
+    - example :
+item1 =>  order:-2 ; 
+item2 =>  order: 0 ; 
+item3 =>  order: 7 ; 
+item4 =>  order: 4 ; 
+item5 =>  order: 0 ;
+item1 + item2 + item5 + item4 + item3
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: brown;
+    /* padding: 10px; */
+    /* height: 422px; */
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
+}
+
+.container .item {
+    background-color: coral;
+    padding: 60px;
+    text-align: center;
+    color: white;
+
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.container .item1 {
+    background-color: orange;
+    order: 2;
+}
+
+.container .item2 {
+    background-color: darkcyan;
+    order: -2;
+}
+
+.container .item3 {
+    background-color: red;
+    /* order: 3; */
+    order: -5;
+}
+
+.container .item4 {
+    background-color: blue;
+
+}

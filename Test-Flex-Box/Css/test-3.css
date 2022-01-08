@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Asap', sans-serif;
+    margin: 0;
+    background-color: #353b48;
+}
+
+
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+/* Start Header */
+header {
+    height: 200px;
+    background-color: #2f3640;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+/* End Header */
+/* Start Main */
+.container main section {
+    margin-bottom: 60px;
+}
+
+.container main .menu h2 {
+    color: white;
+}
+
+.container main .menu nav {
+    background-color: #dcdde1;
+}
+
+.container main .menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container main .simple-nav nav ul {
+    text-align: center;
+}
+
+.container main .menu nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.container main .menu nav ul li a:hover {
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+@media screen and (min-width:768px) {
+    .container main .simple-nav nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container main .simple-nav nav ul li {
+        /* flex-grow: 1;
+        flex-shrink: 0; */
+        flex: 1 0;
+
+    }
+
+    .container>main>section.simple-nav>nav>ul>li:nth-child(5) {
+        order: 1;
+    }
+}
+
+.container main .advanced-nav nav ul li a {
+    display: flex;
+}
+
+.container main .advanced-nav nav ul li a i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.container main .advanced-nav nav ul li a div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container main .advanced-nav nav ul li a div span:nth-child(1) {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container main .advanced-nav nav ul li a div span:nth-child(2) {
+    font-style: italic;
+}
+
+@media screen and (min-width:768px) {
+    .container main .advanced-nav nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container main .advanced-nav nav ul li {
+        /* flex-grow: 1;
+        flex-shrink: 0; */
+        flex: 1 0;
+
+    }
+}
+
+/* End Main */

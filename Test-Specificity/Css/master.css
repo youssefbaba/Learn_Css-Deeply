@@ -1,0 +1,13 @@
+/* 
+- for calculate specifity : (inline-style , id selector , [class selector , pseudo class , attribute selector] , [element selector , pseudo element])
+- for :
+    -inline-style => (1,0,0,0) = 1000
+    - id selector => (0,1,0,0) = 100
+    - [class selector , pseudo class , attribute selector] => (0,0,1,0) = 10
+    - [element selector , pseudo element] => (0,0,0,1) = 1
+    =>1000>100>10>1 : inline style>id selector>[class selector,pseudo class,attribute selector]>[element selector,pseudo element]
+- for pseudo class :not()  ma3andhach specifty (0,0,0,0) sauf kin7assbo  specifity li wsstha
+- for * ma3andouch specifity (0,0,0,0)
+- selector  li 3ando akbar specifity howa li property dyali kaydiro overreding
+- fi 7alat kano 2 selector 3andhom nafss specifity  hadaik ssa3a kinchiw order dyalhom fi code css
+*/

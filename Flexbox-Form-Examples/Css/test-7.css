@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    background-color: beige;
+    padding: 15px;
+    display: flex;
+    gap: 40px;
+}
+
+form .part-left {
+    flex: 1;
+}
+
+form .part-right>div,
+form .part-left>div:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+}
+
+form .part-left>div:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+form input {
+    padding: 10px;
+}
+
+form input[type="submit"] {
+    background-color: gray;
+    color: white;
+    border: none;
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    opacity: 1;
+}
+
+form textarea {
+    height: 237px;
+    resize: horizontal;
+}
+
+form>div.part-left>div:nth-child(4) {
+    display: none;
+}
+
+@media (max-width:575px) {
+    form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    form>div.part-right {
+        display: none;
+    }
+
+    form>div.part-left>div:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+    }
+}

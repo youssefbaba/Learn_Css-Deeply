@@ -1,0 +1,46 @@
+/* Declaration The Global Variables */
+:root {
+    --main-color: dodgerblue;
+}
+
+/* Declaration The Local Variables */
+.container {
+    --font-size: 30px;
+}
+
+.container {
+    background-color: #eee;
+    padding: 20px;
+    width: 600px;
+    margin: 60px auto;
+    font-size: var(--font-size, 30px);
+}
+
+.container h1 {
+    color: var(--main-color, dodgerblue);
+}
+
+.container p {
+    color: var(--main-color, dodgerblue);
+    border: 2px solid var(--main-color, dodgerblue);
+    padding: 20px;
+}
+
+.container a {
+    display: inline-block;
+    width: fit-content;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--main-color, dodgerblue);
+    border: 1px solid var(--main-color, dodgerblue);
+}
+
+@media(min-width:768px) {
+    .container {
+        --font-size: 50px;
+    }
+
+    :root {
+        --main-color: red;
+    }
+}

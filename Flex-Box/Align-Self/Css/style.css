@@ -1,0 +1,70 @@
+/* 
+Property align-self => katdir alignement dyal specific flex item au niveau dyal cross axes
+    - default value is a auto  => la valeur predefinier sur align-items 
+
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    align-items: flex-end;
+}
+
+.container .item {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    flex-basis: 200px;
+}
+
+.container .item1 {
+    background-color: blue;
+    padding: 80px;
+    align-self: baseline;
+}
+
+.container .item2 {
+    background-color: darkcyan;
+    align-self: center;
+}
+
+.container .item3 {
+    background-color: red;
+    align-self: flex-end;
+}
+
+.container .item4 {
+    background-color: orange;
+    align-self: flex-start;
+}
+
+.container .item5 {
+    background-color: #03a9f4;
+    align-self: stretch;
+}
+
+.container .item6 {
+    background-color: #795548;
+    padding: 50px;
+    align-self: baseline;
+}
+
+
+/* 
+- justfiy-content : alignement dyal les flex items au niveau dyal main axes ( row or column ) fi 7alat kano les flex items occupe pas tous espace disponible  sur main axes  
+- align-items : alignement dyal les flex  items au niveau dyal cross axes ( row or column ) fi 7alat kano hadouk les flex items do not occupy all space available in cross axes 
+- align-self : alignement dyal specific  flex item  au niveau dyal cross axes 
+- align-content : alignement dyal main axes au niveau dyal cross axes
+
+
+
+- flex container : display:flex , flex-direction , flex-wrap , justify-content , align-items ,  align-content
+- flex-items : order , flex-grow , flex-shrink , flex-basis , flex , align-self 
+
+*/

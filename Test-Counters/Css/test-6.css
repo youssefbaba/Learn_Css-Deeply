@@ -1,0 +1,15 @@
+ol {
+    counter-reset: counter-list-item;
+    list-style: none;
+}
+
+li {
+    counter-increment: counter-list-item;
+}
+
+/* li::marker {
+    content: counters(counter-list-item, ".") " ";
+} */
+li::before {
+    content: counters(counter-list-item, ".") " ";
+}

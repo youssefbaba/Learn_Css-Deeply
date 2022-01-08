@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+form .form-group label {
+    display: block;
+    font-size: 20px;
+}
+
+form .form-group input[type="text"],
+form .form-group input[type="text"],
+form .form-group input[type="email"],
+form .form-group input[type="password"],
+form .form-group textarea,
+form .form-group select,
+form .form-submit input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 15px 0;
+    border: 1px solid;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+}
+
+form .form-group input[type="text"],
+form .form-group input[type="text"],
+form .form-group input[type="email"],
+form .form-group input[type="password"],
+form .form-group select,
+form .form-submit input[type="submit"] {
+    padding: 20px 40px;
+}
+
+form .form-group textarea {
+    padding: 20px;
+    resize: none;
+    height: 120px;
+}
+
+
+form .form-group input[type="text"],
+form .form-group input[type="email"],
+form .form-group input[type="password"],
+form .form-group textarea,
+form .form-group select {
+    border-color: red;
+    caret-color: red;
+    background-color: #f0f0f0;
+
+}
+
+form .form-group input[type="text"]:focus,
+form .form-group input[type="password"]:focus,
+form .form-group textarea:focus,
+form .form-group select:focus {
+    background-color: #f9f9f9;
+}
+
+
+form .form-group input[type="email"] {
+    color: red;
+}
+
+::placeholder {
+    color: red;
+    font-size: 20px;
+}
+
+form .form-submit input[type="submit"] {
+    background-color: rgba(4, 170, 109, 0.9);
+    border-color: #04aa6d;
+    color: white;
+}
+
+form .form-submit input[type="submit"]:hover {
+    background-color: #04aa6d;
+}
+
+form .form-group,
+form .form-submit {
+    position: relative;
+}
+
+form .form-group i {
+    position: absolute;
+    font-size: 20px;
+    bottom: 23px;
+    left: 10px;
+    color: red;
+}
+
+
+
+
+
+
+
+
+form.form-1 .form-group input[type="text"] {
+    display: block;
+    width: 20%;
+    padding: 20px 40px;
+    margin: 15px 0;
+    border: 1px solid red;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    transition: width 0.4s ease-in-out;
+}
+
+form.form-1 .form-group input[type="text"]:focus {
+    width: 100%;
+}
+
+
+
+form.form-2 .form-submit input[type="submit"],
+form.form-2 .form-reset input[type="reset"] {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+form.form-2 .form-submit input[type="submit"] {
+    background-color: dodgerblue;
+}
+
+form.form-2 .form-reset input[type="reset"] {
+    background-color: red;
+}
+
+form.form-3 .form-submit input[type="submit"],
+form.form-3 .form-reset input[type="reset"] {
+    width: fit-content;
+    padding: 20px 40px;
+    margin: 20px 0;
+    color: white;
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+form.form-3 .form-submit input[type="submit"] {
+    background-color: dodgerblue;
+}
+
+form.form-3 .form-reset input[type="reset"] {
+    background-color: red;
+}

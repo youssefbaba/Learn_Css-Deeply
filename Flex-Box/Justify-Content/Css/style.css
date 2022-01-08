@@ -1,0 +1,54 @@
+/* 
+Property  justify-content =>  permet alignement des flex items au niveau  dyal axe principale ,   qu'on c'est dernier n'occupe pas tout l'espace disponible sur axe principale (row or column)
+justify-content = gestion d'espace
+    - default value is flexe-start
+    - syntax : justify-content:[flex-start , flex-end , center , space-between , space-around ]
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: brown;
+    /* padding: 10px; */
+    height: 410px;
+    /* display: flex; */
+    /* flex-flow: row nowrap; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+
+
+
+}
+
+.container .item {
+    background-color: coral;
+    padding: 20px 10px;
+    text-align: center;
+    /* margin: 7px; */
+}

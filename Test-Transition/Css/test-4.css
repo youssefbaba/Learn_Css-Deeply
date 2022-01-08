@@ -1,0 +1,33 @@
+.first-div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* transition-duration: 2s;
+    transition-property: width; */
+    /* transition: width 2s; */
+    /* transition: width 2s, height 4s; */
+
+    transition-property: width, height;
+    transition-duration: 2s, 3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s, 1s;
+
+    transition: width 2s ease-in-out, height 3s ease-in-out 1s;
+}
+
+.first-div:hover {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+/* 
+transition=[transition-property]+[transition-duration]+[transition-timing-function]+[transition-delay]
+-transition-property :default value is all
+-transition-duration :default value is 0s
+-transition-timing-function :default value is ease ( kiybda bati2e o wasst kiyzrab o kiyssali bati2e )
+-transition-delay :default value is 0s
+
+*/

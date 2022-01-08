@@ -1,0 +1,57 @@
+/*
+Property flex-shrink => reduire ( width or height ) of flex item 
+    - default value is 1
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: brown;
+    display: flex;
+}
+
+.container .item {
+    height: 100px;
+    width: 500px;
+    text-align: center;
+    color: white;
+    /* padding: 60px; */
+    /* float: left; */
+    /* flex-shrink: 1; */
+    /* 
+    default value of flex-shrink is 1 => kiy3ni ana les flex items kamline kiyno9sso bi facteur de 1
+    */
+}
+
+/* p.clear {
+    clear: both;
+} */
+
+.container .item1 {
+    background-color: orange;
+}
+
+.container .item2 {
+    background-color: darkcyan;
+    /*  
+     here item1 and item2 sont reduire de facteur de 1 et item reduire de facteur de 2
+    */
+    flex-shrink: 2;
+
+}
+
+.container .item3 {
+    background-color: red;
+    flex-shrink: 3;
+}
+
+/* .container .item4 {
+    background-color: blue;
+} */

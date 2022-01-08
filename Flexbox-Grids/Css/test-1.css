@@ -1,0 +1,83 @@
+/* Methode One  */
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container div {
+    background-color: #9acd32;
+    border: 2px solid black;
+    height: calc(25vh - 20px);
+    margin: 10px;
+}
+
+.container div:nth-child(odd) {
+    flex-basis: 10vw;
+}
+
+.container div:nth-child(even) {
+    flex-basis: 20vw;
+}
+
+.container div:nth-child(2),
+.container div:nth-child(4),
+.container div:nth-child(9) {
+    flex-basis: 60vw;
+} */
+
+/* Methode Two */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container div {
+    background-color: #9acd32;
+    border: 2px solid black;
+    height: 200px;
+}
+
+div:nth-child(4n + 1) {
+    flex-basis: 180px;
+    flex-grow: 1;
+}
+
+div:nth-child(4n + 2) {
+    flex-basis: 360px;
+    flex-grow: 1;
+}
+
+div:nth-child(4n + 3) {
+    flex-basis: 140px;
+    flex-grow: 1;
+}
+
+div:nth-child(4n + 4) {
+    flex-basis: 260px;
+    flex-grow: 1;
+}
+
+@media (max-width:575px) {
+    .container {
+        flex-direction: column;
+    }
+
+    div:nth-child(n) {
+        flex-basis: 200px;
+    }
+}

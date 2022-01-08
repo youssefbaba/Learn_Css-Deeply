@@ -1,0 +1,83 @@
+@import url("reset.css");
+@import url("layout.css");
+@import url("masthead.css");
+@import url("typography.css");
+
+
+.main-area .centered .menu-section {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.main-area .centered .menu-section .menu-heading {
+    font-size: 2em;
+    font-weight: normal;
+}
+
+
+.main-area .centered .menu-section .menu {
+    background-color: #dcdde1;
+}
+
+.main-area .centered .menu-section .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-area .centered .menu-section .menu ul li a {
+    text-decoration: none;
+    color: #353b48;
+    padding: 0.6em 1em;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.main-area .centered .menu-section .menu ul li a:hover {
+    background-color: #f5f6fa;
+}
+
+@media(min-width:600px) {
+    .main-area .centered .menu-section .single-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-area .centered .menu-section .single-nav ul li {
+        flex: 1 0 auto;
+        text-align: center;
+    }
+
+}
+
+@media(min-width:600px) {
+    .main-area .centered .menu-section .Advanced-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-area .centered .menu-section .Advanced-nav ul li {
+        flex: 1 0 220px;
+    }
+
+    .main-area .centered .menu-section .Advanced-nav ul li a {
+        display: flex;
+        gap: 20px;
+    }
+
+    .main-area .centered .menu-section .Advanced-nav ul li a .icon {
+        font-size: 30px;
+    }
+
+    .main-area .centered .menu-section .Advanced-nav ul li a .text span:nth-child(1) {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .main-area .centered .menu-section .Advanced-nav ul li a .text span:nth-child(2) {
+        display: block;
+        font-style: italic;
+        font-size: 15px;
+    }
+
+}

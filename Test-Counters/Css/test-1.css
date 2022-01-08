@@ -1,0 +1,11 @@
+ol {
+    counter-reset: counter-list-item;
+}
+
+li {
+    counter-increment: counter-list-item;
+}
+
+li::before {
+    content: "["counter(counter-list-item, decimal-leading-zero)"] == ["counter(counter-list-item, lower-alpha)"]";
+}

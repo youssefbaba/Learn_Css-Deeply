@@ -1,0 +1,453 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-yellow: #f6d200;
+}
+
+body,
+button,
+input,
+textarea {
+    color: black;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+body {
+    background-color: #eee;
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+}
+
+header {
+    background-color: black;
+    height: 100px;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+@media (min-width:1200px) {
+    .container .content-area {
+        display: flex;
+    }
+
+    .container .sidebar-right {
+        flex: 0 0 360px;
+    }
+
+    .container .main-content-area {
+        flex: 1;
+    }
+}
+
+.container .content-area .main-content-area img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Start Header */
+.container .site-header {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .site-header .site-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .site-header .site-info h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+}
+
+.container .site-header .site-info p {
+    color: var(--color-yellow);
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: -1em;
+
+}
+
+.container .site-header nav {
+    background-color: var(--color-yellow);
+}
+
+.container .site-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container .site-header nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 12px;
+    color: black;
+    font-weight: bold;
+}
+
+.container .site-header nav ul li a:hover {
+    background-color: black;
+    color: var(--color-yellow);
+}
+
+@media (min-width:1200px) {
+    .container .site-header .site-info h1 {
+        font-size: 4em;
+    }
+
+}
+
+@media(min-width:768px) {
+    .container .site-header nav ul {
+        display: flex;
+    }
+
+    .container .site-header nav ul li {
+        flex-grow: 1;
+        text-align: center;
+    }
+}
+
+/* End Header */
+
+/* Start Section Posts  */
+
+.container .content-area .main-content-area {
+    padding: 2em;
+}
+
+.container .content-area .main-content-area .post {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.container .content-area .main-content-area .post a {
+    color: black;
+    text-decoration: none;
+}
+
+.container .content-area .main-content-area .post .post-content p {
+    padding: 0 40px 20px;
+}
+
+.container .content-area .main-content-area .post .post-content h2 {
+    background-color: var(--color-yellow);
+    padding: 20px;
+    text-align: center;
+    margin: -10px 0 30px 0;
+}
+
+@media(min-width:992px) {
+    .container .content-area .main-content-area .posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .container .content-area .main-content-area .posts .post {
+        flex-basis: calc((100% - 20px) / 2);
+    }
+}
+
+
+/* Large Devices */
+
+@media(min-width:1200px) {
+    .container .content-area .main-content-area .posts .post-one-third {
+        flex-basis: calc((100% - 40px)/3);
+    }
+
+    .container .content-area .main-content-area .posts .post-full {
+        flex-basis: 100%;
+    }
+}
+
+/* End Section  Posts  */
+/* Start Section Watch  */
+.container .content-area .main-content-area .section-header {
+    color: black;
+    font-size: 3em;
+    text-align: center;
+}
+
+.container .content-area .main-content-area .watch-card {
+    margin-bottom: 1em;
+}
+
+.container .content-area .main-content-area .watch-card .watch-content {
+    background-color: black;
+    color: white;
+    padding: 3em;
+}
+
+.container .content-area .main-content-area .watch-card .watch-content h2 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.container .content-area .main-content-area .watch-card .watch-content .movie-info {
+    font-weight: bold;
+}
+
+.container .content-area .main-content-area .watch-card .watch-content .movie-info span {
+    padding-right: 1.5em;
+}
+
+.container .content-area .main-content-area .watch-card .watch-content .movie-info p {
+    margin: 1em 0;
+}
+
+.container .content-area .main-content-area .watch-card .watch-content .movie-info a {
+    color: white;
+}
+
+/* Medium Devices */
+
+@media(min-width:992px) {
+    .container .content-area .main-content-area .watch-card {
+        display: flex;
+    }
+
+    .container .content-area .main-content-area .watch-card .watch-img {
+        flex-basis: 40%;
+    }
+
+    .container .content-area .main-content-area .watch-card .watch-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container .content-area .main-content-area .watch-card:nth-child(3) .watch-img {
+        order: 1;
+    }
+}
+
+/* End Section Watch  */
+/* Start Section Download */
+.container .content-area .main-content-area .download-card {
+    margin-bottom: 1em;
+}
+
+.container .content-area .main-content-area .download-card .download-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content-area .main-content-area .download-card .download-content a,
+.container .content-area .main-content-area .download-card .download-content .download-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content-area .main-content-area .download-card .download-content a {
+    padding: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+}
+
+.container .content-area .main-content-area .download-card .download-content a i {
+    font-size: 40px;
+}
+
+.container .content-area .main-content-area .download-card .download-content .download-info {
+    background-color: white;
+    padding: 20px 30px;
+}
+
+.container .content-area .main-content-area .download-card .download-content .download-info .download-genre,
+.container .content-area .main-content-area .download-card .download-content .download-info .download-cast {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container .content-area .main-content-area .download-card .download-content .download-info .download-genre {
+    margin-bottom: 10px;
+}
+
+.container .content-area .main-content-area .download-card .download-content h4 {
+    /* flex: 15%; */
+    margin: 0;
+    flex-basis: 60px;
+    margin-right: 10%;
+}
+
+.container .content-area .main-content-area .download-card .download-content .download-info .download-cast img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.container .content-area .main-content-area .download-card .download-content .download-rating {
+    background-color: var(--color-yellow);
+    color: black;
+    padding-bottom: 10px;
+}
+
+.container .content-area .main-content-area .download-card .download-content .download-rating span:first-child {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: -15px;
+}
+
+
+@media(min-width:992px) {
+    .container .content-area .main-content-area .download-card .download-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container .content-area .main-content-area .download-card .download-content a,
+    .container .content-area .main-content-area .download-card .download-content .download-rating {
+        flex-grow: 1;
+    }
+
+    .container .content-area .main-content-area .download-card .download-content .download-info {
+        flex-grow: 2;
+    }
+
+
+}
+
+/* End Section Download */
+/* Start Section Gallery */
+.container .content-area .main-content-area .gallery-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .content-area .main-content-area .gallery-imgs .gallery-img {
+    height: 250px;
+}
+
+.container .content-area .main-content-area .gallery-imgs .gallery-img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(min-width:768px) {
+    .container .content-area .main-content-area .gallery-imgs {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container .content-area .main-content-area .gallery-imgs .gallery-img:nth-child(4n + 1) {
+        flex-basis: 250px;
+        flex-grow: 1;
+    }
+
+    .container .content-area .main-content-area .gallery-imgs .gallery-img:nth-child(4n + 2) {
+        flex-basis: 325px;
+        flex-grow: 1;
+    }
+
+    .container .content-area .main-content-area .gallery-imgs .gallery-img:nth-child(4n + 3) {
+        flex-basis: 180px;
+        flex-grow: 1;
+    }
+
+    .container .content-area .main-content-area .gallery-imgs .gallery-img:nth-child(4n + 4) {
+        flex-basis: 380px;
+        flex-grow: 1;
+    }
+
+
+}
+
+/* End Section Gallery */
+/* Start Sidebar */
+
+.container .content-area .sidebar-right {
+    padding: 2em;
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px; */
+}
+
+.container .content-area .sidebar-right .widget {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container .content-area .sidebar-right .widget .sidebar-menu ul {
+    list-style: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.container .content-area .sidebar-right .widget .sidebar-menu ol {
+    color: black;
+    font-weight: bold;
+}
+
+.container .content-area .sidebar-right .widget .sidebar-menu ul li a,
+.container .content-area .sidebar-right .widget .sidebar-menu ol li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+@media(min-width:776px) and (max-width:1199px) {
+    .container .content-area .sidebar-right {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .container .content-area .sidebar-right .widget {
+        flex-basis: calc((100% - 20px)/2);
+        margin-bottom: 0;
+    }
+
+}
+
+/* End Sidebar */
+
+/* Start Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer p {
+    padding: 20px;
+}
+
+footer p span {
+    color: red;
+}
+
+/* End Footer */

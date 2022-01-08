@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    background-color: beige;
+    padding: 20px;
+    display: flex;
+    gap: 60px;
+}
+
+form .part-left {
+    /* border: 1px solid red; */
+    flex-basis: 50%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-end; */
+}
+
+form .part-left>div {
+    /* border: 1px solid blue; */
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+form .part-left input,
+form .part-left select {
+    padding: 10px;
+}
+
+form .part-left input:not(input[type="submit"]),
+form .part-left select {
+    flex-grow: 1;
+}
+
+form .part-left label {
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+form .part-right div {
+    margin-bottom: 10px;
+}

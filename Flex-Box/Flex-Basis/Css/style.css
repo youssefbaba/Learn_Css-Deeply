@@ -1,0 +1,51 @@
+/*
+Property flex-basis =>  define width or height of flex item
+    flex-direction:row; => flex-basis = width of flex item 
+    flex-direction:column; => flex-basis = height of flex-item
+    - default value is auto => ya3ni 9ad contenu dyal flex item
+    - flex-basis override width/height 
+    - flex-grow end flex-shrink impact sur flex-basis 
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+}
+
+.container .item {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    /* flex-basis: auto; */
+    /* flex-basis: 400px; */
+    /* height: 200px; */
+    /* width: 400px;
+    /* height: 100px; */
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    flex-basis: 400px;
+
+}
+
+.container .item1 {
+    background-color: orange;
+}
+
+.container .item2 {
+    background-color: darkcyan;
+}
+
+.container .item3 {
+    background-color: red;
+}
+
+.container .item4 {
+    background-color: blue;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Of Page</title>
+    <link rel="stylesheet" href="Css/test-9.css">
+</head>
+
+<body>
+    <div class="box" id="toggle" onclick="move()">Hello</div>
+    <script>
+        function move() {
+            var rect = document.getElementById("toggle").getBoundingClientRect();
+            //    console.log(rect.top, rect.right, rect.bottom, rect.left);
+            // console.log(rect.left, rect.top);
+            if (rect.top == 0) {
+                if (rect.left == 0) {
+                    document.getElementById("toggle").style.left = "600px"
+                } else {
+                    document.getElementById("toggle").style.top = "600px"
+                }
+            } else {
+                if (rect.left == 0) {
+                    document.getElementById("toggle").style.top = "0px"
+                } else {
+                    document.getElementById("toggle").style.left = "0px"
+                }
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

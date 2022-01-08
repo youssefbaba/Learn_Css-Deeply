@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container>div>div {
+    background-color: #4169e1;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.container>div>div {
+    flex: 1;
+}

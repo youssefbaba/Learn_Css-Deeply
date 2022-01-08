@@ -1,0 +1,62 @@
+/* 
+    - calc() => calculation
+        -syntax : property:calc(expression);
+    - max() =>  choose the largest value from the list of values
+        - syntax : property:max(value1, value2, value2 .....)
+    - min() => choose the smallest value from the list of values
+        - syntax : property:min(value1, value2, value2 .....)
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-padding: 20px;
+}
+
+.parent {
+    background-color: red;
+    padding: 20px 0;
+}
+
+.child {
+    width: calc((100% - 80px)/3);
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+    float: left;
+}
+
+p.clear {
+    clear: both;
+}
+
+p {
+    color: white;
+    background-color: red;
+    width: calc(100% - 200px);
+    padding: calc(var(--main-padding) + 10px) 0;
+    text-align: center;
+
+}
+
+.first-div {
+    background-color: dodgerblue;
+    color: white;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    width: max(50%, 300px);
+    margin-bottom: 20px;
+}
+
+.second-div {
+    color: white;
+    background-color: maroon;
+    padding: 20px;
+    text-align: center;
+    width: min(50%, 400px);
+}

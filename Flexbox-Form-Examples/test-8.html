@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-8</title>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="Css/test-8.css">
+</head>
+
+<body>
+    <form action="#">
+        <div class="part-left">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="date">Pickup Date/Time</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <label for="pickup-place">Pickup Place</label>
+                <select name="pickup-place" id="pickup-place">
+                    <option value="" selected>Select One</option>
+                    <option value="Taxi Office">Taxi Office</option>
+                    <option value="Town Hall">Town Hall</option>
+                    <option value="We'll Guess!">We'll Guess!</option>
+                </select>
+            </div>
+            <div>
+                <label for="dropoff-place">Dropoff Place</label>
+                <input list="dropoff-places" name="dropoff-place" id="dropoff-place">
+                <datalist id="dropoff-places">
+                    <option value="Airport">
+                    <option value="Beach">
+                    <option value="Fred Flinstone's House">
+                </datalist>
+            </div>
+            <div>
+                <input type="submit" value="Submit Booking">
+            </div>
+        </div>
+        <div class="part-right">
+            <div>
+                <p>Which taxi do you require?</p>
+                <div>
+                    <input type="radio" id="car" name="taxi" value="car">
+                    <label for="car">Car</label>
+                </div>
+                <div>
+                    <input type="radio" id="van" name="taxi" value="van">
+                    <label for="van">Van</label>
+                </div>
+                <div>
+                    <input type="radio" id="tuk tuk" name="taxi" value="tuk tuk">
+                    <label for="tuk tuk">Tuk Tuk</label>
+                </div>
+            </div>
+            <div>
+                <p>Extras</p>
+                <div>
+                    <input type="checkbox" name="extras" value="baby seat">
+                    <label> Baby Seat</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="extras" value="wheelchair access">
+                    <label>Wheelchair Access</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="extras" value="stock tip">
+                    <label>Stock Tip</label>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

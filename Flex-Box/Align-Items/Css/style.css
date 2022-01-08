@@ -1,0 +1,45 @@
+/* 
+Property align-items =>  katdir alignement dyal les flex items au niveau dyal cross axes  fi 7alat kano hadik les flex items n'occupe pas tout l'espace  dyal cross axes
+    - default value is stretch
+    - syntax : align-items:[strecth , flex-start , flex-end , center , baseline]
+
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: brown;
+    /* padding: 10px; */
+    /* height: 410px; */
+
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: baseline; */
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+}
+
+.container .item {
+    background-color: coral;
+    padding: 20px 10px;
+    text-align: center;
+    /* margin: 7px; */
+
+}
+
+/* 
+
+justify-content : katdir alignement  of flex items au niveau dyal main axes ( row or column) fi 7alat kano les flex items do not occupy all space of main axes
+align-items : katdir alignement dyal flex items au niveau dyal cross axes (row or main) fi 7alat flex items do not occupy all space of cross axes
+*/

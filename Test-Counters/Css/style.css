@@ -1,0 +1,23 @@
+/*
+counter-reset:counter-name => create and reset a counter name
+counter-increment:counter-name => incrementation the value  of a counter
+content:counter(counter-name) => display  current value of a counter  sous form decmimal (defeult value of counter style)
+content:counter(counter-name , style-counter ) => display  current value of a counter
+*/
+
+/* body {
+    counter-reset: counter-list-item;
+} */
+ol {
+    counter-reset: counter-list-item;
+    /* list-style: none; */
+}
+
+
+li {
+    counter-increment: counter-list-item;
+}
+
+li::before {
+    content: "["counter(counter-list-item, decimal)"] == ["counter(counter-list-item, upper-roman)"]";
+}

@@ -1,0 +1,46 @@
+form .form-group label {
+    color: #3c3c3c;
+}
+
+form .form-group label,
+form .form-group input {
+    font-size: 20px;
+}
+
+form .form-group input {
+    display: block;
+    width: 60%;
+}
+
+form .form-group input[type="text"],
+form .form-group input[type="email"],
+form .form-group input[type="submit"] {
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+form .form-group input[type="text"],
+form .form-group input[type="email"] {
+    border-bottom: 1px solid red;
+
+}
+
+::placeholder {
+    color: red;
+}
+
+form .form-group input[type="submit"] {
+    color: white;
+    background-color: rgba(4, 170, 109, 0.9);
+    border: 1px solid #04aa6d;
+    cursor: pointer;
+}
+
+form .form-group input[type="submit"]:hover {
+    background-color: #04aa6d;
+
+
+}

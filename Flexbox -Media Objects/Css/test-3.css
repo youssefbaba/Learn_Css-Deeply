@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.card-parent {
+    background-color: #f6f3eb;
+    max-width: 400px;
+}
+
+.card {
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.card .card-info {
+    flex: 1;
+}
+
+.card h3 {
+    margin: 0;
+}

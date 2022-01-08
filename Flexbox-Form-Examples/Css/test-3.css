@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #eee;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form>div:last-of-type {
+    align-self: flex-end;
+}
+
+form>div:not(:last-of-type) {
+    display: flex;
+}
+
+form>div input {
+    padding: 10px;
+}
+
+
+form>div input:not(input[type="submit"]) {
+    flex: 2;
+}
+
+form>div label {
+    flex: 1;
+}
+
+@media (max-width:575px) {
+    form>div:not(:last-of-type) {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}

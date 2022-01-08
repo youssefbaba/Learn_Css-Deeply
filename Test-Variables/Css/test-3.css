@@ -1,0 +1,46 @@
+/* 
+Global Variable : homa les varaibles li 3andi access 3lihom man ay blassa
+Local Variable : homa les variables li 3andi access 3lihom ghir fi blassa li mdecalrine fiha
+Declaration :
+    - --name-of-variable:value;
+
+Usage :
+    - var(name-of-variable,fallback)
+
+*/
+
+:root {
+    --main-color: #6495ed;
+    --sub-main-color: #faf0e6;
+}
+
+body {
+    background-color: var(--main-color, #1e90ff);
+}
+
+h2 {
+    border-bottom: 2px solid var(--main-color, #1e90ff);
+}
+
+.container {
+    color: var(--main-color, #1e90ff);
+    background-color: var(--sub-main-color, white);
+    padding: 15px;
+}
+
+/* Method One overriding a gloabl variable  */
+/* button {
+    --main-color: red;
+    background-color: var(--sub-main-color, white);
+    color: var(--main-color, #1e90ff);
+    border: 1px solid var(--main-color, #1e90ff);
+    padding: 5px;
+} */
+/* Method Two Not overriding a gloabl variable  */
+button {
+    --main-color-local: red;
+    background-color: var(--sub-main-color, white);
+    color: var(--main-color-local, #1e90ff);
+    border: 1px solid var(--main-color-local, #1e90ff);
+    padding: 5px;
+}

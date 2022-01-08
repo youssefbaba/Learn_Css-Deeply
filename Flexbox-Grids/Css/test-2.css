@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container>div {
+    /* border: 1px solid blue; */
+    display: flex;
+    gap: 10px;
+}
+
+.container>div>div {
+    /* border: 1px solid red; */
+    background-color: #808080;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.container>div>div {
+    flex: 1;
+}

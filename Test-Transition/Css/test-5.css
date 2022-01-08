@@ -1,0 +1,40 @@
+.anim {
+    width: 100%;
+    height: 800px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.anim:active .ball-one {
+    left: 200px;
+}
+
+.anim:active .ball-two {
+    left: calc(100% - 200px);
+}
+
+
+.ball-one {
+    background: #ff97C0;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    transition: left 0.5s ease-in;
+    border-radius: 50%;
+}
+
+.ball-two {
+    width: 200px;
+    height: 200px;
+    background: #0097C0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 600px;
+    transition: left 0.5s 0.5s ease-in;
+    border-radius: 50%;
+
+}
