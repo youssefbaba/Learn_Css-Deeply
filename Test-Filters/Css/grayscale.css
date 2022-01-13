@@ -1,0 +1,40 @@
+/* 
+Filter grayscale  => convert the element  to grayscale
+    - syntax : filter:grayscale(amount)
+    - default value is filter:grayscale(0) => no effect of  the grayscale
+    - amount => number (0 -> 1) or percentage (0% -> 100%)
+    - default value if omited is 1 or 100% => filter:grayscale() = filter:grayscale(1) or filter:grayscale(100%)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    transition: 0.5s;
+    /* filter: grayscale(0); */
+
+    /* filter: grayscale(100%); */
+    /* filter: grayscale(1); */
+    /* filter: grayscale(60%); */
+    /* filter: grayscale(0.6); */
+    filter: grayscale();
+}
+
+img:hover {
+    filter: grayscale(0);
+}
+
+/* 
+- blur(radius)
+    - default value is filter:blur(0) => no effect of the blur 
+    - radius = [ px , em , rem , vw , vh , ...... ]
+    - radius not accept % unit
+    - default value if omited is 0 : filter:blur() =  filter:blur(0)
+
+grayscale(amount)
+    - default value is filter:grayscale(0) => no effect of the grayscale
+    - amount[number , percentage]
+    - default value if omited is 1 or 100% : filter:grayscale() =  filter:grayscale(1) or filter:grayscale(100%)
+
+*/

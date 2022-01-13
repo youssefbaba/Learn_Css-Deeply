@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+div.first-div {
+    height: 800px;
+    background-image: url("../images/features-03.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+div.first-div:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 128, 0, 0.5);
+}

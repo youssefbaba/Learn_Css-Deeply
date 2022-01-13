@@ -1,0 +1,33 @@
+/* 
+Pointer Events And Caret Color
+
+caret-color => color of cursor mali kinpointer 3la wa7ad editable element
+pointer-event => ya3ni achman event ghadi ytra mali ghadi npointer 3la wa7ad element
+
+*/
+input,
+p {
+    caret-color: red;
+}
+
+h2 {
+    cursor: grab;
+    background-color: dodgerblue;
+}
+
+
+a.google:hover {
+    color: red;
+}
+
+a.google {
+    pointer-events: none;
+}
+
+h2:active {
+    background-color: green;
+}
+
+h2 {
+    pointer-events: none;
+}

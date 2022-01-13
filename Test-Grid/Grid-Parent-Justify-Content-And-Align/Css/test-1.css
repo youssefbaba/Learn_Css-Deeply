@@ -1,0 +1,58 @@
+/* 
+
+*/
+* {
+    box-sizing: border-box;
+}
+
+/* Using Flex Box */
+/* .container {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: calc((100% - calc(45px * 4)) / 3);
+    row-gap: calc((100% - calc(45px * 3)) / 2);
+}
+
+.container div {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+
+} */
+
+
+/* Using Crid System */
+
+.container {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.container div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 
+auto : kiybda yakhod width ola height li y3ich bih element  o fi 7alat l9a width ola height  ghir chait kiyakhdo 
+*/

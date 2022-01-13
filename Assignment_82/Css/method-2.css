@@ -1,0 +1,61 @@
+/* Using grid area */
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0;
+}
+
+.layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 1fr 50px;
+}
+
+.layout header {
+    background-color: #03a9f4;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    grid-area: 1 / 1 / 2 / 13;
+}
+
+.layout header::before {
+    content: "Header";
+    color: white;
+}
+
+.layout section {
+    background-color: #ff5722;
+    padding: 20px;
+    grid-area: 2 / 1 / 3 / 10;
+}
+
+.layout section::before {
+    content: "Section";
+    color: white;
+}
+
+.layout aside {
+    background-color: #607d8b;
+    padding: 20px;
+    grid-area: 2 / 10 / 3 / 13;
+}
+
+.layout aside::before {
+    content: "Aside";
+    color: white;
+}
+
+.layout footer {
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    grid-area: 3 / 1 / 4 / 13;
+}
+
+.layout footer::before {
+    content: "Footer";
+    color: white;
+}

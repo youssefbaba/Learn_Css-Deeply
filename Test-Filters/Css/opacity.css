@@ -1,0 +1,29 @@
+/* 
+Filter opacity => applies transparency to the element
+    - syntax : filter:opacity(amount/value)
+    - default value is  filter:opacity(1) or filter:opacity(100%) => no effect of the opacity
+    - amount [number (0 -> 1) or percentage (0% -> 100%)]
+    - filter opacity  like a property opacity
+*/
+img:first-of-type {
+    margin: 20px;
+    /* filter: opacity(100%); */
+    /* filter: opacity(1); */
+    /* filter: opacity(30%); */
+    /* filter: opacity(0.3); */
+    /* filter: opacity(60%); */
+    filter: opacity(0.6);
+}
+
+img:first-of-type:hover {
+    /* filter: opacity(0); */
+    filter: opacity(1);
+}
+
+/* img:last-of-type {
+    opacity: 1;
+}
+
+img:last-of-type:hover {
+    opacity: 0;
+} */

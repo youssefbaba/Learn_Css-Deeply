@@ -1,0 +1,38 @@
+/* 
+filter invert => invert the color samples  of the element
+    - syntax : filter:invert(amount)
+    - default value is filter:invert(0) => no effect  of the invert 
+    - amount [ number ( 0 -> 1 ) or percentage (0% -> 100%)]
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: red;
+    /* filter: invert(100%); */
+    /* filter: invert(1); */
+    /* filter: invert(30%); */
+    /* filter: invert(0.3); */
+    /* filter: invert(60%); */
+    filter: invert(0.6);
+}
+
+h2:hover {
+    filter: invert(0);
+}
+
+img {
+    /* filter: invert(100%) */
+    /* filter: invert(60%); */
+    /* filter: invert(0.6); */
+    /* filter: invert(30%); */
+    filter: invert(0);
+}
+
+img:hover {
+    filter: invert(0);
+    filter: invert(100%);
+}

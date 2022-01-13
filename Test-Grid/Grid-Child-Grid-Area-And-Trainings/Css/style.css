@@ -1,0 +1,50 @@
+/* 
+Grid System : for child 
+    - grid-area:[grid-row-start][grid-column-start][grid-row-end][grid-column-end]
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #eee;
+    display: grid;
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* grid-template-areas: "col col col col col col"; */
+    grid-template-areas: "logo logo nav nav nav nav""cont cont cont cont cont cont ";
+    gap: 10px;
+}
+
+.container>div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* .container>div:nth-of-type(9) {
+    background-color: green;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 6;
+    grid-area: 2 / 2 / 5 / 6;
+} */
+
+.container>div:nth-of-type(1) {
+    grid-area: logo;
+}
+
+.container>div:nth-of-type(2) {
+    grid-area: nav;
+}
+
+.container>div:nth-of-type(3) {
+    grid-area: cont;
+}

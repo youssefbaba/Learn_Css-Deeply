@@ -1,0 +1,25 @@
+/* 
+filter brightness => adjust brightness of the element , making it apeare  brighter or darker 
+    - syntax : filter:brightness(amount)
+    - amount[ number , percentage]
+    - default value is filter:brightness(1) or filter:brightness(100%)
+
+*/
+img {
+    transition: 0.5s;
+    /* filter: brightness(1); */
+    /* filter: brightness(100%); */
+
+    /* filter: brightness(0); */
+    /* filter: brightness(60%); */
+    /* filter: brightness(0.6); */
+    /* filter: brightness(30%); */
+    /* filter: brightness(0.3); */
+    /* filter: brightness(180%); */
+    filter: brightness(1.8);
+}
+
+img:hover {
+    filter: brightness(1);
+    /* filter: brightness(0); */
+}

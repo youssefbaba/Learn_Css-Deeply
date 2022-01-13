@@ -1,0 +1,25 @@
+/* 
+Property Caret color : color of the cursor when pointe on editable element => y3ani color dyal  cursor mali kinpointer 3la wa7ad element editable ( input , texterea , p ....)
+
+    - syntax : caret-color:[ color, auto , currentColor , transparent ....]
+
+*/
+input[type="text"] {
+    caret-color: auto;
+}
+
+input[type="email"] {
+    caret-color: transparent;
+}
+
+input[type="password"] {
+    color: green;
+    caret-color: currentColor;
+}
+
+
+input,
+textarea,
+p {
+    caret-color: red;
+}

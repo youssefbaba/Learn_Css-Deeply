@@ -1,0 +1,94 @@
+/* 
+Grid System
+    - justify-content : alignement dyal items au niveau dyal flow if space exist in container
+    - align-content : alignement dyal les row au niveau  dyal  container
+
+*/
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    justify-content: stretch;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: stretch;
+    align-content: space-between;
+
+}
+
+.container div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+/* Test 1 Using Flex Box */
+/* .container {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .row {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% / 3);
+}
+
+.container .row div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+} */
+
+/* Test 2 Using Flex Box */
+/* 
+.container {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc((100% - 400px) / 3);
+}
+
+.container div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+} */

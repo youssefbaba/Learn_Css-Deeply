@@ -1,0 +1,107 @@
+/* 
+Filters
+    - syntax: filter:typeoffilter; default value is 0
+    -  typeoffilter => grayscale() , blur() ,invert()
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    transition: 1s;
+    margin: 40px 0;
+
+}
+
+img:nth-child(1) {
+    filter: grayscale(100%);
+}
+
+img:nth-child(1):hover {
+    /* filter: grayscale(100%); */
+    filter: grayscale(0);
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: block;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    filter: grayscale(100%);
+    color: white;
+}
+
+a:hover {
+    /* filter: grayscale(100%); */
+    filter: grayscale(0);
+}
+
+ul>li:nth-child(1) a {
+    background-color: #1877f2;
+}
+
+ul>li:nth-child(2) a {
+    background-color: #e1306c;
+}
+
+ul>li:nth-child(3) a {
+    background-color: #0077b5;
+}
+
+ul>li:nth-child(4) a {
+    background-color: #ff0000;
+}
+
+img:nth-of-type(2) {
+    filter: blur(5px);
+}
+
+img:nth-of-type(2):hover {
+    filter: blur(0);
+    /* filter: blur(5px); */
+}
+
+p {
+    display: inline-block;
+    /* filter: blur(5px); */
+    transition: 0.5s;
+}
+
+p:hover {
+    filter: blur(5px);
+    /* filter: blur(0); */
+}
+
+img:nth-of-type(3) {
+    filter: invert(100%);
+    transition: 1s;
+}
+
+img:nth-of-type(3):hover {
+    filter: invert(0);
+}
+
+h2 {
+    /* color: blue; */
+    color: red;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+h2:hover {
+    filter: invert(100%);
+}

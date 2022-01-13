@@ -1,0 +1,25 @@
+/* 
+Filter contrast => adjust contrast of the element
+    - syntax : filter:contrast(amount)
+    - amount[ number (0 -> infini) or percentage (0% -> infini%)]
+    - value over 1 or 100% element with high contrast 
+    - value under 1 or 100% element withe low contrast
+    - default value is filter:contrast(1) or filter:contarst(100%)
+    - value is 0 => element completely gray
+
+*/
+img {
+    transition: 0.5s;
+    /* filter: contrast(100%); */
+    /* filter: contrast(0); */
+    /* filter: contrast(60%); */
+    /* filter: contrast(0.6); */
+    /* filter: contrast(30%); */
+    /* filter: contrast(0.3); */
+    /* filter: contrast(140%); */
+    filter: contrast(1.4);
+}
+
+img:hover {
+    filter: contrast(1);
+}

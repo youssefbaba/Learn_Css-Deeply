@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.first-div {
+    height: 400px;
+    margin: 60px auto;
+    border: 2px solid red;
+}
+
+.first-div>img {
+    width: 100%;
+    height: 100%;
+}
+
+.second-div {
+    max-width: 800px;
+    height: 400px;
+    margin: 60px auto;
+    border: 2px solid blue;
+}
+
+.second-div>img {
+    max-width: 100%;
+}
+
+img:nth-child(6) {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Method One */
+/* body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* Method Two */
+/* .first-div {
+    border: 2px solid red;
+    width: 500px;
+    height: 500px;
+}
+
+.first-div>img {
+    max-width: 100%;
+    height: 100%;
+} */
+/* Method Two */
+img {
+    display: block;
+    margin: auto;
+
+}

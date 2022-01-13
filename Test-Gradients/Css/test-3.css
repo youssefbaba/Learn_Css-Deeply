@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.form-group {
+    width: 600px;
+    margin: 20px auto;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: #f4f4f4;
+    caret-color: red;
+    font-size: 20px;
+}
+
+.form-group span {
+    display: block;
+    height: 5px;
+    background-image: linear-gradient(to right, #f4473a 0%, #f4473a 50%, #0f9c8f 50%, #0f9c8f 100%);
+}

@@ -1,0 +1,25 @@
+/* 
+Filter Blur => applies a Gaussian blur on the element
+    - syntax : filter:blur(radius)
+    - default value is filter:blur(0) => no effect of the blur
+    - radius [px , rem , em  , vw ,vh , .... ]
+    - radius if omited is 0 =>  filter:blur() = filter:blur(0)
+    - blur  doe not accept % unit
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    transition: 0.5s;
+    /* filter: blur(); */
+    /* filter: blur(0); */
+    /* filter: blur(4px); */
+    /* filter: blur(0.25em); */
+    filter: blur(1rem);
+}
+
+img:hover {
+    filter: blur(0);
+}

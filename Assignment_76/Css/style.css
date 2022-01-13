@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.first-div {
+    width: 25px;
+    height: 18px;
+    position: relative;
+}
+
+.first-div::before,
+.first-div::after,
+.first-div span {
+    position: absolute;
+    height: 3px;
+    background-color: black;
+}
+
+.first-div::before,
+.first-div::after {
+    content: "";
+    width: 100%;
+    left: 0;
+}
+
+.first-div::before {
+    top: 0;
+}
+
+.first-div::after {
+    bottom: 0;
+}
+
+.first-div span {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

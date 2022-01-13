@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    /* border: 1px solid red; */
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+nav ul li:first-of-type a {
+    background-color: green;
+    color: white;
+}

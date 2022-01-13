@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+@media(min-width:576px) {
+    .container {
+        width: 540px;
+        margin: 40px auto;
+    }
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+        margin: 40px auto;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+        margin: 40px auto;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+        margin: 40px auto;
+    }
+}
+
+/*  Test Using Float */
+/* .container {
+    border: 1px solid red;
+}
+
+.container .three-div div {
+    background-color: #eee;
+    float: left;
+    height: 100px;
+    width: calc((100% - 40px) / 3);
+}
+
+.container .three-div div:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.container .four-div div {
+    background-color: #eee;
+    float: left;
+    height: 100px;
+    width: calc((100% - 60px)/4);
+}
+
+.container .four-div div:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+p.clear {
+    clear: both;
+} */
+
+/* Test Using FlexBox */
+.container {
+    border: 1px solid red;
+}
+
+.container .three-div {
+    display: flex;
+}
+
+.container .three-div div {
+    background-color: #eee;
+    flex: 1;
+    height: 100px;
+}
+
+.container .three-div div:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.container .four-div {
+    display: flex;
+}
+
+.container .four-div div {
+    background-color: #eee;
+    height: 100px;
+    flex: 1;
+}
+
+.container .four-div div:not(:last-of-type) {
+    margin-right: 20px;
+}

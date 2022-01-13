@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Of Page</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+    <input type="text" name="" placeholder="clikc Here">
+    <a href="http://www.google.com" class="first-link">Google</a>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br>
+
+    <a href="http://www.google.com" class="second-link" id="special" onclick="disable()" target="_blank">Google</a>
+
+    <script>
+        function disable() {
+            document.getElementById("special").style.pointerEvents = "none"
+            document.getElementById("special").style.opacity = "0.1"
+        }
+    </script>
+</body>
+
+</html>

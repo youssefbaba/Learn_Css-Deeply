@@ -1,0 +1,46 @@
+/* 
+Grid System
+    - in System Grid i have property for parent (container)  and property for childs (items)
+    - display:grid | inline-grid  => kin9oul browser ana had container rah grid o child dyalo ghadi nt3amal m3ahom bi les property dyal Grid system fo child
+    - grid-template-columns=>[number of columns width in] => [lenght(px , em , rem , vw , vh ...) , % ,fr ,auto , repeat() ,mix ]
+    - auto is shy => ya3ni kiyakhod width li yakfih bach y3ich , ya3ni 9ad content li fih 
+    - fr is greedy =>  fraction b7alo b7al auto sauf que mali kiytla9aw tous les deux fraction kiyghawfal 3la auto
+*/
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 200px;
+    grid-template-columns: 100px 10em 10rem 200px;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 100px 10em 25% 10rem 150px;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-columns: repeat(5, auto);
+    grid-template-columns: 100px 10em repeat(3, 50px) 25% auto;
+    grid-template-columns: 100px 100px auto;
+    grid-template-columns: 100px 100px 1fr;
+    grid-template-columns: 100px 100px 1fr 1fr;
+    grid-template-columns: repeat(2, 100px) repeat(2, 1fr);
+    grid-template-columns: repeat(2, 100px) 1fr 2fr;
+    grid-template-columns: auto auto 1fr 1fr;
+    grid-template-columns: repeat(2, auto) repeat(2, 1fr);
+    grid-template-columns: auto auto 1fr 2fr;
+
+}
+
+.container>div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

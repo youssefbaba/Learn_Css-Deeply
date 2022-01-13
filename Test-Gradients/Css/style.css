@@ -1,0 +1,51 @@
+/* 
+Gradients => linear-gradient work with background-image => y3ani background-image sous forme lineare gradient
+    - syntax:linear-gradient(Direction || Angle , Color Stop 1 , Color Stope 2 , ........ )
+    - Direction [to right , to left , to bottom , to top ]
+    - Angle :
+        - 0deg => to top  
+        - 90deg => to right  
+        - 180deg => to bottom
+        - 270deg => to left  
+
+*/
+.first-div {
+    /* background-image: linear-gradient(to left, red, green); */
+    /* background-image: linear-gradient(to bottom, red, green); */
+    /* background-image: linear-gradient(to top, red, green); */
+    /* background-image: linear-gradient(to right, red, green, blue, yellow); */
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+    /* background-color: blue; */
+    margin: 20px auto;
+    position: relative;
+}
+
+.first-div::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    /* background-color: red; */
+    /* transform: translateY(-50%); */
+    transform: translateY(-100%);
+    /* background-image: linear-gradient(to right, green 20%, blue 20%, blue 40%, red 40%); */
+    background-image: linear-gradient(to right, green 0%, green 20%, blue 20%, blue 40%, red 40%, red 60%, yellow 60%, yellow 80%, black 80%, black 100%);
+}
+
+/*  first color and last color not necessary add to an stop */
+/* ya3ni color lwal o lkhar ymkan lina andirouch lih stop  */
+
+
+/* 
+linear-gradient rah sous forme dyal background-image  ya3ni kandir :
+background-image:linear-gradient()
+syntax : linear-gradient(Direction || Angle , color stop 1 , color stop 2 , color stop 2 , ........)
+Direction => to right , to left  , to top  , to bottom 
+Angle => 
+    - 0deg : to top 
+    - 90deg : to right 
+    - 180deg  : to bottom 
+    - 270deg : to left
+*/

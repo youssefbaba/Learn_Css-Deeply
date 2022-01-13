@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    transition: 0.5s ease-in-out;
+    margin: 60px 0;
+
+}
+
+/* Start Filter Blur */
+/* 
+Filter Blur => applies Gaussian blur on element
+    - syntax : filter:blur(lenght)
+    - length[ px , em , rem , vw , vh .....]
+    - length not accept % unit 
+    - default value is  filter:blur(0) => no effect of the blur , element unchanged
+    - if value omited => filter:blur(0)
+*/
+img:nth-of-type(1) {
+    filter: blur(0);
+    filter: blur(4px);
+    filter: blur(0.25em);
+    filter: blur(0.25rem);
+    filter: blur(16px);
+    filter: blur(1em);
+    filter: blur(1rem);
+    /* filter: blur(); */
+}
+
+img:nth-of-type(1):hover {
+    filter: blur(0);
+
+}
+
+/* End Filter Blur */
+
+/* Start Filter grayscale */
+/* 
+filtert grayscale => convert element to grayscale (white and black)
+    - syntax : filter:grayscale(amount)
+    - amount[ number ( 0 -> 1) or percentage (0% -> 100% )]
+    - default value is  filter:grayscale(0) or filter:grayscale(0%) => no effect of the grayscale , element unchanged
+    - if value is omited => filter:grayscale(1) or filter:grayscale(100%)
+
+*/
+
+img:nth-of-type(2) {
+    filter: grayscale(100%);
+    filter: grayscale(1);
+    filter: grayscale(60%);
+    filter: grayscale(0.6);
+    filter: grayscale(30%);
+    filter: grayscale(0.3);
+    filter: grayscale();
+}
+
+img:nth-of-type(2):hover {
+    filter: grayscale(0);
+}
+
+/* End Filter grayscale */
+/* Start Filter Invert */
+/* 
+filter invert => invert the color samples of the element 
+    - syntax : filter:invert(amount)
+    - amount[ number (0 -> 1) or percentage (0% -> 100%)]
+    - default value is filter:invert(0) or filter:invert(0%) => no effect of the invert , unchanged element
+    - if value is omited => filter:invert(100%) or filter:invert(1)
+
+*/
+img:nth-of-type(3) {
+    filter: invert(100%);
+    filter: invert(1);
+    filter: invert(60%);
+    filter: invert(0.6);
+    filter: invert(30%);
+    filter: invert(0.3);
+    /* filter: invert(); */
+}
+
+img:nth-of-type(3):hover {
+    filter: invert(0)
+}
+
+/* End Filter Invert */
+/* Start Filter Opacity */
+/* 
+Filter opacity => applies transparency on element
+    - syntax : filter:opacity(amount)
+    - amount[ number( 0 -> 1) or percentage (0% -> 100%)]
+    - default value is filter:opacity(1) or filter:opacity(100%) => no effect of the opacity , element unchanged
+    - if value is omited => filter:opacity(1) or filter:opacity(100%)
+
+*/
+img:nth-of-type(4) {
+    filter: opacity(0);
+    filter: opacity(60%);
+    filter: opacity(0.6);
+    filter: opacity(30%);
+    filter: opacity(0.3);
+    filter: opacity();
+}
+
+img:nth-of-type(4):hover {
+    /* filter: opacity(100%); */
+    filter: opacity(1);
+}
+
+/* End Filter Opacity */
+/* Start Filter Brightness */
+/* 
+filter brightness => adjust brightness of the element , making it apeare brighter or darker
+    - syntax :filter:brightness(amount)
+    - amount[ number ( 0 -> infini) or percentage (0% -> infini%)]
+    - default value is filter:brightness(1) or filter:brightness(100%) => no effect of the brightness , unchanged element 
+    - valur over 100% or 1 make element brighter , value under 100% or 1 make element darker
+    - if value equal 0 or 0% element completely black
+    - if value is omited => filter:brightness(1) or filter:brightness(100%)
+
+*/
+img:nth-of-type(5) {
+    filter: brightness(100%);
+    filter: brightness(0);
+    filter: brightness(60%);
+    filter: brightness(0.6);
+    filter: brightness(30%);
+    filter: brightness();
+}
+
+img:nth-of-type(5):hover {
+    filter: brightness(1);
+}
+
+/* End Filter Brightness */

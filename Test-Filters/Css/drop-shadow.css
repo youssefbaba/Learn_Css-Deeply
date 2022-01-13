@@ -1,0 +1,22 @@
+/* 
+filter drop-shadow  => applies a shadow effect to the element
+    - syntax : filter:;drop-shadow(h-shadow v-shadow blur color)
+    - h-shadow  and v-shadow are required  while blur and color are optional
+    - if color not specified  so value is  0 , nagative  value not allowed
+    - if color not specified so  value is currect color ya3ni  value dyal property color
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    margin: 60px auto;
+    /* filter: drop-shadow(0 0 5px gray); */
+    /* filter: drop-shadow(10px 10px 5px gray); */
+    /* filter: drop-shadow(-10px 10px 5px gray); */
+    /* filter: drop-shadow(10px -10px 5px gray); */
+    /* filter: drop-shadow(10px 10px red); */
+    filter: drop-shadow(10px 10px 5px);
+}

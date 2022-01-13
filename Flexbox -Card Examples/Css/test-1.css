@@ -1,0 +1,124 @@
+/* Method One */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 2px solid red;
+}
+
+.container .card {
+    border: 2px solid blue;
+    flex: 0 0 200px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container .card .card-img img {
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+.container .card .card-body,
+.container .card .card-footer {
+    padding: 15px;
+}
+
+.container .card .card-body h3 {
+    margin: 0;
+}
+
+.container .card .card-body p {
+    margin: 15px 0;
+}
+
+.container .card .card-footer button {
+    background-color: gray;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Method Two */
+
+/* * {
+    box-sizing: border-box;
+}
+
+.container .card {
+    border: 0.2px solid #bebebe;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .card .card-img img {
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+.container .card .card-body {
+    flex: 1;
+    padding: 15px;
+}
+
+.container .card .card-body h3 {
+    margin: 0;
+}
+
+.container .card .card-body p {
+    margin: 15px 0;
+}
+
+.container .card .card-footer {
+    padding: 15px;
+}
+
+.container .card .card-footer button {
+    background-color: gray;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+@media (max-width:575px) {}
+
+@media (min-width:576px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .container .card {
+        flex-basis: calc((100% - 20px)/ 2);
+        margin: 0;
+    }
+}
+
+@media (min-width:992px) {
+    .container .card {
+        flex-basis: calc((100% - 60px)/ 4);
+
+    }
+}
+
+@media (min-width:1400px) {
+    .container .card {
+        flex: 1 0;
+    }
+} */

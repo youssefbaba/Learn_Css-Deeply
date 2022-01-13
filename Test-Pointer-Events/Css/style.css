@@ -1,0 +1,45 @@
+/*
+Property pointer-events => ya3ni events li kiytraw mali kinpointer 3la element
+    - syntax: pointer-events[auto , none]
+    - default value is pointer-events:auto
+    - used for disabled or enabled events for element
+    - value pointer-events:auto => events enabled 
+    - value pointer-events:none => events disabled
+
+*/
+input {
+    outline: none;
+    /* pointer-events: auto; */
+    pointer-events: none;
+}
+
+input[type="text"]:focus {
+    border: 2px solid dodgerblue;
+}
+
+a.first-link {
+    display: block;
+    margin: 20px 0;
+    /* pointer-events: auto; */
+    pointer-events: none;
+}
+
+a.first-link:hover {
+    color: red;
+}
+
+a.first-link:active {
+    color: blue;
+}
+
+input[type="checkbox"]:checked+label {
+    color: green;
+    font-size: 18px;
+
+}
+
+/* 
+events [hover , focus , checked]
+pointer-events:auto => events enabled for this element
+pointer-events:none => events disabled for this element
+*/

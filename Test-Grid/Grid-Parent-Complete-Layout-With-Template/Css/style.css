@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: "head head head head head head head head head head"
+        "cont cont cont cont cont cont cont.  sidebar sidebar "
+        " foot foot foot  foot foot foot foot foot foot foot ";
+}
+
+.page header {
+    grid-area: head;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "logo logo nav nav nav nav nav nav nav nav";
+}
+
+.page header h2 {
+    grid-area: logo;
+    background-color: red;
+    color: white;
+    line-height: 60px;
+}
+
+.page header nav {
+    grid-area: nav;
+    background-color: blue;
+    color: white;
+    line-height: 60px;
+}
+
+.page header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+}
+
+.page section {
+    padding: 20px;
+    grid-area: cont;
+    background-color: yellow;
+}
+
+.page aside {
+    padding: 20px;
+    grid-area: sidebar;
+    background-color: green;
+    color: white;
+}
+
+.page footer {
+    padding: 20px;
+    grid-area: foot;
+    background-color: black;
+    color: white;
+}

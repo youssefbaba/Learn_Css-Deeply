@@ -1,0 +1,47 @@
+/* 
+Grid System
+    -grid-template-rows => [numbers of rows height in ] => [lenght(px ,em ,rem,vw ,vh ,...) , % , fr ,auto , repeat() , mix]
+    -row-gap : space between rows
+    -column-gap : space between columns
+    -gap:[row-gap]+[column-gap]
+*/
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px;
+    grid-template-rows: 100px 200px;
+    grid-template-rows: 100px 200px 100px;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 10em 10rem 100px;
+    grid-template-rows: auto auto auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-rows: 100px auto 300px;
+    grid-template-rows: 200px 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: 100px repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+    gap: 10px 20px;
+    gap: 20px;
+
+
+}
+
+.container>div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

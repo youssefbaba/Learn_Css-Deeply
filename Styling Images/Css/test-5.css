@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .card {
+    background-color: white;
+    border: 2px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 7px;
+}
+
+.container .card .card-img img {
+    width: 100%;
+    height: auto;
+}
+
+.container .card .card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.container .card .card-body p {
+    font-size: 20px;
+}
+
+@media (min-width:576px) {
+    .container {
+        flex-direction: row;
+    }
+}

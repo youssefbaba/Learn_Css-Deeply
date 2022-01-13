@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+:root {
+    --main-background-color: #aaaaaa;
+}
+
+/* Start header */
+header {
+    /* border: 2px solid red; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+header p:first-child {
+    background-color: #ffff00;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header>div {
+    background-color: #1abc9c;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+header>div h1 {
+    margin: 0;
+}
+
+/* End header */
+/* Start navigation */
+
+nav {
+    background-color: #333333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: #333333;
+}
+
+/* End navigation */
+/* Start Main */
+/* Start Aside */
+aside {
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+aside>div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+aside>div:first-child>div p {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+aside>div:first-child>div div {
+    background-color: var(--main-background-color);
+    height: 200px;
+    padding: 20px;
+}
+
+aside>div:nth-child(2) div {
+    background-color: var(--main-background-color);
+    padding: 20px;
+}
+
+/* aside>div:nth-child(2) div:not(:last-child) {
+    margin-bottom: 20px;
+} */
+
+/* End Aside */
+/* Start Main Content */
+.main-content {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-content article {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-content article h2 {
+    text-transform: uppercase;
+}
+
+.main-content article p:first-of-type {
+    font-weight: bold;
+}
+
+.main-content article div {
+    height: 200px;
+    background-color: var(--main-background-color);
+    padding: 20px;
+}
+
+/* End Main Content */
+/* End Main */
+/* Start Footer */
+footer {
+    background-color: #dddddd;
+}
+
+footer h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+/* End Footer */
+@media(min-width:768px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: left;
+    }
+
+    main {
+        display: flex;
+    }
+
+    aside {
+        flex: 1;
+    }
+
+    .main-content {
+        flex: 2;
+    }
+}
