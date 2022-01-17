@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.page {
+    position: relative;
+}
+
+.page aside {
+    background-color: black;
+    width: 120px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.page aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page aside ul li a {
+    display: block;
+    color: gray;
+    text-decoration: none;
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.page aside ul li a:hover {
+    color: white;
+}
+
+.page main {
+    margin-left: 130px;
+}

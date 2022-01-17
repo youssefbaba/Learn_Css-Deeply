@@ -1,0 +1,62 @@
+/* 
+With auto-fit,when there are not enough grid items to fill the number of tracks created,those empty tracks are collapsed.
+when there aren't enough grid items to fill all the columns in the row, those empty columns are collapsed. The space that was used by the empty columns becomes free space, which is then evenly distributed among existing items. By absorbing the free space, the items grow to fill the entire row.
+
+With auto-fill,everything is the same as auto-fit,except empty tracks are not collapsed. They are preserved. Basically,the grid layout remains fixed,with or without items.
+*/
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #eee;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-template-rows: repeat(2, 100px);
+}
+
+.container>div {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>div:nth-child(1) {
+    background-color: red;
+}
+
+.container>div:nth-child(2) {
+    background-color: green;
+}
+
+.container>div:nth-child(3) {
+    background-color: dodgerblue;
+}
+
+.container>div:nth-child(4) {
+    background-color: blue;
+}
+
+.container>div:nth-child(5) {
+    background-color: orange;
+}
+
+.container>div:nth-child(6) {
+    background-color: maroon;
+}
+
+.container>div:nth-child(7) {
+    background-color: mediumorchid;
+}
+
+.container>div:nth-child(8) {
+    background-color: palegreen;
+}
+
+.container>div:nth-child(9) {
+    background-color: turquoise;
+}

@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+.layout {
+    min-height: 2000px;
+}
+
+.layout nav {
+    background-color: #eee;
+}
+
+.layout nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.layout nav ul li {
+    text-align: center;
+}
+
+.layout nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #787878;
+    padding: 15px;
+}
+
+.layout nav ul li a:hover {
+    background-color: #616161;
+    color: white;
+}
+
+.layout nav ul li:first-of-type a {
+    background-color: green;
+    color: white;
+}
+
+
+
+
+/* Small Devices */
+
+@media(min-width:768px) {
+    .layout nav ul {
+        display: flex;
+    }
+}
+
+@media(min-width:992px) {
+    .layout nav {
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+    }
+
+    .layout nav ul {
+        flex-direction: column;
+    }
+
+    .layout nav ul li {
+        text-align: left;
+    }
+
+    .layout main {
+        margin-left: 210px;
+    }
+}

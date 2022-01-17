@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+.first-container,
+.second-container {
+    width: 400px;
+    height: 300px;
+    margin: 40px auto;
+    background-color: blue;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 40px[five] 50px [line-end];
+    grid-template-rows: [row1-start] 70px [row1-end] 90px [third-line] 100px [last-line];
+}
+
+.first-container>div {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+    /*  < number >  */
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+    /* < name > */
+    grid-row-start: row1-start;
+    grid-row-end: third-line;
+    grid-column-start: line2;
+    grid-column-end: five;
+
+    /* < number >  and  span < number >*/
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+
+    /* < number > and  span < name >*/
+    grid-row-start: 1;
+    grid-row-end: span third-line;
+    grid-column-start: 2;
+    grid-column-end: span five;
+}
+
+.second-container>div {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.second-container>div:nth-child(1) {
+    /*  < number >  */
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    /* < name > */
+    grid-row-start: row1-end;
+    grid-row-end: last-line;
+    grid-column-start: first;
+    grid-column-end: col4-start;
+
+
+    /* < number >  and  span < number >*/
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+
+
+    /* < number > and  span < name >*/
+    grid-row-start: 2;
+    grid-row-end: span last-line;
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+
+}
+
+.second-container>div:nth-child(2) {
+    grid-row-start: 1;
+    /*  by default grid-row-end: span 1 */
+    grid-column-start: 4;
+    grid-column-end: span 2;
+}

@@ -1,0 +1,52 @@
+/* 
+max-content : represents the size ( width or height) a box needs to contain all of its content without being wrapped or it overflows the box.
+*/
+
+.first-container {
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+.first-container .item1 {
+    border: 2px solid red;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.first-container .item2 {
+    /* width: auto; */
+    /* width: min-content; */
+    width: max-content;
+    border: 2px solid red;
+    padding: 5px;
+    margin-bottom: 3em;
+}
+
+.second-container {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr max-content max-content;
+    gap: 10px;
+    background-color: #eee;
+    margin: 40px 0;
+    padding: 10px;
+}
+
+.second-container>div {
+    background-color: red;
+    color: white;
+}
+
+.third-container {
+    width: 200px;
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.third-container>div {
+    /* width: auto; */
+    width: max-content;
+    border: 2px solid blue;
+    padding: 5px 0;
+}

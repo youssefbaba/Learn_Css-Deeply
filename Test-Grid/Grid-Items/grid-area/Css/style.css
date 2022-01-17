@@ -1,0 +1,112 @@
+/* 
+grid-area : <name>  or [grid-row-start][grid-column-start][grid-row-end][grid-column-end]
+
+<name> : name of grid item li kinssta3moulh fi grid-template-area
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.first-container {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: blue;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "a a a"
+        "b c c"
+        "b c c";
+}
+
+.first-container>div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-container>div:nth-child(1) {
+    background-color: purple;
+    grid-area: a;
+}
+
+.first-container>div:nth-child(2) {
+    background-color: red;
+    grid-area: b;
+}
+
+.first-container>div:nth-child(3) {
+    background-color: green;
+    grid-area: c;
+}
+
+.second-container,
+.third-container {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: [column-1] 40px [column-2] 50px [column-3] auto [column-4] 50px [column-5] 40px [column-6];
+    grid-template-rows: [row-1] 70px [row-2] 90px [row-3] 100px [row-4];
+}
+
+.second-container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    /* <number> */
+    grid-area: 1 / 2 / 3 / 5;
+    /* <name> */
+    grid-area: row-1 / column-2 / row-3 / column-5;
+
+    /* <number> and span <number> */
+    grid-area: 1 / 2 / span 2 / span 3;
+
+    /* <number> and span <name> */
+    grid-area: 1 / 2 / span row-3 / sapn column-5;
+}
+
+.third-container>div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    /* <number> */
+    grid-area: 2 / 1 / 4 / 4;
+    /* <name> */
+    grid-area: row-2 / column-1 / row-4 / column-4;
+    /*<number> and span <number> */
+    grid-area: 2 / 1 / span 2 / span 3;
+
+    /* <number> and span <name> */
+    grid-area: 2 / 1 / span row-4 / span column-4;
+
+}
+
+.third-container>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    /* <number> */
+    grid-area: 1 / 4 / 4 / 6;
+    /* <name> */
+    grid-area: row-1 / column-4 / row-4 / column-6;
+    /* <number> and span <number> */
+    grid-area: 1 / 4 / span 3 / span 2;
+    /* <number> and span <name> */
+    grid-area: 1 / 4 / span row-4 / span column-6;
+}

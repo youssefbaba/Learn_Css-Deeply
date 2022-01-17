@@ -1,0 +1,36 @@
+/* 
+align-content  => la gestion d'espace vertical
+    -aligns the grid along the column axis
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: blue;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    /* grid-template-rows: repeat(3, auto); */
+    align-content: stretch;
+    align-content: start;
+    align-content: end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+}
+
+.container>div {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

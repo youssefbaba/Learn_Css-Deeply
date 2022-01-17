@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+    background-color: #eee;
+    display: grid;
+    display: inline-grid;
+}
+
+.container>div {
+    background-color: red;
+    color: white;
+}

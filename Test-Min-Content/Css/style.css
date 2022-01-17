@@ -1,0 +1,36 @@
+/* 
+- the min-content is the smallest size (height or width) a box can take without overflowing its content.
+- For horizontal content,the min-content uses the length of the widest bit of content in the element box and automatically sets that length value as the box width.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.first-div {
+    /* width: 200px;
+    height: 200px; */
+    width: min-content;
+    height: min-content;
+    font-size: 30px;
+    border: 2px solid red;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: min-content min-content 1fr;
+    grid-gap: 5px;
+    box-sizing: border-box;
+    height: 200px;
+    width: 100%;
+    background-color: #eee;
+    padding: 10px;
+    margin: 600px 0;
+}
+
+.container>div {
+    background-color: red;
+    padding: 5px;
+    color: white;
+}

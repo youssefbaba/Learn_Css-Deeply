@@ -1,0 +1,66 @@
+/* 
+place-items :[align-items][justify-items]
+if second value is omited so kiatkhod nafss value dyal first value
+    - example : place-items : center  => place-items : center center
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: blue;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* align-items: stretch; */
+    /* align-items: start; */
+    /* align-items: end; */
+    align-items: center;
+
+    justify-items: stretch;
+    justify-items: start;
+    justify-items: end;
+    justify-items: center;
+
+    /* place-items: stretch stretch;
+    place-items: stretch start;
+    place-items: stretch end;
+    place-items: stretch center; */
+
+    /* place-items: start stretch;
+    place-items: start start;
+    place-items: start end;
+    place-items: start center; */
+
+    /* place-items: end stretch;
+    place-items: end start;
+    place-items: end end;
+    place-items: end center; */
+
+    place-items: center stretch;
+    place-items: center start;
+    place-items: center end;
+    place-items: center center;
+
+
+    place-items: stretch;
+    place-items: center;
+    place-items: start;
+    place-items: end;
+
+
+}
+
+.container>div {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

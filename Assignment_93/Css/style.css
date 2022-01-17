@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.layout nav {
+    background-color: black;
+    width: 180px;
+    height: 100vh;
+    padding-top: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.layout nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.layout nav ul li {}
+
+.layout nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 8px 20px;
+    color: #616161;
+    transition: 0.3s;
+}
+
+.layout nav ul li a i {
+    margin-right: 10px;
+    color: #616161;
+    transition: 0.3s;
+}
+
+.layout nav ul li a:hover,
+.layout nav ul li a:hover i {
+    color: white;
+}
+
+.layout main {
+    margin-left: 190px;
+}

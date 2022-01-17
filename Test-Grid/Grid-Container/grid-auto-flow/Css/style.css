@@ -1,0 +1,105 @@
+/* 
+grid-auto-flow : specifying exactly how auto-placed items get flowed into the grid.
+    - ya3ni pecifying exactly the flow of the grid items li madarnach lihom emplacement manuel ola darna lihom emplacelemnt o kharjo man grid container.
+    - default value is grdi-auto-flow:row
+    - when you don’t explicitly place the grid items inside the grid items placed automaticaly
+    - when a grid item is placed outside of the explicit grid this items placed automaticaly .
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*  Test 1 */
+
+.first-container {
+    width: 220px;
+    background-color: #eee;
+    border: 2px solid blue;
+    padding: 0.75em;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(40px, auto));
+    gap: 10px;
+    /* grid-auto-flow: row; */
+    /* grid-auto-flow: column; */
+    /* grid-auto-flow: row dense; */
+    grid-auto-flow: column dense;
+}
+
+.first-container>div {
+    background-color: rgba(0, 0, 255, .2);
+    border: 3px solid #00f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-container>div:nth-child(1) {
+    grid-column: auto/span 2;
+}
+
+.first-container>div:nth-child(2) {
+    grid-column: auto/span 2;
+}
+
+/*  Test 2 */
+.second-container {
+    width: 220px;
+    background-color: #eee;
+    border: 2px solid blue;
+    padding: 0.75em;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    /* grid-auto-flow: row; */
+    /* grid-auto-flow: column; */
+    /* grid-auto-flow: row dense; */
+    grid-auto-flow: column dense;
+}
+
+.second-container>div {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-container>div:nth-child(3) {
+    grid-column: span 3;
+    grid-row: span 3;
+}
+
+
+/* Test Three */
+.third-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 30px 30px;
+    grid-auto-flow: row;
+    grid-auto-flow: column;
+}
+
+.third-container>div {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-a {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.item-e {
+    grid-column: 5;
+    grid-row: 1 / 3;
+}

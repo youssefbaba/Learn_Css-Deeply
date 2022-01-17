@@ -1,0 +1,38 @@
+/* 
+row-gap : space (gap) between rows
+column-gap :  space (gap) between columns
+gap : [row-gap][column-gap] tel que row-gap required and column-gap optional and if column-omited kitakhod  same value dyal row-gap
+units [length(px , em , rem , vw , vh ,...) , %]
+
+*/
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    background-color: #eee;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* row-gap: 16px;
+    row-gap: 1em;
+    row-gap: 1rem;
+    row-gap: 10%; */
+    /* column-gap: 16px;
+    column-gap: 1em;
+    column-gap: 1rem;
+    column-gap: 10%; */
+    column-gap: 10px;
+    row-gap: 10px;
+    gap: 10px 10px;
+    gap: 10px;
+
+}
+
+.container>div {
+    background-color: red;
+    color: white;
+}

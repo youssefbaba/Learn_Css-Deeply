@@ -1,0 +1,63 @@
+/* 
+place-self is a shorthand of  [align-self][justify-self]
+if second value is omited so kitakhod naffs value of first value
+*/
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    margin: auto;
+    background-color: blue;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.container>div {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>div:nth-child(5) {
+    /* align-self: stretch; */
+    /* align-self: start; */
+    /* align-self: end; */
+    align-self: center;
+
+
+    /* justify-self: stretch;
+    justify-self: start;
+    justify-self: end;
+    justify-self: center; */
+
+
+    /* place-self: stretch stretch;
+    place-self: stretch start;
+    place-self: stretch end;
+    place-self: stretch center; */
+
+    /* place-self: start stretch;
+    place-self: start start;
+    place-self: start end;
+    place-self: start center; */
+
+    /* place-self: end stretch;
+    place-self: end start;
+    place-self: end end;
+    place-self: end center; */
+
+    place-self: center stretch;
+    place-self: center start;
+    place-self: center end;
+    place-self: center center;
+
+}

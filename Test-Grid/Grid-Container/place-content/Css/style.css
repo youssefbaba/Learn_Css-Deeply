@@ -1,0 +1,67 @@
+/* 
+place-content : [align-content][justify-content]
+    - if the second value is omited rah kitakhod nafss value dyal first value 
+        - example : place-content : center => place-content:center center
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: blue;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, 50px);
+    grid-template-rows: repeat(3, auto);
+
+
+    /* align-content: stretch; */
+    align-content: start;
+    /* align-content: end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+
+    justify-content: stretch;
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+    /*
+    place-content: stretch stretch;
+    place-content: stretch start;
+    place-content: stretch end;
+    place-content: stretch center;
+    place-content: stretch space-between;
+    place-content: stretch space-around;
+    place-content: stretch space-evenly; 
+    */
+    place-content: start stretch;
+    place-content: start start;
+    place-content: start end;
+    place-content: start center;
+    place-content: start space-between;
+    place-content: start space-around;
+    place-content: start space-evenly;
+
+}
+
+.container>div {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
