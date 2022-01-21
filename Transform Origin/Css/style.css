@@ -1,0 +1,92 @@
+/* 
+Transform -origin 
+    - transform-origin : X-axis Y-axis Z-axis
+- 2D transform :
+    - default value is transform-origin : 50% 50%  ;
+    - syntax :  transform-origin : X-axis Y-axis ;
+        - X-axis
+            - lenght (px , em ,  rem ....)
+            - percentage : 0% , 50% , 100% ...
+            - keyword : left (0%) center(50%) right(100%)
+        - Y-axis
+            - lenght (px , em ,  rem ....)
+            - percentage : 0% , 50% , 100% ...
+            - keyword : top (0%) center(50%) bottom(100%)
+
+*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    position: relative;
+}
+
+.container>div {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(250, 163, 132, 0.5);
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform-origin: 0% 0%;
+    /* transform-origin: left top; */
+
+
+    /* transform-origin: 0% 50%; */
+    /* transform-origin: left center; */
+
+
+    /* transform-origin: 0% 100%; */
+    /* transform-origin: left bottom; */
+
+
+
+    /* transform-origin: 50% 50%; */
+    /* transform-origin: center center; */
+
+
+    /* transform-origin: 100% 50%; */
+    /* transform-origin: right center; */
+
+    transform-origin: 100% 100%;
+    transform-origin: right bottom;
+
+
+
+    transform: rotate(10deg);
+
+
+
+
+}
+
+.container>.origin {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    /* top: 50%; */
+    bottom: 0;
+    /* left: 0; */
+    right: 0;
+    /* transform: translate(-50%, -50%); */
+}

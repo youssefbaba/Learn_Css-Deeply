@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    padding: 20px;
+    margin: auto;
+    background-color: #ddd;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-between;
+}
+
+.container>div {
+    background-color: #e91e63;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

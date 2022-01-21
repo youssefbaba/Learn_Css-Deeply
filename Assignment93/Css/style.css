@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #009688;
+}
+
+h1 {
+    width: 150px;
+    margin: 60px auto;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    box-sizing: content-box;
+    position: relative;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 100%;
+    width: 40px;
+    top: 0;
+    left: -15px;
+    transform: skewX(20deg);
+}
+
+h1::before {
+    width: 40px;
+    left: -15px;
+}
+
+h1::after {
+    width: 30px;
+    left: -55px;
+}

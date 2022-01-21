@@ -1,0 +1,74 @@
+/* 
+2D transform 
+matrix
+    - default value is transform:matrix(1 , 0 , 0 , 1 , 0 , 0)
+    - syntax : transform:matrix(scaleX() , skewY() , skewX() , scaleY() , translateX() , translateY()) ;
+*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+}
+
+.container>div {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(250, 163, 132, 0.5);
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: matrix(1, 0, 0, 1, 0, 0); */
+
+
+    /* transform: matrix(1.5, 0.36397023, 0.26794919, 2, 20, 10); */
+
+
+    /* transform: matrix(1, 0.36397023, 0, 1, 0, 0); */
+    /* transform: skewY(20deg); */
+
+
+    /* transform: matrix(1, 0, 0.26794919, 1, 0, 0); */
+    /* transform: skewX(15deg); */
+
+
+    /* transform: matrix(1.5, 0.36397023, 0.26794919, 2, 20, 10); */
+    /* transform: scaleX(1.5) skewY(20deg) skewX(15deg) scaleY(2) translateX(20px) translateY(10px); */
+
+
+    /* transform: translateX(20px) translateY(10px) scaleX(1.2) skewY(15deg) skewX(20deg) scaleY(2); */
+    transform: matrix(1.2, 0.26794919, 0, 2, 20, 10);
+    transform: translate(20px, 10px) skew(0deg, 15deg) scale(1.2, 2);
+
+
+
+
+    /* 
+    - 1.5 => value of scaleX()
+    - 0.36397023 => value of skewY() but 0.36397023 = tang(20deg)
+    - 0.26794919 => value of skewX() but 0.26794919 = tang(15deg)
+    - 2 => value of scaleY()
+    - 20 => value of translateX() but without unit 
+    - 10 => value of translateY() but without unit 
+    */
+
+    /* 
+    order for properties : transform used first translate and after this used other properties ( scale ,skew , rotate ....)
+    */
+}

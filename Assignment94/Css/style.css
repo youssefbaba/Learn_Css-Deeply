@@ -1,0 +1,42 @@
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+}
+
+.first-div {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+    align-self: center;
+    background-color: #607d8b;
+    position: relative;
+}
+
+.first-div::before {
+    content: 'youssef';
+    position: absolute;
+    color: white;
+    left: 10px;
+    bottom: 10px;
+}
+
+.first-div::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: calc(100% / 1.4142);
+    height: calc(100% / 1.4142);
+    transform: translateY(-50%) rotate(45deg);
+    left: calc((calc(100% - calc(100% / 1.4142))) / 2);
+    border: 2px solid;
+    border-color: black white white black;
+}

@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Extra Small Devices */
+@media(min-width:576px) {
+    .container {
+        width: 540px;
+        margin: 60px auto;
+    }
+}
+
+/* Small Devices */
+
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+        margin: 60px auto;
+    }
+}
+
+/* Medium Devices */
+
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+        margin: 60px auto;
+    }
+}
+
+/* Large Devices */
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+        margin: 60px auto;
+    }
+}
+
+.container {
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.container .card {
+    background-color: white;
+    border: 0.5px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 7px;
+}
+
+.container .card .card-img img {
+    max-width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+.container .card .card-info {
+    padding: 10px;
+}
+
+.container .card .card-info h3,
+.container .card .card-info p {
+    padding: 0 20px;
+}
+
+.container .card .card-info p {
+    margin: 15px 0;
+
+}
+
+.container .card .card-info a {
+    display: block;
+    text-decoration: none;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}

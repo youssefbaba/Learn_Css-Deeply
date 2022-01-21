@@ -1,0 +1,65 @@
+/* 
+2D Transform 
+-SkewX  : skew of the element in  direction x
+    - default value is transform:skewX(0deg)
+    - syntax :transform:skewX(angle);
+    - angle( deg , turn , rad , grad)
+    - angle maybe take value positive or negative
+
+
+
+-SkewY=>skew of the element in direction y
+    - default value is transform:skewY(0deg) 
+    - syntax :transform:skewY(angle);
+    - angle(deg, turn, rad, grad) 
+    - angle maybe take value positive or negative
+
+
+-Skew is a shorhand  of skewX and skewY
+    - default value is transform:skew(0deg);
+    - syntax transform:skew(angle1 , angle2);
+    - angle1 => skewX , angle2 => skewY
+    - if second angle is omited donc kitakhod 0deg
+        - example : transform:skew(10ddeg)  = transform:skew(10deg ,0deg);
+
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+}
+
+.container>div {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(250, 163, 132, 0.5);
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    /* transform: skewX(30deg); */
+    /* transform: skewX(0.083turn); */
+    /* transform: skewX(-30deg); */
+    /* transform: skewX(-0.083turn); */
+    transform: skewY(30deg);
+    transform: skewY(0.083turn);
+    transform: skewY(-30deg);
+    transform: skewY(-0.083turn);
+
+
+}

@@ -1,0 +1,88 @@
+/* Using grid-template-area and grid area */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "one one two three"
+        "four five five three"
+        "four six six three"
+        "seven eight nine ten";
+    gap: 10px;
+}
+
+.container>div {
+    background-color: white;
+    border-bottom: 2px solid red;
+    padding: 10px;
+}
+
+.container>div span:first-of-type {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container>div span:last-of-type {
+    color: gray;
+}
+
+.container>div p:first-of-type {
+    font-weight: bold;
+}
+
+.container>div:nth-child(3),
+.container>div:nth-child(5),
+.container>div:nth-child(8) {
+    background-color: black;
+    color: white;
+}
+
+.container>div:nth-child(1) {
+    grid-area: one;
+}
+
+.container>div:nth-child(2) {
+    grid-area: two;
+}
+
+.container>div:nth-child(3) {
+    grid-area: three;
+}
+
+.container>div:nth-child(4) {
+    grid-area: four;
+}
+
+.container>div:nth-child(5) {
+    grid-area: five;
+}
+
+.container>div:nth-child(6) {
+    grid-area: six;
+}
+
+.container>div:nth-child(7) {
+    grid-area: seven;
+}
+
+.container>div:nth-child(8) {
+    grid-area: eight;
+}
+
+.container>div:nth-child(9) {
+    grid-area: nine;
+}
+
+.container>div:nth-child(10) {
+    grid-area: ten;
+}

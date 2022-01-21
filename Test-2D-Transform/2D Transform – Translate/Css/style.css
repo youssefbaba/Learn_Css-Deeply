@@ -1,0 +1,71 @@
+/* 
+2D Transform 
+- Translate
+-TranslateX => translate an element in direction x
+    - default value is transform:translateX(0px)
+    - syntax  transform:translateX(amount)
+    - amount[length( px , em , rem ,...) , %]
+    - if amount is positive => translate in right  , if amount is negative => translate in  left
+
+
+-TranslateY => translate an element in direction y
+    - default value is transform:translateY(0px) 
+    - syntax transform:translateY(amount) 
+    - amount[length(px, em, rem, ...),%]
+    - if amount is positive => translate in bottom ,if amount is negative => translate in top
+
+-Translate => is a shorthand of translateX and translateY
+    - syntax  transform : translate(value1 , value2)
+    - value 1 => translateX , value 2 => translateY
+    - if second value is omited donc rah kitakhod value 0px
+        - example transform:translate(10px)=transform:translate(10px , 0px)
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+}
+
+.container>div {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(250, 163, 132, 0.5);
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    /* transform: translateX(0px); */
+    /* transform: translateX(40px); */
+    /* transform: translateX(20%); */
+    /* transform: translateX(-40px); */
+    /* transform: translateX(-20%); */
+    /* transform: translateX(100%); */
+    /* transform: translateX(-100%); */
+    /* transform: translateX(50%); */
+    /* transform: translateX(-50%); */
+
+    transform: translateY(0px);
+    transform: translateY(40px);
+    transform: translateY(20%);
+    transform: translateY(-40px);
+    transform: translateY(-20%);
+    transform: translateY(100%);
+    transform: translateY(-100%);
+    transform: translateY(50%);
+    transform: translateY(-50%);
+}

@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+    position: relative;
+}
+
+.parent::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+
+.parent::after {
+    content: "";
+    height: 100%;
+    width: 0.7px;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+.parent>.child {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    /* hnaya ghada tkhdam ghir translate Y */
+    /* transform: translateX(-50%);
+    transform: translateY(-50%); */
+
+    transform: translate(-50%, -50%);
+
+}

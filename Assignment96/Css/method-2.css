@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 600px;
+}
+
+.container .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.container .card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    backface-visibility: hidden;
+}
+
+.container .card .front {
+    background-color: #ea2264;
+}
+
+.container .card .back {
+    background-color: #03a9f4;
+    transform: rotateX(180deg);
+}
+
+.container .card:hover {
+    transform: rotateX(-180deg);
+
+}
