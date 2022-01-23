@@ -1,0 +1,126 @@
+/* 
+3D transform  => transformation dans l'espace
+Rotate
+    - transform:rotateX(angle) => rotate an element following the X-axis if angle equal a 90 deg element is omited
+    - transform:rotateY(angle) => rotate an element following the Y-axis if angle equal a 90 deg element is omited
+    - transform:rotateZ(angle) = >rotate element following the Z-axis is sumilar a rotate 2D transform ya3ni b7alha b7al transform:rotate(angle)
+    - transform:rotate3d(value1, value2, value3, angle)
+        - value1 number equal ( 0 or 1 ) => X-axis
+        - value2 number equal ( 0 or 1 ) => Y-axis
+        - value3 number equal ( 0 or 1 ) => Z-axis
+
+*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #787878;
+}
+
+.container>div {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(238, 147, 147, 0.764);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    position: relative;
+    transition: transform 1s;
+
+    /* transform: rotate(90deg); */
+    /* transform: rotate(-90deg); */
+    /* transform: rotate(180deg); */
+    /* transform: rotate(-180deg); */
+
+
+    /* 7int kindir rotate suivant X-axis kiyhamni ghir origin dyal Y-axis */
+
+
+    /*
+    transform-origin: 50% 50%;
+    transform-origin: 50% 0%;
+    transform-origin: 50% 100%;
+     */
+
+
+    /* transform: rotateX(45deg); */
+    /* transform: rotateX(90deg); */
+    /* transform: rotateX(180deg); */
+
+
+
+    /* 7int kindir rotate suivant Y-axis kiyhamni ghir origin dyal X-axis */
+
+    /* 
+    transform-origin: 50% 50%;
+    transform-origin: 0% 50%;
+    transform-origin: 100% 50%; 
+    */
+
+
+    /* transform: rotateY(45deg); */
+    /* transform: rotateY(90deg); */
+    /* transform: rotateY(180deg); */
+
+
+
+    /* transform: rotateZ(90deg); */
+    /* transform: rotateZ(-90deg); */
+    /* transform: rotateZ(180deg); */
+    /* transform: rotateZ(-180deg); */
+
+
+    /* transform: rotate3d(1, 1, 1, 30deg); */
+    /* transform: rotate3d(0, 1, 1, 30deg); */
+    /* transform: rotate3d(1, 0, 1, 30deg); */
+    /* transform: rotate3d(1, 1, 0, 30deg); */
+
+
+
+    /* 7int kindir rotate suivant Y-axis kiyhamni ghir origin dyal X-axis */
+
+    /* transform: rotateY(90deg); */
+
+    /* transform-origin: 0% 50%; */
+
+    /* transform-origin: 50% 50%; */
+
+    /* transform-origin: 100% 50%; */
+
+
+
+    /* 7int kindir rotate suivant X-axis kiyhamni ghir origin dyal Y-axis */
+
+    transform: rotateX(90deg);
+
+    transform-origin: 50% 0%;
+
+
+    transform-origin: 50% 50%;
+
+
+    transform-origin: 50% 100%;
+
+
+}
+
+.container:hover div {
+    /* transform: rotateY(0deg); */
+    transform: rotateX(0deg);
+}

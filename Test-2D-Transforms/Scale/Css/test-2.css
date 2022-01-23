@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.one,
+.two {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.one {
+    background-color: #87ceeb;
+}
+
+.two {
+    background-color: #ffc0cb;
+    transform: scale(2, 0.5);
+    transform-origin: 0% 0%;
+
+}

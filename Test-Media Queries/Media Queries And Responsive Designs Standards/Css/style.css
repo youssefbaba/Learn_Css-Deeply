@@ -1,0 +1,67 @@
+/* 
+-Media Queries 
+-Responsive Web Design
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    border: 1px solid blue;
+}
+
+.parent>div {
+    background-color: red;
+    text-align: center;
+    font-size: 20px;
+    width: 290px;
+}
+
+/* best practice for using Media Queries */
+
+/* Small Screens */
+@media screen and (max-width: 767px) {
+    /* Code Css */
+}
+
+/* Medium Screens  */
+@media screen and (min-width: 768px) {
+    /* Code Css */
+}
+
+/* Large Screens */
+@media screen and (min-width: 992px) {
+    .parent>div {
+        background-color: blue;
+        color: white;
+    }
+}
+
+/* X-Large Screens */
+@media screen and (min-width: 1200px) {
+    /* Code Css */
+}
+
+
+/* X-X-Large Screens */
+@media screen and (min-width: 1400px) {
+    /* Code Css */
+}
+
+/* Custom media */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Code Css */
+}
+
+/* Custom media */
+@media screen and (max-width: 1199px) {
+    /* Code Css */
+}

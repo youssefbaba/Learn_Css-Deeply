@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.container>div {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 15px;
+}
+
+.container>div p {
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container>div h3 {
+        color: #fe1010;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .container>div h3 {
+        color: #019688;
+    }
+}

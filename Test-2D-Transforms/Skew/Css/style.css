@@ -1,0 +1,72 @@
+/* 
+2D Transform 
+Skew 
+    - X-axis => skews an element along the X-axis
+    - syntax : transform:skewX(angle);
+    - default value is transform:skewX(0deg);
+    - angle[deg ,turn,rad ,grad]
+    - according to the value of angle you can skew element to right or left , if angle positive skew to left  , if angle negative skew to  right
+
+    - Y-axis => skews an element along the Y-axis 
+    - syntax : transform:skewY(angle);
+    - default value is transform:skewY(0deg);
+    - angle[deg,turn,rad,grad]
+    - according to the value of angle you can skew element to top or bottom,if angle positive skew to bottom,if angle negative skew to top
+
+    - X-axis and Y-axis => skews an element along the X-axis and Y-axis 
+    - syntax : transform:skew(angle1 , angle2);
+    - default value is transform:skew(0deg ,0deg) or transform:skew(0deg);
+    - angle[deg,turn,rad,grad]
+    - if angle2 is omitted , so his value equal a 0 deg
+        - example : transform:skew(20deg) = transfrom:skew(20deg ,0deg)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #787878;
+}
+
+.container>div {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(238, 147, 147, 0.764);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+
+    /* transform: skewX(0deg); */
+    /* transform: skewX(20deg); */
+    /* transform: skewX(-20deg); */
+
+    /* transform: skewY(0deg); */
+    /* transform: skewY(20deg); */
+    /* transform: skewY(-20deg); */
+
+
+    /* Reset the first property */
+    /* transform: skewX(20deg);
+    transform: skewY(20deg); */
+
+
+    transform: skew(20deg, 20deg);
+
+    transform: skew(20deg);
+
+
+}

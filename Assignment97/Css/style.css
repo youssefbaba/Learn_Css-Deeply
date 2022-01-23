@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.first-div {
+    width: fit-content;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: red;
+    font-size: 20px;
+    font-weight: 20px;
+    color: white;
+}
+
+@media print {
+    .first-div {
+        font-size: 40px;
+        color: black;
+        border: 1px solid red;
+    }
+}

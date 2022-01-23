@@ -1,0 +1,67 @@
+/* 
+3D transform
+-Backface-Visibility => wach other face of element visible or not 
+    - default value is backface-visibility : visible;
+    - syntax backface-visibility : [hidden , visible];
+
+-Transform-Style => this property sets whether childrens of an element are positioned in the 3D space or are flattened in the plane of the element.
+    - default value is transform-style:flat;
+    - syntax : transform-style: flat / preserve-3d;
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+    align-self: center;
+    perspective: 600px;
+}
+
+.container>div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    transform-origin: 0% 50%;
+}
+
+.container>div::before,
+.container>div::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.container>div::before {
+    content: "Front Face";
+    background-color: #fa3664;
+}
+
+.container>div::after {
+    content: "Back Face";
+    background-color: #2296f4;
+    transform: rotateY(180deg);
+}
+
+.container>div:hover {
+    /* transform: rotateY(180deg); */
+    transform: translateX(100%) rotateY(-180deg);
+}

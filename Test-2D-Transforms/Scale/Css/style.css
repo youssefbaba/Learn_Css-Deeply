@@ -1,0 +1,70 @@
+/* 
+2D Transform
+Scale
+    - X-axis => increases or decreases the size of element following the X-axis (width)
+        - syntax : transform:scaleX(number);
+        - default value is transform:scaleX(1);
+        - if number is outside the ]-1,1[ range,the element grows along that dimension; when inside,it shrinks. If it is negative, element flip
+
+    - Y-axis => increases or decreases the size of element following the Y-axis (height)
+        - syntax : transform:scaleY(number);
+        - default value is transform:scaleY(1);
+        - if number is outside the ]-1,1[ range,the element grows along that dimension; when inside,it shrinks. If it is negative, element flip
+
+    - X-axis and Y-axis => increases or decreases the size of element following the X-axis and the Y-axis (width and height)
+        - syntax : transform:scale(number1 ,number2);
+        - default value is transform:scale(1, 1) or transform:scale(1);
+        - if number is outside the ]-1,1[ range,the element grows along that dimension; when inside,it shrinks. If it is negative, element flip
+        - if number2 is omitted , so his value equal a number1
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #787878;
+}
+
+.container>div {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(238, 147, 147, 0.764);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+
+
+    /* transform: scaleX(1);
+    transform: scaleX(-1);
+    transform: scaleX(0.5);
+    transform: scaleX(-0.5);
+    transform: scaleX(2);
+    transform: scaleX(-2); */
+
+    /* transform: scaleY(1);
+    transform: scaleY(-1);
+    transform: scaleY(0.5);
+    transform: scaleY(-0.5);
+    transform: scaleY(2);
+    transform: scaleY(-2); */
+
+
+    transform: scale(1.5, 0.5);
+    transform: scale(2, 2);
+    transform: scale(2);
+
+}

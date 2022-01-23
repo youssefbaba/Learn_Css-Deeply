@@ -1,0 +1,55 @@
+/* 
+2D Transform
+Matrix => combines all the 2D transform methods (translate , scale , rotate , skew ) into one.
+    - syntax : transform:matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
+    - default value is transform:matrix(1, 0, 0, 1, 0, 0);
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #787878;
+}
+
+.container>div {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(238, 147, 147, 0.764);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
+
+    transform: matrix(0.5, 0.26794919, 0, 1.5, 20, 10);
+    transform: translateX(20px) translateY(10px) scaleX(0.5) skewY(15deg) skewX(0deg) scaleY(1.5);
+
+    /* 
+
+    - 0.5 => value of scaleX 
+    - 0.26794919 => value of skewY where 0.26794919 = tang(15deg)
+    - 0.36397023 => value of skewX where 0.36397023 = tang(20deg)
+    - 1.5 => value of scaleY 
+    - 20  => value of translateX without unit
+    - 10  => value of translateY without unit
+    
+    
+    */
+}

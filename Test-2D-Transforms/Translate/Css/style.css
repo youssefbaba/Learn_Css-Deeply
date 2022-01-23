@@ -1,0 +1,97 @@
+/*
+2D transform
+Translate :
+    - X-axis :
+        - syntax : transform : translateX(amount)
+        - amount [lenght(px ,em ,rem ,vh ,vw ....) , percentage]
+        - default value is transform:translateX(0px)
+        - if amount is positive => translate to right , if amount is negative => translate to left
+    - Y-axis :
+        - syntax : transform : translateY(amount)
+        - amount [lenght(px ,em ,rem ,vh ,vw ....) , percentage]
+        - default value is transform:translateY(0px)
+        - if amount is positive => translate to bottom , if amount is negative => translate to top
+    - X-axis and Y-axis :
+        - syntax : transform : translate(value1 , value2)
+        - value [lenght(px ,em ,rem ,vh ,vw ....) , percentage]
+        - default value is transform:translate(0px)
+        - value1 => translate element following X-axis
+        - value2 => translate element following Y-axis
+        - if value2 is omitted so his value equal 0px
+            - example : transform:translate(50px) = transform:translate(50px ,0px)
+
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #787878;
+}
+
+.container>div {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(238, 147, 147, 0.764);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+
+    /* transform-origin: 50% 50%;
+    transform: translateX(0px);
+    transform: translateX(90px);
+    transform: translateX(50%);
+    transform: translateX(-90px);
+    transform: translateX(-50%); */
+    /* 
+    transform-origin: 0% 50%;
+    transform: translateX(0px);
+    transform: translateX(90px);
+    transform: translateX(50%);
+    transform: translateX(-90px);
+    transform: translateX(-50%); */
+
+    /* transform-origin: 100% 50%;
+    transform: translateX(0px);
+    transform: translateX(90px);
+    transform: translateX(50%);
+    transform: translateX(-90px);
+    transform: translateX(-50%); */
+
+    /* transform-origin: 0% 50%;
+    transform: translateY(0px);
+    transform: translateY(90px);
+    transform: translateY(50%);
+    transform: translateY(-90px);
+    transform: translateY(-50%); */
+
+    /* transform-origin: 0% 0%;
+    transform: translateY(0px);
+    transform: translateY(90px);
+    transform: translateY(50%);
+    transform: translateY(-90px);
+    transform: translateY(-50%); */
+
+
+    /* transform: translate(0px, 0px);
+    transform: translate(90px, 90px);
+    transform: translate(50%, 50%);
+    transform: translate(-90px, -90px);
+    transform: translate(-50%, -50%); */
+
+
+    transform: translate(50%);
+}

@@ -1,0 +1,46 @@
+/* 
+-Media Queries 
+-Responsive Web Design
+    - Mobile First
+    - Test Devices
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.parent>div {
+    padding: 20px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    flex-basis: 100%;
+}
+
+
+
+
+/* Medium Screens  */
+@media screen and (min-width: 768px) {
+    .parent>div {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+/* Large Screens */
+@media screen and (min-width: 992px) {
+    .parent>div {
+        flex: 1;
+    }
+
+}
