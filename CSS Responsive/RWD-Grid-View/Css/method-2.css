@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.container header {
+    height: 100px;
+    background-color: #ac5ad6;
+}
+
+.container main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container main nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container main ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.container main ul li a {
+    display: block;
+    height: 40px;
+    background-color: #33b5e5;
+}
+
+.container main aside {
+    background-color: #33b5e5;
+    min-height: 300px;
+}
+
+.container footer {
+    height: 80px;
+    background-color: #0099cc;
+}

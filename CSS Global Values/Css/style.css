@@ -1,0 +1,120 @@
+/* 
+Css Global Values
+    - inherit =>  element child inherit property from element parent where this property is not Inherted
+        - example : border:inherit
+
+    - initial => default value of property when created first times. (machi dyal li 3taha user ugent)
+        - example : font-weight: initial;
+    - unset
+        - if property is Inherited  => inherit
+        - if property Not Inherited => initial
+
+    - revert =>  default value of property of user ugent (ya3ni value li kiy3tiha user ugent lhadik property)
+    - all  =>  all properties
+
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.div {
+    color: red;
+    background-color: #eee;
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid blue;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.div p {
+    border: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+.div span {
+    color: green;
+}
+
+.div strong {
+    font-weight: initial;
+    font-weight: normal;
+}
+
+.div h2 {
+    font-size: initial;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+button {
+    /* unset in this case = inherit */
+    color: unset;
+    color: inherit;
+
+
+
+    /*  unset in this case = initial */
+    border: unset;
+    border: initial;
+
+
+    /* 7int button hnaya machi child  dyal wa7ad element parent so all properties = initial */
+    all: unset;
+
+
+}
+
+.div button {
+    /* all properties of button  =>  inherted properties = initial   and   not inherited properties = initial */
+    all: unset;
+
+    /* 
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit; 
+    border:initial
+    .
+    .
+    .
+    */
+}
+
+.div h2 {
+
+    font-weight: revert;
+    font-weight: bold;
+}
+
+body {
+    margin: revert;
+    margin: 8px;
+}
+
+
+/* 
+- color is inherited  property 
+- font-size is inherited property 
+- font-weight is inherited property 
+- .
+- .
+- .
+- .
+- .
+- .
+
+- border is not inherited property 
+- margin is not inherited property 
+- padding is not inherited property 
+- .
+- .
+- .
+- .
+- .
+
+
+*/

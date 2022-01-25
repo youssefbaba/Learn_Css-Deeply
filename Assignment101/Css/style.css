@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #dddddd;
+}
+
+.arrow {
+    width: 800px;
+    background-color: var(--main-color);
+    margin: 60px auto;
+    padding: 25px;
+    position: relative;
+}
+
+.arrow::before {
+    content: "";
+    position: absolute;
+    border: 20px solid;
+}
+
+.top::before {
+    border-color: transparent transparent var(--main-color) transparent;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.right::before {
+    border-color: transparent transparent transparent var(--main-color);
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+}
+
+.bottom::before {
+    border-color: var(--main-color) transparent transparent transparent;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.left::before {
+    border-color: transparent var(--main-color) transparent transparent;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+}

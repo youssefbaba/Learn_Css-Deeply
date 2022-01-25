@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    img[alt="img_10"] {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    img[alt="img_1"] {
+        display: none;
+    }
+
+    img[alt="img_10"] {
+        display: inline-block;
+    }
+}

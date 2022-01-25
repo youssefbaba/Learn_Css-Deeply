@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.one {
+    max-width: 800px;
+    border: 2px solid red;
+}
+
+.two {
+    max-width: 300px;
+    border: 2px solid blue;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
